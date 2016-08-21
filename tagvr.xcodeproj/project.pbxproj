@@ -1,0 +1,505 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		525718A81D6A73EA007D744C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525718A71D6A73EA007D744C /* AppDelegate.swift */; };
+		525718AA1D6A73EA007D744C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525718A91D6A73EA007D744C /* ViewController.swift */; };
+		525718AD1D6A73EA007D744C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 525718AB1D6A73EA007D744C /* Main.storyboard */; };
+		525718AF1D6A73EA007D744C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 525718AE1D6A73EA007D744C /* Assets.xcassets */; };
+		525718B21D6A73EA007D744C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 525718B01D6A73EA007D744C /* LaunchScreen.storyboard */; };
+		525718BD1D6A73EA007D744C /* tagvrTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525718BC1D6A73EA007D744C /* tagvrTests.swift */; };
+		525718C81D6A73EA007D744C /* tagvrUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525718C71D6A73EA007D744C /* tagvrUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		525718B91D6A73EA007D744C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5257189C1D6A73EA007D744C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 525718A31D6A73EA007D744C;
+			remoteInfo = tagvr;
+		};
+		525718C41D6A73EA007D744C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5257189C1D6A73EA007D744C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 525718A31D6A73EA007D744C;
+			remoteInfo = tagvr;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		525718A41D6A73EA007D744C /* tagvr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tagvr.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		525718A71D6A73EA007D744C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		525718A91D6A73EA007D744C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		525718AC1D6A73EA007D744C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		525718AE1D6A73EA007D744C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		525718B11D6A73EA007D744C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		525718B31D6A73EA007D744C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		525718B81D6A73EA007D744C /* tagvrTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tagvrTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		525718BC1D6A73EA007D744C /* tagvrTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tagvrTests.swift; sourceTree = "<group>"; };
+		525718BE1D6A73EA007D744C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		525718C31D6A73EA007D744C /* tagvrUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tagvrUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		525718C71D6A73EA007D744C /* tagvrUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tagvrUITests.swift; sourceTree = "<group>"; };
+		525718C91D6A73EA007D744C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		525718A11D6A73EA007D744C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		525718B51D6A73EA007D744C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		525718C01D6A73EA007D744C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5257189B1D6A73EA007D744C = {
+			isa = PBXGroup;
+			children = (
+				525718A61D6A73EA007D744C /* tagvr */,
+				525718BB1D6A73EA007D744C /* tagvrTests */,
+				525718C61D6A73EA007D744C /* tagvrUITests */,
+				525718A51D6A73EA007D744C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		525718A51D6A73EA007D744C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				525718A41D6A73EA007D744C /* tagvr.app */,
+				525718B81D6A73EA007D744C /* tagvrTests.xctest */,
+				525718C31D6A73EA007D744C /* tagvrUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		525718A61D6A73EA007D744C /* tagvr */ = {
+			isa = PBXGroup;
+			children = (
+				525718A71D6A73EA007D744C /* AppDelegate.swift */,
+				525718A91D6A73EA007D744C /* ViewController.swift */,
+				525718AB1D6A73EA007D744C /* Main.storyboard */,
+				525718AE1D6A73EA007D744C /* Assets.xcassets */,
+				525718B01D6A73EA007D744C /* LaunchScreen.storyboard */,
+				525718B31D6A73EA007D744C /* Info.plist */,
+			);
+			path = tagvr;
+			sourceTree = "<group>";
+		};
+		525718BB1D6A73EA007D744C /* tagvrTests */ = {
+			isa = PBXGroup;
+			children = (
+				525718BC1D6A73EA007D744C /* tagvrTests.swift */,
+				525718BE1D6A73EA007D744C /* Info.plist */,
+			);
+			path = tagvrTests;
+			sourceTree = "<group>";
+		};
+		525718C61D6A73EA007D744C /* tagvrUITests */ = {
+			isa = PBXGroup;
+			children = (
+				525718C71D6A73EA007D744C /* tagvrUITests.swift */,
+				525718C91D6A73EA007D744C /* Info.plist */,
+			);
+			path = tagvrUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		525718A31D6A73EA007D744C /* tagvr */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 525718CC1D6A73EA007D744C /* Build configuration list for PBXNativeTarget "tagvr" */;
+			buildPhases = (
+				525718A01D6A73EA007D744C /* Sources */,
+				525718A11D6A73EA007D744C /* Frameworks */,
+				525718A21D6A73EA007D744C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = tagvr;
+			productName = tagvr;
+			productReference = 525718A41D6A73EA007D744C /* tagvr.app */;
+			productType = "com.apple.product-type.application";
+		};
+		525718B71D6A73EA007D744C /* tagvrTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 525718CF1D6A73EA007D744C /* Build configuration list for PBXNativeTarget "tagvrTests" */;
+			buildPhases = (
+				525718B41D6A73EA007D744C /* Sources */,
+				525718B51D6A73EA007D744C /* Frameworks */,
+				525718B61D6A73EA007D744C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				525718BA1D6A73EA007D744C /* PBXTargetDependency */,
+			);
+			name = tagvrTests;
+			productName = tagvrTests;
+			productReference = 525718B81D6A73EA007D744C /* tagvrTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		525718C21D6A73EA007D744C /* tagvrUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 525718D21D6A73EA007D744C /* Build configuration list for PBXNativeTarget "tagvrUITests" */;
+			buildPhases = (
+				525718BF1D6A73EA007D744C /* Sources */,
+				525718C01D6A73EA007D744C /* Frameworks */,
+				525718C11D6A73EA007D744C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				525718C51D6A73EA007D744C /* PBXTargetDependency */,
+			);
+			name = tagvrUITests;
+			productName = tagvrUITests;
+			productReference = 525718C31D6A73EA007D744C /* tagvrUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5257189C1D6A73EA007D744C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Tag the agency";
+				TargetAttributes = {
+					525718A31D6A73EA007D744C = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					525718B71D6A73EA007D744C = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 525718A31D6A73EA007D744C;
+					};
+					525718C21D6A73EA007D744C = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 525718A31D6A73EA007D744C;
+					};
+				};
+			};
+			buildConfigurationList = 5257189F1D6A73EA007D744C /* Build configuration list for PBXProject "tagvr" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5257189B1D6A73EA007D744C;
+			productRefGroup = 525718A51D6A73EA007D744C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				525718A31D6A73EA007D744C /* tagvr */,
+				525718B71D6A73EA007D744C /* tagvrTests */,
+				525718C21D6A73EA007D744C /* tagvrUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		525718A21D6A73EA007D744C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				525718B21D6A73EA007D744C /* LaunchScreen.storyboard in Resources */,
+				525718AF1D6A73EA007D744C /* Assets.xcassets in Resources */,
+				525718AD1D6A73EA007D744C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		525718B61D6A73EA007D744C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		525718C11D6A73EA007D744C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		525718A01D6A73EA007D744C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				525718AA1D6A73EA007D744C /* ViewController.swift in Sources */,
+				525718A81D6A73EA007D744C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		525718B41D6A73EA007D744C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				525718BD1D6A73EA007D744C /* tagvrTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		525718BF1D6A73EA007D744C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				525718C81D6A73EA007D744C /* tagvrUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		525718BA1D6A73EA007D744C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 525718A31D6A73EA007D744C /* tagvr */;
+			targetProxy = 525718B91D6A73EA007D744C /* PBXContainerItemProxy */;
+		};
+		525718C51D6A73EA007D744C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 525718A31D6A73EA007D744C /* tagvr */;
+			targetProxy = 525718C41D6A73EA007D744C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		525718AB1D6A73EA007D744C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				525718AC1D6A73EA007D744C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		525718B01D6A73EA007D744C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				525718B11D6A73EA007D744C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		525718CA1D6A73EA007D744C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		525718CB1D6A73EA007D744C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		525718CD1D6A73EA007D744C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = tagvr/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tagtheagency.tagvr;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		525718CE1D6A73EA007D744C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = tagvr/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tagtheagency.tagvr;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		525718D01D6A73EA007D744C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = tagvrTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tagtheagency.tagvrTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/tagvr.app/tagvr";
+			};
+			name = Debug;
+		};
+		525718D11D6A73EA007D744C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = tagvrTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tagtheagency.tagvrTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/tagvr.app/tagvr";
+			};
+			name = Release;
+		};
+		525718D31D6A73EA007D744C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = tagvrUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tagtheagency.tagvrUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = tagvr;
+			};
+			name = Debug;
+		};
+		525718D41D6A73EA007D744C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = tagvrUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tagtheagency.tagvrUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = tagvr;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5257189F1D6A73EA007D744C /* Build configuration list for PBXProject "tagvr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				525718CA1D6A73EA007D744C /* Debug */,
+				525718CB1D6A73EA007D744C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		525718CC1D6A73EA007D744C /* Build configuration list for PBXNativeTarget "tagvr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				525718CD1D6A73EA007D744C /* Debug */,
+				525718CE1D6A73EA007D744C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		525718CF1D6A73EA007D744C /* Build configuration list for PBXNativeTarget "tagvrTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				525718D01D6A73EA007D744C /* Debug */,
+				525718D11D6A73EA007D744C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		525718D21D6A73EA007D744C /* Build configuration list for PBXNativeTarget "tagvrUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				525718D31D6A73EA007D744C /* Debug */,
+				525718D41D6A73EA007D744C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5257189C1D6A73EA007D744C /* Project object */;
+}

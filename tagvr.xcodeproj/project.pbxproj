@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		256236DF1D95185C00D25FFC /* arrows.png in Resources */ = {isa = PBXBuildFile; fileRef = 256236DA1D95185C00D25FFC /* arrows.png */; };
+		256236E01D95185C00D25FFC /* cardboardOff.png in Resources */ = {isa = PBXBuildFile; fileRef = 256236DB1D95185C00D25FFC /* cardboardOff.png */; };
+		256236E11D95185C00D25FFC /* cardboardOn.png in Resources */ = {isa = PBXBuildFile; fileRef = 256236DC1D95185C00D25FFC /* cardboardOn.png */; };
+		256236E21D95185C00D25FFC /* pause@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 256236DD1D95185C00D25FFC /* pause@3x.png */; };
+		256236E31D95185C00D25FFC /* play@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 256236DE1D95185C00D25FFC /* play@3x.png */; };
+		259234CA1D950A3F0029BF3E /* VideoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259234C91D950A3F0029BF3E /* VideoController.swift */; };
+		259234CF1D9510600029BF3E /* favela.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 259234CD1D9510600029BF3E /* favela.mp4 */; };
+		259234D01D9510600029BF3E /* giraffe1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 259234CE1D9510600029BF3E /* giraffe1.mp4 */; };
 		525718A81D6A73EA007D744C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525718A71D6A73EA007D744C /* AppDelegate.swift */; };
 		525718AA1D6A73EA007D744C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525718A91D6A73EA007D744C /* ViewController.swift */; };
 		525718AD1D6A73EA007D744C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 525718AB1D6A73EA007D744C /* Main.storyboard */; };
@@ -34,6 +42,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		256236DA1D95185C00D25FFC /* arrows.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrows.png; sourceTree = "<group>"; };
+		256236DB1D95185C00D25FFC /* cardboardOff.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardboardOff.png; sourceTree = "<group>"; };
+		256236DC1D95185C00D25FFC /* cardboardOn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardboardOn.png; sourceTree = "<group>"; };
+		256236DD1D95185C00D25FFC /* pause@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pause@3x.png"; sourceTree = "<group>"; };
+		256236DE1D95185C00D25FFC /* play@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "play@3x.png"; sourceTree = "<group>"; };
+		259234C91D950A3F0029BF3E /* VideoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoController.swift; sourceTree = "<group>"; };
+		259234CD1D9510600029BF3E /* favela.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = favela.mp4; sourceTree = "<group>"; };
+		259234CE1D9510600029BF3E /* giraffe1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = giraffe1.mp4; sourceTree = "<group>"; };
 		525718A41D6A73EA007D744C /* tagvr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tagvr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		525718A71D6A73EA007D744C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		525718A91D6A73EA007D744C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -74,6 +90,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		256236E41D9519B900D25FFC /* buttons */ = {
+			isa = PBXGroup;
+			children = (
+				256236DA1D95185C00D25FFC /* arrows.png */,
+				256236DB1D95185C00D25FFC /* cardboardOff.png */,
+				256236DC1D95185C00D25FFC /* cardboardOn.png */,
+				256236DD1D95185C00D25FFC /* pause@3x.png */,
+				256236DE1D95185C00D25FFC /* play@3x.png */,
+			);
+			name = buttons;
+			sourceTree = "<group>";
+		};
 		5257189B1D6A73EA007D744C = {
 			isa = PBXGroup;
 			children = (
@@ -97,6 +125,10 @@
 		525718A61D6A73EA007D744C /* tagvr */ = {
 			isa = PBXGroup;
 			children = (
+				256236E41D9519B900D25FFC /* buttons */,
+				259234CD1D9510600029BF3E /* favela.mp4 */,
+				259234CE1D9510600029BF3E /* giraffe1.mp4 */,
+				259234C91D950A3F0029BF3E /* VideoController.swift */,
 				525718A71D6A73EA007D744C /* AppDelegate.swift */,
 				525718A91D6A73EA007D744C /* ViewController.swift */,
 				525718AB1D6A73EA007D744C /* Main.storyboard */,
@@ -193,6 +225,7 @@
 				TargetAttributes = {
 					525718A31D6A73EA007D744C = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = GKW5GXD942;
 						LastSwiftMigration = 0800;
 					};
 					525718B71D6A73EA007D744C = {
@@ -232,9 +265,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				259234D01D9510600029BF3E /* giraffe1.mp4 in Resources */,
+				256236E11D95185C00D25FFC /* cardboardOn.png in Resources */,
+				259234CF1D9510600029BF3E /* favela.mp4 in Resources */,
+				256236E31D95185C00D25FFC /* play@3x.png in Resources */,
 				525718B21D6A73EA007D744C /* LaunchScreen.storyboard in Resources */,
+				256236E21D95185C00D25FFC /* pause@3x.png in Resources */,
 				525718AF1D6A73EA007D744C /* Assets.xcassets in Resources */,
+				256236E01D95185C00D25FFC /* cardboardOff.png in Resources */,
 				525718AD1D6A73EA007D744C /* Main.storyboard in Resources */,
+				256236DF1D95185C00D25FFC /* arrows.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +300,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				525718AA1D6A73EA007D744C /* ViewController.swift in Sources */,
+				259234CA1D950A3F0029BF3E /* VideoController.swift in Sources */,
 				525718A81D6A73EA007D744C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -402,6 +443,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = GKW5GXD942;
 				INFOPLIST_FILE = tagvr/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tagtheagency.tagvr;
@@ -414,6 +456,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = GKW5GXD942;
 				INFOPLIST_FILE = tagvr/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tagtheagency.tagvr;

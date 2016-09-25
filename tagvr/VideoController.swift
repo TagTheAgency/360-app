@@ -75,6 +75,7 @@ class VideoController: UIViewController, SCNSceneRendererDelegate, UIGestureReco
         
         super.viewDidLoad()
         
+        navigationController?.isNavigationBarHidden    = true
         leftSceneView?.backgroundColor              = UIColor.black
         rightSceneView?.backgroundColor             = UIColor.black
         
@@ -214,13 +215,13 @@ class VideoController: UIViewController, SCNSceneRendererDelegate, UIGestureReco
         return sphereNode
     }
     
-    func configureScene(node sphereNode: SCNNode) {
+    func configureScene(view sceneView: SCNView!, node sphereNode: SCNNode) {
         // Set the scene
         let scene1 = SCNScene()
-        leftSceneView?.scene = scene1
-        rightSceneView?.scene = scene1
-        leftSceneView.showsStatistics = false
-        leftSceneView.allowsCameraControl = true
+        sceneView.scene = scene1
+        sceneView.scene = scene1
+        sceneView.showsStatistics = false
+        sceneView.allowsCameraControl = true
         // Camera, ...
         cameraNode.camera = SCNCamera()
         cameraNode.position = SCNVector3Make(0, 0, 0)
@@ -303,15 +304,30 @@ class VideoController: UIViewController, SCNSceneRendererDelegate, UIGestureReco
             player = AVPlayer(url: fileURL! as URL)
             let leftVideoNode = SKVideoNode(avPlayer: player)
             let size = CGSize(width: 1280 * screenScale, height: 1280 * screenScale)
-            leftVideoNode.size = size
-            leftVideoNode.position = CGPoint(x: size.width/2.0, y: size.height/2.0)
             let spriteScene1 = SKScene(size: size)
             spriteScene1.shouldRasterize = true
             spriteScene1.scaleMode = .aspectFit
+            leftVideoNode.size = size
+            leftVideoNode.position = CGPoint(x: size.width/2.0, y: size.height/2.0)
             spriteScene1.addChild(leftVideoNode)
-            let sphereNode = createSphereNode(material:spriteScene1)
-            configureScene(node: sphereNode)
-            videoNodes                                         = [leftVideoNode]
+            let sphereNode1 = createSphereNode(material:spriteScene1)
+            configureScene(view: leftSceneView, node: sphereNode1)
+            
+            if true == activateStereoscopicVideo {
+                let rightVideoNode = SKVideoNode(avPlayer: player)
+                let spriteScene2 = SKScene(size: size)
+                spriteScene2.shouldRasterize = true
+                spriteScene2.scaleMode = .aspectFit
+                rightVideoNode.size = size
+                rightVideoNode.position = CGPoint(x: size.width/2.0, y: size.height/2.0)
+                spriteScene2.addChild(rightVideoNode)
+                let sphereNode2 = createSphereNode(material: spriteScene2)
+                configureScene(view: rightSceneView, node: sphereNode2)
+                videoNodes = [leftVideoNode, rightVideoNode]
+            } else {
+                videoNodes = [leftVideoNode]
+            }
+
             
 //            guard motionManager.isDeviceMotionAvailable else {
 //                fatalError("Device motion is not available")

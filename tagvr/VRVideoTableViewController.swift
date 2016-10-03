@@ -10,19 +10,19 @@ import UIKit
 
 class VRVideoTableViewController: UITableViewController {
     
-    var videos = [VRVideo]()
+    var vrVideos = [VRVideo]()
     
     func loadSampleVideos() {
         let photo1 = UIImage(named: "image1")!
         let video1 = VRVideo(photo: photo1)!
         
-        let photo2 = UIImage(named: "image2")
-        let video2 = VRVideo(photo: image2)
+        let photo2 = UIImage(named: "image2")!
+        let video2 = VRVideo(photo: photo2)!
         
-        let photo3 = UIImage(named: "image3")
-        let video3 = VRVideo(photo: image3)
+        let photo3 = UIImage(named: "image3")!
+        let video3 = VRVideo(photo: photo3)!
         
-        videos += [video1, video2, video3]
+        vrVideos += [video1, video2, video3]
 
     }
 
@@ -47,25 +47,25 @@ class VRVideoTableViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+        return vrVideos.count
     }
 
-    /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cellIdentifier = "VRVideoTableViewCell"
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! VRVideoTableViewCell
+        
+        let vrVideo = vrVideos[indexPath.row]
 
-        // Configure the cell...
-
+        cell.coverImageView.image = vrVideo.photo
+        
         return cell
     }
-    */
-
+ 
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {

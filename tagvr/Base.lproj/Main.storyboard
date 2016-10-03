@@ -39,10 +39,10 @@
             </objects>
             <point key="canvasLocation" x="380" y="1158"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Video Table View Controller-->
         <scene sceneID="JWD-tV-2VE">
             <objects>
-                <tableViewController id="SVT-bq-dSf" sceneMemberID="viewController">
+                <tableViewController id="SVT-bq-dSf" customClass="VRVideoTableViewController" customModule="tagvr" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="90" sectionHeaderHeight="28" sectionFooterHeight="28" id="oll-9w-la4">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

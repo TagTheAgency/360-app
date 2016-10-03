@@ -9,6 +9,10 @@
 import UIKit
 
 class VRVideoTableViewCell: UITableViewCell {
+    
+    //MARK: Properties
+    
+    @IBOutlet weak var coverImageView: UIImageView!
 
     override func awakeFromNib() {
         super.awakeFromNib()

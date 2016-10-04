@@ -101,14 +101,21 @@ class VRVideoTableViewController: UITableViewController {
     }
     */
 
-    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        if segue.identifier == "ShowDetail" {
+            let VRVideoDetailViewController = segue.destination as! ViewController
+            
+            if let selectedVRVideoCell = sender as? VRVideoTableViewCell {
+                let indexPath = tableView.indexPath(for: selectedVRVideoCell)!
+                let selectedVRVideo = vrVideos[indexPath.row]
+                VRVideoDetailViewController.vrVideo = selectedVRVideo
+            }
+        }
+//         Get the new view controller using segue.destinationViewController.
+//         Pass the selected object to the new view controller.
     }
-    */
 
 }

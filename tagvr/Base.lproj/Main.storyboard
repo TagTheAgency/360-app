@@ -68,7 +68,7 @@
                                 </constraints>
                                 <connections>
                                     <outlet property="coverImageView" destination="KA7-mj-UhI" id="BqG-MM-OeI"/>
-                                    <segue destination="cOL-vL-3PB" kind="show" id="ikJ-8k-ZNv"/>
+                                    <segue destination="cOL-vL-3PB" kind="show" identifier="ShowDetail" id="ikJ-8k-ZNv"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -86,7 +86,7 @@
         <!--View Controller-->
         <scene sceneID="Fqf-cV-BDj">
             <objects>
-                <viewController id="cOL-vL-3PB" sceneMemberID="viewController">
+                <viewController id="cOL-vL-3PB" customClass="ViewController" customModule="tagvr" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="SEC-fE-0Ur"/>
                         <viewControllerLayoutGuide type="bottom" id="c9B-Db-zaV"/>
@@ -94,8 +94,27 @@
                     <view key="view" contentMode="scaleToFill" id="JpP-kF-1Xn">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="dcT-O9-apH">
+                                <frame key="frameInset" minY="64" width="414" height="120"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zdb-n0-ENn">
+                                        <frame key="frameInset" width="414" height="120"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="QiH-pG-huY"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="zdb-n0-ENn" firstAttribute="width" secondItem="JpP-kF-1Xn" secondAttribute="width" id="zXz-EO-9bE"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="detailImageView" destination="zdb-n0-ENn" id="a9q-WR-Hqj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CHW-fR-ef6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -292,6 +311,6 @@
     <resources>
         <image name="arrows.png" width="256" height="256"/>
         <image name="cardboardOn.png" width="87" height="51"/>
-        <image name="play.png" width="31" height="31"/>
+        <image name="play.png" width="540" height="540"/>
     </resources>
 </document>

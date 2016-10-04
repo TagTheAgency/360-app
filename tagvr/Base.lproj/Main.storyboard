@@ -39,30 +39,36 @@
             </objects>
             <point key="canvasLocation" x="380" y="1158"/>
         </scene>
-        <!--Video Table View Controller-->
+        <!--TagVR-->
         <scene sceneID="JWD-tV-2VE">
             <objects>
                 <tableViewController id="SVT-bq-dSf" customClass="VRVideoTableViewController" customModule="tagvr" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="90" sectionHeaderHeight="28" sectionFooterHeight="28" id="oll-9w-la4">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="120" sectionHeaderHeight="28" sectionFooterHeight="28" id="oll-9w-la4">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="VRVideoTableViewCell" rowHeight="90" id="uqP-3N-aq8" customClass="VRVideoTableViewCell" customModule="tagvr" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="92" width="414" height="90"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="VRVideoTableViewCell" rowHeight="120" id="uqP-3N-aq8" customClass="VRVideoTableViewCell" customModule="tagvr" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="92" width="414" height="120"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="uqP-3N-aq8" id="tCz-yu-bcs">
-                                    <frame key="frameInset" width="414" height="89"/>
+                                    <frame key="frameInset" width="381" height="119"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KA7-mj-UhI">
-                                            <frame key="frameInset" minX="-7" minY="-20" width="421" height="128"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KA7-mj-UhI">
+                                            <frame key="frameInset" minX="-7" minY="-20" width="421" height="139"/>
                                         </imageView>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <constraints>
+                                    <constraint firstItem="KA7-mj-UhI" firstAttribute="width" secondItem="uqP-3N-aq8" secondAttribute="width" id="5yK-aO-rue"/>
+                                    <constraint firstItem="KA7-mj-UhI" firstAttribute="centerX" secondItem="uqP-3N-aq8" secondAttribute="centerX" id="Sli-Cg-JJW"/>
+                                    <constraint firstItem="KA7-mj-UhI" firstAttribute="centerY" secondItem="uqP-3N-aq8" secondAttribute="centerY" id="Tc0-kt-Y09"/>
+                                    <constraint firstItem="KA7-mj-UhI" firstAttribute="height" secondItem="uqP-3N-aq8" secondAttribute="height" id="ujK-9S-Ap2"/>
+                                </constraints>
                                 <connections>
                                     <outlet property="coverImageView" destination="KA7-mj-UhI" id="BqG-MM-OeI"/>
+                                    <segue destination="cOL-vL-3PB" kind="show" id="ikJ-8k-ZNv"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -71,16 +77,34 @@
                             <outlet property="delegate" destination="SVT-bq-dSf" id="dCV-NH-X7L"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="9ii-6U-vMS"/>
+                    <navigationItem key="navigationItem" title="TagVR" id="F7U-KQ-DIz"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Oe-Cp-apE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1315.9420289855072" y="336.68478260869568"/>
+            <point key="canvasLocation" x="1314.4927536231885" y="336.68478260869568"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--View Controller-->
+        <scene sceneID="Fqf-cV-BDj">
+            <objects>
+                <viewController id="cOL-vL-3PB" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="SEC-fE-0Ur"/>
+                        <viewControllerLayoutGuide type="bottom" id="c9B-Db-zaV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="JpP-kF-1Xn">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CHW-fR-ef6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2062" y="337"/>
+        </scene>
+        <!--TagVR-->
         <scene sceneID="yTQ-8k-Z1n">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xbA-zw-4Hg" sceneMemberID="viewController">
+                <navigationController title="TagVR" automaticallyAdjustsScrollViewInsets="NO" id="xbA-zw-4Hg" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="q3e-fL-GBx">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>

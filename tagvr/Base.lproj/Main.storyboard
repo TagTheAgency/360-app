@@ -39,7 +39,7 @@
             </objects>
             <point key="canvasLocation" x="380" y="1158"/>
         </scene>
-        <!--TagVR-->
+        <!--Video Table View Controller-->
         <scene sceneID="JWD-tV-2VE">
             <objects>
                 <tableViewController id="SVT-bq-dSf" customClass="VRVideoTableViewController" customModule="tagvr" customModuleProvider="target" sceneMemberID="viewController">
@@ -77,7 +77,7 @@
                             <outlet property="delegate" destination="SVT-bq-dSf" id="dCV-NH-X7L"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="TagVR" id="F7U-KQ-DIz"/>
+                    <navigationItem key="navigationItem" id="F7U-KQ-DIz"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Oe-Cp-apE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -95,21 +95,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="dcT-O9-apH">
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="dcT-O9-apH">
                                 <frame key="frameInset" minY="64" width="414" height="120"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zdb-n0-ENn">
-                                        <frame key="frameInset" width="414" height="120"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zdb-n0-ENn">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="120" id="EeS-Ug-yaO"/>
+                                        </constraints>
                                     </imageView>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="120" id="QiH-pG-huY"/>
-                                </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="zdb-n0-ENn" firstAttribute="width" secondItem="JpP-kF-1Xn" secondAttribute="width" id="zXz-EO-9bE"/>
+                            <constraint firstItem="zdb-n0-ENn" firstAttribute="centerX" secondItem="JpP-kF-1Xn" secondAttribute="centerX" id="RD9-Wm-jiR"/>
+                            <constraint firstItem="zdb-n0-ENn" firstAttribute="top" secondItem="SEC-fE-0Ur" secondAttribute="bottom" id="oXe-9U-VDO"/>
+                            <constraint firstItem="zdb-n0-ENn" firstAttribute="width" secondItem="JpP-kF-1Xn" secondAttribute="width" id="pAh-hu-EwU"/>
                         </constraints>
                     </view>
                     <connections>

@@ -14,13 +14,13 @@ class VRVideoTableViewController: UITableViewController {
     
     func loadSampleVideos() {
         let photo1 = UIImage(named: "image1")!
-        let video1 = VRVideo(photo: photo1)!
+        let video1 = VRVideo(photo: photo1, title: "Soaring with Orcas", duration: "2:52")!
         
         let photo2 = UIImage(named: "image2")!
-        let video2 = VRVideo(photo: photo2)!
+        let video2 = VRVideo(photo: photo2, title: "Road Trip New Zealand", duration: "1:29")!
         
         let photo3 = UIImage(named: "image3")!
-        let video3 = VRVideo(photo: photo3)!
+        let video3 = VRVideo(photo: photo3, title: "Aventador Test", duration: "3:12")!
         
         vrVideos += [video1, video2, video3]
 
@@ -62,6 +62,7 @@ class VRVideoTableViewController: UITableViewController {
         let vrVideo = vrVideos[indexPath.row]
 
         cell.coverImageView.image = vrVideo.photo
+        cell.coverTitle.text = vrVideo.title
         
         return cell
     }

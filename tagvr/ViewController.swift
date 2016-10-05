@@ -11,6 +11,8 @@ import UIKit
 class ViewController: UIViewController {
     
     @IBOutlet weak var detailImageView: UIImageView!
+    @IBOutlet weak var detailTitle: UILabel!
+    @IBOutlet weak var detailDuration: UILabel!
     
     var vrVideo: VRVideo?
     
@@ -19,6 +21,8 @@ class ViewController: UIViewController {
         
         if let vrVideo = vrVideo {
             detailImageView.image = vrVideo.photo
+            detailTitle.text = vrVideo.title
+            detailDuration.text = vrVideo.duration
         }
         // Do any additional setup after loading the view, typically from a nib.
     }

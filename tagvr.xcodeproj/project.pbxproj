@@ -20,6 +20,7 @@
 		52C8A7F91DA1FB08001759F5 /* VRVideoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C8A7F81DA1FB08001759F5 /* VRVideoTableViewCell.swift */; };
 		52C8A7FB1DA1FEFA001759F5 /* VRVideoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C8A7FA1DA1FEFA001759F5 /* VRVideoTableViewController.swift */; };
 		52C8A8001DA30264001759F5 /* VRVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C8A7FF1DA30264001759F5 /* VRVideo.swift */; };
+		77ECEE35D5DF15C9356BBEAA /* Pods_tagvr.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF520F1B8A6E5DD11110FBA8 /* Pods_tagvr.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,9 +41,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		180B1B66F1D0C4B8DE2F0F72 /* Pods_tagvrTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tagvrTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		259234C91D950A3F0029BF3E /* VideoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoController.swift; sourceTree = "<group>"; };
 		259234CD1D9510600029BF3E /* favela.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = favela.mp4; sourceTree = "<group>"; };
 		259234CE1D9510600029BF3E /* giraffe1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = giraffe1.mp4; sourceTree = "<group>"; };
+		3EF559CDA641EDD9DE04AB61 /* Pods-tagvr.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tagvr.release.xcconfig"; path = "Pods/Target Support Files/Pods-tagvr/Pods-tagvr.release.xcconfig"; sourceTree = "<group>"; };
 		525718A41D6A73EA007D744C /* tagvr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tagvr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		525718A71D6A73EA007D744C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		525718A91D6A73EA007D744C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -59,6 +62,9 @@
 		52C8A7F81DA1FB08001759F5 /* VRVideoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VRVideoTableViewCell.swift; sourceTree = "<group>"; };
 		52C8A7FA1DA1FEFA001759F5 /* VRVideoTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VRVideoTableViewController.swift; sourceTree = "<group>"; };
 		52C8A7FF1DA30264001759F5 /* VRVideo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VRVideo.swift; sourceTree = "<group>"; };
+		7F8275380E8AC952133BA413 /* Pods_tagvrUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tagvrUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE33F603C793BA84E9F287DF /* Pods-tagvr.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tagvr.debug.xcconfig"; path = "Pods/Target Support Files/Pods-tagvr/Pods-tagvr.debug.xcconfig"; sourceTree = "<group>"; };
+		FF520F1B8A6E5DD11110FBA8 /* Pods_tagvr.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tagvr.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77ECEE35D5DF15C9356BBEAA /* Pods_tagvr.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,6 +100,8 @@
 				525718BB1D6A73EA007D744C /* tagvrTests */,
 				525718C61D6A73EA007D744C /* tagvrUITests */,
 				525718A51D6A73EA007D744C /* Products */,
+				F78858BA8692178C8E4D7531 /* Pods */,
+				C9C4CD39342AEDFDA0279655 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -143,6 +152,25 @@
 			path = tagvrUITests;
 			sourceTree = "<group>";
 		};
+		C9C4CD39342AEDFDA0279655 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FF520F1B8A6E5DD11110FBA8 /* Pods_tagvr.framework */,
+				180B1B66F1D0C4B8DE2F0F72 /* Pods_tagvrTests.framework */,
+				7F8275380E8AC952133BA413 /* Pods_tagvrUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F78858BA8692178C8E4D7531 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EE33F603C793BA84E9F287DF /* Pods-tagvr.debug.xcconfig */,
+				3EF559CDA641EDD9DE04AB61 /* Pods-tagvr.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -150,9 +178,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 525718CC1D6A73EA007D744C /* Build configuration list for PBXNativeTarget "tagvr" */;
 			buildPhases = (
+				571EE91606DB830BC3FC94F6 /* [CP] Check Pods Manifest.lock */,
 				525718A01D6A73EA007D744C /* Sources */,
 				525718A11D6A73EA007D744C /* Frameworks */,
 				525718A21D6A73EA007D744C /* Resources */,
+				05DFC83DE668F3E6762248AB /* [CP] Embed Pods Frameworks */,
+				291E527B28E792754AE59A6B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -274,6 +305,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		05DFC83DE668F3E6762248AB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-tagvr/Pods-tagvr-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		291E527B28E792754AE59A6B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-tagvr/Pods-tagvr-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		571EE91606DB830BC3FC94F6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		525718A01D6A73EA007D744C /* Sources */ = {
@@ -425,6 +504,7 @@
 		};
 		525718CD1D6A73EA007D744C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE33F603C793BA84E9F287DF /* Pods-tagvr.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = GKW5GXD942;
@@ -438,6 +518,7 @@
 		};
 		525718CE1D6A73EA007D744C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3EF559CDA641EDD9DE04AB61 /* Pods-tagvr.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = GKW5GXD942;

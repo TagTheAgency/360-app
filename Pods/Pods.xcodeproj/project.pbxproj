@@ -1,0 +1,398 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		248D6545508BE71296ACDD76176114E9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		41C9798E7235B3460D94EC3AE3A90806 /* Pods-tagvr-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 17189BBF3B539CABDB4F2C99FC59EB85 /* Pods-tagvr-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FCD7076289ABE50F041F7B8E87CC6E7C /* Pods-tagvr-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 777FF33E126202A29F2BEA14870576C2 /* Pods-tagvr-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		17189BBF3B539CABDB4F2C99FC59EB85 /* Pods-tagvr-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-tagvr-umbrella.h"; sourceTree = "<group>"; };
+		288DD12EBB0198DD84D1A03E518E4033 /* Pods-tagvr.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-tagvr.modulemap"; sourceTree = "<group>"; };
+		3525C1838BCE7FFB1F21FF28206346B8 /* GCSCardboardView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCSCardboardView.h; path = Headers/Public/GCSCardboardView.h; sourceTree = "<group>"; };
+		3D49B3FA8AD5911FDDEF86D3E76FF025 /* Pods-tagvr.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-tagvr.debug.xcconfig"; sourceTree = "<group>"; };
+		3F54085E8A29A6E386FA1A99CDACCF5B /* GoogleKitDialogs.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GoogleKitDialogs.bundle; path = Resources/GoogleKitDialogs.bundle; sourceTree = "<group>"; };
+		48C0BC63B889AF143C287762E36351B3 /* GCSHeadTransform.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCSHeadTransform.h; path = Headers/Public/GCSHeadTransform.h; sourceTree = "<group>"; };
+		64771139CD35996D7E6CCBD98485C81B /* MaterialTypography.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = MaterialTypography.bundle; path = Resources/MaterialTypography.bundle; sourceTree = "<group>"; };
+		69A14DDE9F813BF66AD62AA7309F85EE /* Pods-tagvr-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-tagvr-resources.sh"; sourceTree = "<group>"; };
+		6B51DA8E65609904A68519AAC9276F80 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6D670A849ABC550E3A16E8759E56E31E /* GCSCardboardAudioEngine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCSCardboardAudioEngine.h; path = Headers/Public/GCSCardboardAudioEngine.h; sourceTree = "<group>"; };
+		731660E5F67E75F48FC53B96BC97C324 /* Pods-tagvr-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-tagvr-acknowledgements.markdown"; sourceTree = "<group>"; };
+		777FF33E126202A29F2BEA14870576C2 /* Pods-tagvr-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-tagvr-dummy.m"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		98A7F8A8DE4E1C1ADCB7E4219D7D14F5 /* GCSPanoramaView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCSPanoramaView.h; path = Headers/Public/GCSPanoramaView.h; sourceTree = "<group>"; };
+		99C309A03D7000634156ABE273E61BBA /* Pods_tagvr.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tagvr.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DC64B952E629AC747F30F32F203399E /* GCSVideoView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCSVideoView.h; path = Headers/Public/GCSVideoView.h; sourceTree = "<group>"; };
+		9E202B15AAED123DA437DB5B045DFE13 /* libCardboardSDK.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libCardboardSDK.a; path = Libraries/libCardboardSDK.a; sourceTree = "<group>"; };
+		A0C409452E6C47342ACE9C7662D292F6 /* GCSWidgetView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCSWidgetView.h; path = Headers/Public/GCSWidgetView.h; sourceTree = "<group>"; };
+		BEAAA68818900E6569DB22D245F8C19E /* GoogleKitCore.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GoogleKitCore.bundle; path = Resources/GoogleKitCore.bundle; sourceTree = "<group>"; };
+		CD1DF467AB48E9744E89493D79B26883 /* Pods-tagvr-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-tagvr-frameworks.sh"; sourceTree = "<group>"; };
+		CD8D766094820F1F21FA6AEFE4B37ADE /* Pods-tagvr-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-tagvr-acknowledgements.plist"; sourceTree = "<group>"; };
+		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D8BA643AAFC7929CB44CE9FBA995247C /* Pods-tagvr.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-tagvr.release.xcconfig"; sourceTree = "<group>"; };
+		F86AA3842AEE4DCA9083269059CAE505 /* GoogleKitHUD.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GoogleKitHUD.bundle; path = Resources/GoogleKitHUD.bundle; sourceTree = "<group>"; };
+		FD68BC806ECED986749062B22A48C05A /* CardboardSDK.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = CardboardSDK.bundle; path = Resources/CardboardSDK.bundle; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BBCBB56C2C73E742614DF8BE7E69C243 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				248D6545508BE71296ACDD76176114E9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		059C26149F04D1A616006908D6F68D87 /* CardboardSDK */ = {
+			isa = PBXGroup;
+			children = (
+				6D670A849ABC550E3A16E8759E56E31E /* GCSCardboardAudioEngine.h */,
+				3525C1838BCE7FFB1F21FF28206346B8 /* GCSCardboardView.h */,
+				48C0BC63B889AF143C287762E36351B3 /* GCSHeadTransform.h */,
+				98A7F8A8DE4E1C1ADCB7E4219D7D14F5 /* GCSPanoramaView.h */,
+				9DC64B952E629AC747F30F32F203399E /* GCSVideoView.h */,
+				A0C409452E6C47342ACE9C7662D292F6 /* GCSWidgetView.h */,
+				D63FA919042C3917AF6AE6B11696330F /* Frameworks */,
+				95F8B8565498FD7186698A9EB44C7B59 /* Resources */,
+			);
+			path = CardboardSDK;
+			sourceTree = "<group>";
+		};
+		275684974C6256D94002A0CD4F5DED8E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				99C309A03D7000634156ABE273E61BBA /* Pods_tagvr.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		332AB989D4380189279408F0789EA8DB /* Pods-tagvr */ = {
+			isa = PBXGroup;
+			children = (
+				6B51DA8E65609904A68519AAC9276F80 /* Info.plist */,
+				288DD12EBB0198DD84D1A03E518E4033 /* Pods-tagvr.modulemap */,
+				731660E5F67E75F48FC53B96BC97C324 /* Pods-tagvr-acknowledgements.markdown */,
+				CD8D766094820F1F21FA6AEFE4B37ADE /* Pods-tagvr-acknowledgements.plist */,
+				777FF33E126202A29F2BEA14870576C2 /* Pods-tagvr-dummy.m */,
+				CD1DF467AB48E9744E89493D79B26883 /* Pods-tagvr-frameworks.sh */,
+				69A14DDE9F813BF66AD62AA7309F85EE /* Pods-tagvr-resources.sh */,
+				17189BBF3B539CABDB4F2C99FC59EB85 /* Pods-tagvr-umbrella.h */,
+				3D49B3FA8AD5911FDDEF86D3E76FF025 /* Pods-tagvr.debug.xcconfig */,
+				D8BA643AAFC7929CB44CE9FBA995247C /* Pods-tagvr.release.xcconfig */,
+			);
+			name = "Pods-tagvr";
+			path = "Target Support Files/Pods-tagvr";
+			sourceTree = "<group>";
+		};
+		3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		41C8DA0E5B3218982F746240730864A2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				059C26149F04D1A616006908D6F68D87 /* CardboardSDK */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				41C8DA0E5B3218982F746240730864A2 /* Pods */,
+				275684974C6256D94002A0CD4F5DED8E /* Products */,
+				9288FA542404151551816A96D914DD1B /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		9288FA542404151551816A96D914DD1B /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				332AB989D4380189279408F0789EA8DB /* Pods-tagvr */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		95F8B8565498FD7186698A9EB44C7B59 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FD68BC806ECED986749062B22A48C05A /* CardboardSDK.bundle */,
+				BEAAA68818900E6569DB22D245F8C19E /* GoogleKitCore.bundle */,
+				3F54085E8A29A6E386FA1A99CDACCF5B /* GoogleKitDialogs.bundle */,
+				F86AA3842AEE4DCA9083269059CAE505 /* GoogleKitHUD.bundle */,
+				64771139CD35996D7E6CCBD98485C81B /* MaterialTypography.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D63FA919042C3917AF6AE6B11696330F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9E202B15AAED123DA437DB5B045DFE13 /* libCardboardSDK.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		A68A7E91E3F8572062633AE132C5AE48 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41C9798E7235B3460D94EC3AE3A90806 /* Pods-tagvr-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		933BC500AE889E683EF48BF9D8232A90 /* Pods-tagvr */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4A0AFA7A80A36A58553B3C0AADB82E46 /* Build configuration list for PBXNativeTarget "Pods-tagvr" */;
+			buildPhases = (
+				EA36A66871DBBAC73D21DCD0D509D3AE /* Sources */,
+				BBCBB56C2C73E742614DF8BE7E69C243 /* Frameworks */,
+				A68A7E91E3F8572062633AE132C5AE48 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-tagvr";
+			productName = "Pods-tagvr";
+			productReference = 99C309A03D7000634156ABE273E61BBA /* Pods_tagvr.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 275684974C6256D94002A0CD4F5DED8E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				933BC500AE889E683EF48BF9D8232A90 /* Pods-tagvr */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EA36A66871DBBAC73D21DCD0D509D3AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCD7076289ABE50F041F7B8E87CC6E7C /* Pods-tagvr-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		021D5062E8EABE904CDF736704465293 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D49B3FA8AD5911FDDEF86D3E76FF025 /* Pods-tagvr.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-tagvr/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-tagvr/Pods-tagvr.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_tagvr;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3FA451D268613890FA8A5A03801E11D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4106D30E45FFF2395D3465CA65A8279D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8BA643AAFC7929CB44CE9FBA995247C /* Pods-tagvr.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-tagvr/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-tagvr/Pods-tagvr.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_tagvr;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5E62115DE8C09934BF8D2FE5D15FED1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E62115DE8C09934BF8D2FE5D15FED1E /* Debug */,
+				3FA451D268613890FA8A5A03801E11D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4A0AFA7A80A36A58553B3C0AADB82E46 /* Build configuration list for PBXNativeTarget "Pods-tagvr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				021D5062E8EABE904CDF736704465293 /* Debug */,
+				4106D30E45FFF2395D3465CA65A8279D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

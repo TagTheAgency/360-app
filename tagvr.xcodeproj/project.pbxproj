@@ -17,10 +17,10 @@
 		525718B21D6A73EA007D744C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 525718B01D6A73EA007D744C /* LaunchScreen.storyboard */; };
 		525718BD1D6A73EA007D744C /* tagvrTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525718BC1D6A73EA007D744C /* tagvrTests.swift */; };
 		525718C81D6A73EA007D744C /* tagvrUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525718C71D6A73EA007D744C /* tagvrUITests.swift */; };
+		529E7E201DA5EAAC0039A4F5 /* Pods_tagvr.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21B303D3063A38CEF3746E6C /* Pods_tagvr.framework */; };
 		52C8A7F91DA1FB08001759F5 /* VRVideoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C8A7F81DA1FB08001759F5 /* VRVideoTableViewCell.swift */; };
 		52C8A7FB1DA1FEFA001759F5 /* VRVideoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C8A7FA1DA1FEFA001759F5 /* VRVideoTableViewController.swift */; };
 		52C8A8001DA30264001759F5 /* VRVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C8A7FF1DA30264001759F5 /* VRVideo.swift */; };
-		77ECEE35D5DF15C9356BBEAA /* Pods_tagvr.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF520F1B8A6E5DD11110FBA8 /* Pods_tagvr.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,11 +41,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		180B1B66F1D0C4B8DE2F0F72 /* Pods_tagvrTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tagvrTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		21B303D3063A38CEF3746E6C /* Pods_tagvr.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tagvr.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		259234C91D950A3F0029BF3E /* VideoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoController.swift; sourceTree = "<group>"; };
 		259234CD1D9510600029BF3E /* favela.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = favela.mp4; sourceTree = "<group>"; };
 		259234CE1D9510600029BF3E /* giraffe1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = giraffe1.mp4; sourceTree = "<group>"; };
 		3EF559CDA641EDD9DE04AB61 /* Pods-tagvr.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tagvr.release.xcconfig"; path = "Pods/Target Support Files/Pods-tagvr/Pods-tagvr.release.xcconfig"; sourceTree = "<group>"; };
+		52226C891DA6F1E2003C2AAD /* tagvr-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "tagvr-Bridging-Header.h"; sourceTree = "<group>"; };
 		525718A41D6A73EA007D744C /* tagvr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tagvr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		525718A71D6A73EA007D744C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		525718A91D6A73EA007D744C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -62,9 +63,8 @@
 		52C8A7F81DA1FB08001759F5 /* VRVideoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VRVideoTableViewCell.swift; sourceTree = "<group>"; };
 		52C8A7FA1DA1FEFA001759F5 /* VRVideoTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VRVideoTableViewController.swift; sourceTree = "<group>"; };
 		52C8A7FF1DA30264001759F5 /* VRVideo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VRVideo.swift; sourceTree = "<group>"; };
-		7F8275380E8AC952133BA413 /* Pods_tagvrUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tagvrUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		52D5B0EB1DA5F67800D6D4C9 /* libCardboardSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libCardboardSDK.a; path = Pods/CardboardSDK/Libraries/libCardboardSDK.a; sourceTree = "<group>"; };
 		EE33F603C793BA84E9F287DF /* Pods-tagvr.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tagvr.debug.xcconfig"; path = "Pods/Target Support Files/Pods-tagvr/Pods-tagvr.debug.xcconfig"; sourceTree = "<group>"; };
-		FF520F1B8A6E5DD11110FBA8 /* Pods_tagvr.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tagvr.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,7 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				77ECEE35D5DF15C9356BBEAA /* Pods_tagvr.framework in Frameworks */,
+				529E7E201DA5EAAC0039A4F5 /* Pods_tagvr.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,6 +118,7 @@
 		525718A61D6A73EA007D744C /* tagvr */ = {
 			isa = PBXGroup;
 			children = (
+				52226C891DA6F1E2003C2AAD /* tagvr-Bridging-Header.h */,
 				259234CD1D9510600029BF3E /* favela.mp4 */,
 				259234CE1D9510600029BF3E /* giraffe1.mp4 */,
 				259234C91D950A3F0029BF3E /* VideoController.swift */,
@@ -155,9 +156,8 @@
 		C9C4CD39342AEDFDA0279655 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				FF520F1B8A6E5DD11110FBA8 /* Pods_tagvr.framework */,
-				180B1B66F1D0C4B8DE2F0F72 /* Pods_tagvrTests.framework */,
-				7F8275380E8AC952133BA413 /* Pods_tagvrUITests.framework */,
+				52D5B0EB1DA5F67800D6D4C9 /* libCardboardSDK.a */,
+				21B303D3063A38CEF3746E6C /* Pods_tagvr.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -442,6 +442,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				"FRAMEWORK_SEARCH_PATHS[arch=*]" = "$(SRCROOT)/**";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -487,6 +488,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				"FRAMEWORK_SEARCH_PATHS[arch=*]" = "$(SRCROOT)/**";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -508,10 +510,21 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = GKW5GXD942;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				"FRAMEWORK_SEARCH_PATHS[arch=*]" = "";
 				INFOPLIST_FILE = tagvr/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/CardboardSDK/Libraries",
+				);
+				"LIBRARY_SEARCH_PATHS[arch=*]" = (
+					"$(inherited)",
+					"${PODS_ROOT}/GVRSDK/Libraries",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.tagtheagency.tagvr;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "tagvr/tagvr-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -522,10 +535,21 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = GKW5GXD942;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				"FRAMEWORK_SEARCH_PATHS[arch=*]" = "";
 				INFOPLIST_FILE = tagvr/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/CardboardSDK/Libraries",
+				);
+				"LIBRARY_SEARCH_PATHS[arch=*]" = (
+					"$(inherited)",
+					"${PODS_ROOT}/GVRSDK/Libraries",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.tagtheagency.tagvr;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "tagvr/tagvr-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

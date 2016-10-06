@@ -13,31 +13,39 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		039DF661FDDB4CD8FF9E352C6C4AC48D /* GoogleKitHUD.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GoogleKitHUD.bundle; path = Resources/GoogleKitHUD.bundle; sourceTree = "<group>"; };
+		0C0F0D6E51CEBD2ADFD5BE253E489001 /* GVRAudioEngine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GVRAudioEngine.h; path = Sources/GVRAudioEngine.h; sourceTree = "<group>"; };
+		0F5536784D6B5C3CE3B7C89B000B0925 /* gvr_audio.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = gvr_audio.h; path = Sources/vr/gvr/capi/include/gvr_audio.h; sourceTree = "<group>"; };
 		17189BBF3B539CABDB4F2C99FC59EB85 /* Pods-tagvr-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-tagvr-umbrella.h"; sourceTree = "<group>"; };
+		1D601A82105C6DE99FCA07D532A16F81 /* GoogleKitDialogs.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GoogleKitDialogs.bundle; path = Resources/GoogleKitDialogs.bundle; sourceTree = "<group>"; };
+		20313AE426F4436ADA547BC217B60D4F /* GVRVideoView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GVRVideoView.h; path = Sources/GVRVideoView.h; sourceTree = "<group>"; };
 		288DD12EBB0198DD84D1A03E518E4033 /* Pods-tagvr.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-tagvr.modulemap"; sourceTree = "<group>"; };
-		3525C1838BCE7FFB1F21FF28206346B8 /* GCSCardboardView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCSCardboardView.h; path = Headers/Public/GCSCardboardView.h; sourceTree = "<group>"; };
+		2D59C2D24CE4E25CD3B53BA5E5D9D88A /* GVRPanoramaView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GVRPanoramaView.h; path = Sources/GVRPanoramaView.h; sourceTree = "<group>"; };
+		3B4E1EBFC092553C7AE94A75B797FC59 /* libCardboardSDK_i386.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libCardboardSDK_i386.a; path = Libraries/libCardboardSDK_i386.a; sourceTree = "<group>"; };
 		3D49B3FA8AD5911FDDEF86D3E76FF025 /* Pods-tagvr.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-tagvr.debug.xcconfig"; sourceTree = "<group>"; };
-		3F54085E8A29A6E386FA1A99CDACCF5B /* GoogleKitDialogs.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GoogleKitDialogs.bundle; path = Resources/GoogleKitDialogs.bundle; sourceTree = "<group>"; };
-		48C0BC63B889AF143C287762E36351B3 /* GCSHeadTransform.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCSHeadTransform.h; path = Headers/Public/GCSHeadTransform.h; sourceTree = "<group>"; };
-		64771139CD35996D7E6CCBD98485C81B /* MaterialTypography.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = MaterialTypography.bundle; path = Resources/MaterialTypography.bundle; sourceTree = "<group>"; };
+		431A522D63DBC8F01F0FFB1F1763654E /* libCardboardSDK_armv7.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libCardboardSDK_armv7.a; path = Libraries/libCardboardSDK_armv7.a; sourceTree = "<group>"; };
+		4E74203377C66D5FC8BDF03D67A437BE /* gvr_types.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = gvr_types.h; path = Sources/vr/gvr/capi/include/gvr_types.h; sourceTree = "<group>"; };
+		595326396E65BAD10AE526F50CEB7BD2 /* GVRCardboardView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GVRCardboardView.h; path = Sources/GVRCardboardView.h; sourceTree = "<group>"; };
+		62DE846A513FA6D42DF148FC45910AB8 /* GVROverlayView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GVROverlayView.h; path = Sources/GVROverlayView.h; sourceTree = "<group>"; };
 		69A14DDE9F813BF66AD62AA7309F85EE /* Pods-tagvr-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-tagvr-resources.sh"; sourceTree = "<group>"; };
 		6B51DA8E65609904A68519AAC9276F80 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6D670A849ABC550E3A16E8759E56E31E /* GCSCardboardAudioEngine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCSCardboardAudioEngine.h; path = Headers/Public/GCSCardboardAudioEngine.h; sourceTree = "<group>"; };
 		731660E5F67E75F48FC53B96BC97C324 /* Pods-tagvr-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-tagvr-acknowledgements.markdown"; sourceTree = "<group>"; };
 		777FF33E126202A29F2BEA14870576C2 /* Pods-tagvr-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-tagvr-dummy.m"; sourceTree = "<group>"; };
+		798330494E6B1AA5B24C7E0EEF1358D0 /* gvr.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = gvr.h; path = Sources/vr/gvr/capi/include/gvr.h; sourceTree = "<group>"; };
+		8434728BEFA9D1931C6CFBE03B972247 /* gvr_version.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = gvr_version.h; path = Sources/vr/gvr/capi/include/gvr_version.h; sourceTree = "<group>"; };
+		864E6B19A838C3C3F334E6A824ACD798 /* libCardboardSDK_arm64.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libCardboardSDK_arm64.a; path = Libraries/libCardboardSDK_arm64.a; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		98A7F8A8DE4E1C1ADCB7E4219D7D14F5 /* GCSPanoramaView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCSPanoramaView.h; path = Headers/Public/GCSPanoramaView.h; sourceTree = "<group>"; };
+		971FEDE16C52EF6858ADA9144488D38D /* GVRWidgetView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GVRWidgetView.h; path = Sources/GVRWidgetView.h; sourceTree = "<group>"; };
 		99C309A03D7000634156ABE273E61BBA /* Pods_tagvr.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tagvr.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9DC64B952E629AC747F30F32F203399E /* GCSVideoView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCSVideoView.h; path = Headers/Public/GCSVideoView.h; sourceTree = "<group>"; };
-		9E202B15AAED123DA437DB5B045DFE13 /* libCardboardSDK.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libCardboardSDK.a; path = Libraries/libCardboardSDK.a; sourceTree = "<group>"; };
-		A0C409452E6C47342ACE9C7662D292F6 /* GCSWidgetView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCSWidgetView.h; path = Headers/Public/GCSWidgetView.h; sourceTree = "<group>"; };
-		BEAAA68818900E6569DB22D245F8C19E /* GoogleKitCore.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GoogleKitCore.bundle; path = Resources/GoogleKitCore.bundle; sourceTree = "<group>"; };
+		ABD3B74625B310CFB974DCB822156EA0 /* libCardboardSDK_x86_64.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libCardboardSDK_x86_64.a; path = Libraries/libCardboardSDK_x86_64.a; sourceTree = "<group>"; };
+		C88126943637C9B522C4F173493F78D2 /* CardboardSDK.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = CardboardSDK.bundle; path = Resources/CardboardSDK.bundle; sourceTree = "<group>"; };
 		CD1DF467AB48E9744E89493D79B26883 /* Pods-tagvr-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-tagvr-frameworks.sh"; sourceTree = "<group>"; };
 		CD8D766094820F1F21FA6AEFE4B37ADE /* Pods-tagvr-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-tagvr-acknowledgements.plist"; sourceTree = "<group>"; };
 		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		D8BA643AAFC7929CB44CE9FBA995247C /* Pods-tagvr.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-tagvr.release.xcconfig"; sourceTree = "<group>"; };
-		F86AA3842AEE4DCA9083269059CAE505 /* GoogleKitHUD.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GoogleKitHUD.bundle; path = Resources/GoogleKitHUD.bundle; sourceTree = "<group>"; };
-		FD68BC806ECED986749062B22A48C05A /* CardboardSDK.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = CardboardSDK.bundle; path = Resources/CardboardSDK.bundle; sourceTree = "<group>"; };
+		D909CAB21EBA73C08E50BD12D664020C /* MaterialRobotoFontLoader.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = MaterialRobotoFontLoader.bundle; path = Resources/MaterialRobotoFontLoader.bundle; sourceTree = "<group>"; };
+		DEDDBBBEA0827226BAD22B70DDEC35D5 /* GVRHeadTransform.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GVRHeadTransform.h; path = Sources/GVRHeadTransform.h; sourceTree = "<group>"; };
+		FE4AB5CC8F147287FCE4CDFC85B45FEB /* GoogleKitCore.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GoogleKitCore.bundle; path = Resources/GoogleKitCore.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,21 +60,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		059C26149F04D1A616006908D6F68D87 /* CardboardSDK */ = {
-			isa = PBXGroup;
-			children = (
-				6D670A849ABC550E3A16E8759E56E31E /* GCSCardboardAudioEngine.h */,
-				3525C1838BCE7FFB1F21FF28206346B8 /* GCSCardboardView.h */,
-				48C0BC63B889AF143C287762E36351B3 /* GCSHeadTransform.h */,
-				98A7F8A8DE4E1C1ADCB7E4219D7D14F5 /* GCSPanoramaView.h */,
-				9DC64B952E629AC747F30F32F203399E /* GCSVideoView.h */,
-				A0C409452E6C47342ACE9C7662D292F6 /* GCSWidgetView.h */,
-				D63FA919042C3917AF6AE6B11696330F /* Frameworks */,
-				95F8B8565498FD7186698A9EB44C7B59 /* Resources */,
-			);
-			path = CardboardSDK;
-			sourceTree = "<group>";
-		};
 		275684974C6256D94002A0CD4F5DED8E /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -93,6 +86,17 @@
 			path = "Target Support Files/Pods-tagvr";
 			sourceTree = "<group>";
 		};
+		38FE176FD86A9776551F68FBC287C8C2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				864E6B19A838C3C3F334E6A824ACD798 /* libCardboardSDK_arm64.a */,
+				431A522D63DBC8F01F0FFB1F1763654E /* libCardboardSDK_armv7.a */,
+				3B4E1EBFC092553C7AE94A75B797FC59 /* libCardboardSDK_i386.a */,
+				ABD3B74625B310CFB974DCB822156EA0 /* libCardboardSDK_x86_64.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -101,12 +105,16 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		41C8DA0E5B3218982F746240730864A2 /* Pods */ = {
+		781F671572B5715FC9D6379F7D4B30D0 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				059C26149F04D1A616006908D6F68D87 /* CardboardSDK */,
+				C88126943637C9B522C4F173493F78D2 /* CardboardSDK.bundle */,
+				FE4AB5CC8F147287FCE4CDFC85B45FEB /* GoogleKitCore.bundle */,
+				1D601A82105C6DE99FCA07D532A16F81 /* GoogleKitDialogs.bundle */,
+				039DF661FDDB4CD8FF9E352C6C4AC48D /* GoogleKitHUD.bundle */,
+				D909CAB21EBA73C08E50BD12D664020C /* MaterialRobotoFontLoader.bundle */,
 			);
-			name = Pods;
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -114,7 +122,7 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				41C8DA0E5B3218982F746240730864A2 /* Pods */,
+				F05351E3E640B64052A7087B9D887540 /* Pods */,
 				275684974C6256D94002A0CD4F5DED8E /* Products */,
 				9288FA542404151551816A96D914DD1B /* Targets Support Files */,
 			);
@@ -128,18 +136,6 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		95F8B8565498FD7186698A9EB44C7B59 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				FD68BC806ECED986749062B22A48C05A /* CardboardSDK.bundle */,
-				BEAAA68818900E6569DB22D245F8C19E /* GoogleKitCore.bundle */,
-				3F54085E8A29A6E386FA1A99CDACCF5B /* GoogleKitDialogs.bundle */,
-				F86AA3842AEE4DCA9083269059CAE505 /* GoogleKitHUD.bundle */,
-				64771139CD35996D7E6CCBD98485C81B /* MaterialTypography.bundle */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -148,12 +144,32 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D63FA919042C3917AF6AE6B11696330F /* Frameworks */ = {
+		DD11FE85EE6E1541CDF6B64F71C69C1D /* GVRSDK */ = {
 			isa = PBXGroup;
 			children = (
-				9E202B15AAED123DA437DB5B045DFE13 /* libCardboardSDK.a */,
+				798330494E6B1AA5B24C7E0EEF1358D0 /* gvr.h */,
+				0F5536784D6B5C3CE3B7C89B000B0925 /* gvr_audio.h */,
+				4E74203377C66D5FC8BDF03D67A437BE /* gvr_types.h */,
+				8434728BEFA9D1931C6CFBE03B972247 /* gvr_version.h */,
+				0C0F0D6E51CEBD2ADFD5BE253E489001 /* GVRAudioEngine.h */,
+				595326396E65BAD10AE526F50CEB7BD2 /* GVRCardboardView.h */,
+				DEDDBBBEA0827226BAD22B70DDEC35D5 /* GVRHeadTransform.h */,
+				62DE846A513FA6D42DF148FC45910AB8 /* GVROverlayView.h */,
+				2D59C2D24CE4E25CD3B53BA5E5D9D88A /* GVRPanoramaView.h */,
+				20313AE426F4436ADA547BC217B60D4F /* GVRVideoView.h */,
+				971FEDE16C52EF6858ADA9144488D38D /* GVRWidgetView.h */,
+				38FE176FD86A9776551F68FBC287C8C2 /* Frameworks */,
+				781F671572B5715FC9D6379F7D4B30D0 /* Resources */,
 			);
-			name = Frameworks;
+			path = GVRSDK;
+			sourceTree = "<group>";
+		};
+		F05351E3E640B64052A7087B9D887540 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DD11FE85EE6E1541CDF6B64F71C69C1D /* GVRSDK */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

@@ -14,9 +14,9 @@
 		</dict>
 		<dict>
 			<key>FooterText</key>
-			<string>Copyright 2016 Google Inc. All Rights Reserved.</string>
+			<string>Copyright 2016 Google</string>
 			<key>Title</key>
-			<string>CardboardSDK</string>
+			<string>GVRSDK</string>
 			<key>Type</key>
 			<string>PSGroupSpecifier</string>
 		</dict>

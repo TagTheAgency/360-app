@@ -122,21 +122,18 @@
                                     <constraint firstItem="zdb-n0-ENn" firstAttribute="centerX" secondItem="KzY-qB-jdj" secondAttribute="centerX" id="yeS-R9-VpK"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="egG-ei-Qox">
-                                <frame key="frameInset" minX="55" minY="265" width="47" height="24"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="egG-ei-Qox">
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5ZG-aB-Dre">
-                                <frame key="frameInset" minX="55" minY="368" width="339" height="213"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5ZG-aB-Dre" customClass="GVRVideoView">
                                 <color key="backgroundColor" red="0.92156862750000001" green="0.33333333329999998" blue="0.68235294120000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" priority="750" constant="213" id="aIp-Gb-a4O"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IkI-ia-h1S">
-                                <frame key="frameInset" minX="55" minY="631" width="100" height="40"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IkI-ia-h1S">
                                 <color key="backgroundColor" red="0.92156862750000001" green="0.33333333329999998" blue="0.68235294120000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="6EU-HZ-EjO"/>
@@ -173,7 +170,7 @@
                         <outlet property="detailDuration" destination="egG-ei-Qox" id="pT1-8T-lTy"/>
                         <outlet property="detailImageView" destination="zdb-n0-ENn" id="a9q-WR-Hqj"/>
                         <outlet property="detailTitle" destination="VNe-AK-Cqh" id="4Nc-ua-z6a"/>
-                        <outlet property="videoView" destination="5ZG-aB-Dre" id="Or3-Tb-vYp"/>
+                        <outlet property="videoVRView" destination="5ZG-aB-Dre" id="3ol-5h-gyp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CHW-fR-ef6" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -13,22 +13,17 @@ class ViewController: UIViewController {
     @IBOutlet weak var detailImageView: UIImageView!
     @IBOutlet weak var detailTitle: UILabel!
     @IBOutlet weak var detailDuration: UILabel!
-    @IBOutlet weak var videoView: GVRVideoView!
+    @IBOutlet weak var videoVRView: GVRVideoView!
     
     var vrVideo: VRVideo?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
-//        self.videoView = GVRVideoView()
-//        self.videoView.delegate = self
-//        self.videoView.enableFullscreenButton = true
-//        self.videoView.enableCardboardButton = true
-//        scrollView.addSubview(videoView)
-        
+
         if let vrVideo = vrVideo {
-            videoView.load(from: URL(string: "favela.mp4"))
+            videoVRView.load(from: URL(string: "https://s3.amazonaws.com/ray.wenderlich/elephant_safari.mp4"))
+            videoVRView.enableCardboardButton = true
+            videoVRView.enableFullscreenButton = true
             detailImageView.image = vrVideo.photo
             detailTitle.text = vrVideo.title
             detailDuration.text = vrVideo.duration

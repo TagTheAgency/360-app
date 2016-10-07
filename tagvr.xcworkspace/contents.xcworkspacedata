@@ -2,9 +2,36 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:tagvr.xcodeproj">
+      location = "group:tagvr/Assets.xcassets">
    </FileRef>
    <FileRef
-      location = "group:Pods/Pods.xcodeproj">
+      location = "group:tagvr/Base.lproj">
+   </FileRef>
+   <FileRef
+      location = "group:tagvr/giraffe1.mp4">
+   </FileRef>
+   <FileRef
+      location = "group:tagvr/Info.plist">
+   </FileRef>
+   <FileRef
+      location = "group:tagvr/Main.storyboard">
+   </FileRef>
+   <FileRef
+      location = "group:tagvr/tagvr-Bridging-Header.h">
+   </FileRef>
+   <FileRef
+      location = "group:tagvr/AppDelegate.swift">
+   </FileRef>
+   <FileRef
+      location = "group:tagvr/ViewController.swift">
+   </FileRef>
+   <FileRef
+      location = "group:tagvr/VRVideo.swift">
+   </FileRef>
+   <FileRef
+      location = "group:tagvr/VRVideoTableViewCell.swift">
+   </FileRef>
+   <FileRef
+      location = "group:tagvr/VRVideoTableViewController.swift">
    </FileRef>
 </Workspace>

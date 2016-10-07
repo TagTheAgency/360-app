@@ -7,11 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		256236DF1D95185C00D25FFC /* arrows.png in Resources */ = {isa = PBXBuildFile; fileRef = 256236DA1D95185C00D25FFC /* arrows.png */; };
-		256236E01D95185C00D25FFC /* cardboardOff.png in Resources */ = {isa = PBXBuildFile; fileRef = 256236DB1D95185C00D25FFC /* cardboardOff.png */; };
-		256236E11D95185C00D25FFC /* cardboardOn.png in Resources */ = {isa = PBXBuildFile; fileRef = 256236DC1D95185C00D25FFC /* cardboardOn.png */; };
-		256236E21D95185C00D25FFC /* pause@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 256236DD1D95185C00D25FFC /* pause@3x.png */; };
-		256236E31D95185C00D25FFC /* play@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 256236DE1D95185C00D25FFC /* play@3x.png */; };
 		259234CA1D950A3F0029BF3E /* VideoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259234C91D950A3F0029BF3E /* VideoController.swift */; };
 		259234CF1D9510600029BF3E /* favela.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 259234CD1D9510600029BF3E /* favela.mp4 */; };
 		259234D01D9510600029BF3E /* giraffe1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 259234CE1D9510600029BF3E /* giraffe1.mp4 */; };
@@ -22,6 +17,10 @@
 		525718B21D6A73EA007D744C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 525718B01D6A73EA007D744C /* LaunchScreen.storyboard */; };
 		525718BD1D6A73EA007D744C /* tagvrTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525718BC1D6A73EA007D744C /* tagvrTests.swift */; };
 		525718C81D6A73EA007D744C /* tagvrUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525718C71D6A73EA007D744C /* tagvrUITests.swift */; };
+		529E7E201DA5EAAC0039A4F5 /* Pods_tagvr.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21B303D3063A38CEF3746E6C /* Pods_tagvr.framework */; };
+		52C8A7F91DA1FB08001759F5 /* VRVideoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C8A7F81DA1FB08001759F5 /* VRVideoTableViewCell.swift */; };
+		52C8A7FB1DA1FEFA001759F5 /* VRVideoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C8A7FA1DA1FEFA001759F5 /* VRVideoTableViewController.swift */; };
+		52C8A8001DA30264001759F5 /* VRVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C8A7FF1DA30264001759F5 /* VRVideo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,14 +41,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		256236DA1D95185C00D25FFC /* arrows.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrows.png; sourceTree = "<group>"; };
-		256236DB1D95185C00D25FFC /* cardboardOff.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardboardOff.png; sourceTree = "<group>"; };
-		256236DC1D95185C00D25FFC /* cardboardOn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardboardOn.png; sourceTree = "<group>"; };
-		256236DD1D95185C00D25FFC /* pause@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pause@3x.png"; sourceTree = "<group>"; };
-		256236DE1D95185C00D25FFC /* play@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "play@3x.png"; sourceTree = "<group>"; };
+		21B303D3063A38CEF3746E6C /* Pods_tagvr.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tagvr.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		259234C91D950A3F0029BF3E /* VideoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoController.swift; sourceTree = "<group>"; };
 		259234CD1D9510600029BF3E /* favela.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = favela.mp4; sourceTree = "<group>"; };
 		259234CE1D9510600029BF3E /* giraffe1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = giraffe1.mp4; sourceTree = "<group>"; };
+		3EF559CDA641EDD9DE04AB61 /* Pods-tagvr.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tagvr.release.xcconfig"; path = "Pods/Target Support Files/Pods-tagvr/Pods-tagvr.release.xcconfig"; sourceTree = "<group>"; };
+		52226C891DA6F1E2003C2AAD /* tagvr-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "tagvr-Bridging-Header.h"; sourceTree = "<group>"; };
 		525718A41D6A73EA007D744C /* tagvr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tagvr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		525718A71D6A73EA007D744C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		525718A91D6A73EA007D744C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +60,11 @@
 		525718C31D6A73EA007D744C /* tagvrUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tagvrUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		525718C71D6A73EA007D744C /* tagvrUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tagvrUITests.swift; sourceTree = "<group>"; };
 		525718C91D6A73EA007D744C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52C8A7F81DA1FB08001759F5 /* VRVideoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VRVideoTableViewCell.swift; sourceTree = "<group>"; };
+		52C8A7FA1DA1FEFA001759F5 /* VRVideoTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VRVideoTableViewController.swift; sourceTree = "<group>"; };
+		52C8A7FF1DA30264001759F5 /* VRVideo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VRVideo.swift; sourceTree = "<group>"; };
+		52D5B0EB1DA5F67800D6D4C9 /* libCardboardSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libCardboardSDK.a; path = Pods/CardboardSDK/Libraries/libCardboardSDK.a; sourceTree = "<group>"; };
+		EE33F603C793BA84E9F287DF /* Pods-tagvr.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tagvr.debug.xcconfig"; path = "Pods/Target Support Files/Pods-tagvr/Pods-tagvr.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				529E7E201DA5EAAC0039A4F5 /* Pods_tagvr.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,18 +93,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		256236E41D9519B900D25FFC /* buttons */ = {
-			isa = PBXGroup;
-			children = (
-				256236DA1D95185C00D25FFC /* arrows.png */,
-				256236DB1D95185C00D25FFC /* cardboardOff.png */,
-				256236DC1D95185C00D25FFC /* cardboardOn.png */,
-				256236DD1D95185C00D25FFC /* pause@3x.png */,
-				256236DE1D95185C00D25FFC /* play@3x.png */,
-			);
-			name = buttons;
-			sourceTree = "<group>";
-		};
 		5257189B1D6A73EA007D744C = {
 			isa = PBXGroup;
 			children = (
@@ -109,6 +100,8 @@
 				525718BB1D6A73EA007D744C /* tagvrTests */,
 				525718C61D6A73EA007D744C /* tagvrUITests */,
 				525718A51D6A73EA007D744C /* Products */,
+				F78858BA8692178C8E4D7531 /* Pods */,
+				C9C4CD39342AEDFDA0279655 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,13 +118,16 @@
 		525718A61D6A73EA007D744C /* tagvr */ = {
 			isa = PBXGroup;
 			children = (
-				256236E41D9519B900D25FFC /* buttons */,
+				52226C891DA6F1E2003C2AAD /* tagvr-Bridging-Header.h */,
 				259234CD1D9510600029BF3E /* favela.mp4 */,
 				259234CE1D9510600029BF3E /* giraffe1.mp4 */,
 				259234C91D950A3F0029BF3E /* VideoController.swift */,
 				525718A71D6A73EA007D744C /* AppDelegate.swift */,
 				525718A91D6A73EA007D744C /* ViewController.swift */,
 				525718AB1D6A73EA007D744C /* Main.storyboard */,
+				52C8A7FA1DA1FEFA001759F5 /* VRVideoTableViewController.swift */,
+				52C8A7FF1DA30264001759F5 /* VRVideo.swift */,
+				52C8A7F81DA1FB08001759F5 /* VRVideoTableViewCell.swift */,
 				525718AE1D6A73EA007D744C /* Assets.xcassets */,
 				525718B01D6A73EA007D744C /* LaunchScreen.storyboard */,
 				525718B31D6A73EA007D744C /* Info.plist */,
@@ -157,6 +153,24 @@
 			path = tagvrUITests;
 			sourceTree = "<group>";
 		};
+		C9C4CD39342AEDFDA0279655 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				52D5B0EB1DA5F67800D6D4C9 /* libCardboardSDK.a */,
+				21B303D3063A38CEF3746E6C /* Pods_tagvr.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F78858BA8692178C8E4D7531 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EE33F603C793BA84E9F287DF /* Pods-tagvr.debug.xcconfig */,
+				3EF559CDA641EDD9DE04AB61 /* Pods-tagvr.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -164,9 +178,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 525718CC1D6A73EA007D744C /* Build configuration list for PBXNativeTarget "tagvr" */;
 			buildPhases = (
+				571EE91606DB830BC3FC94F6 /* [CP] Check Pods Manifest.lock */,
 				525718A01D6A73EA007D744C /* Sources */,
 				525718A11D6A73EA007D744C /* Frameworks */,
 				525718A21D6A73EA007D744C /* Resources */,
+				05DFC83DE668F3E6762248AB /* [CP] Embed Pods Frameworks */,
+				291E527B28E792754AE59A6B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -266,15 +283,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				259234D01D9510600029BF3E /* giraffe1.mp4 in Resources */,
-				256236E11D95185C00D25FFC /* cardboardOn.png in Resources */,
 				259234CF1D9510600029BF3E /* favela.mp4 in Resources */,
-				256236E31D95185C00D25FFC /* play@3x.png in Resources */,
 				525718B21D6A73EA007D744C /* LaunchScreen.storyboard in Resources */,
-				256236E21D95185C00D25FFC /* pause@3x.png in Resources */,
 				525718AF1D6A73EA007D744C /* Assets.xcassets in Resources */,
-				256236E01D95185C00D25FFC /* cardboardOff.png in Resources */,
 				525718AD1D6A73EA007D744C /* Main.storyboard in Resources */,
-				256236DF1D95185C00D25FFC /* arrows.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,6 +306,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		05DFC83DE668F3E6762248AB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-tagvr/Pods-tagvr-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		291E527B28E792754AE59A6B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-tagvr/Pods-tagvr-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		571EE91606DB830BC3FC94F6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		525718A01D6A73EA007D744C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -302,6 +362,9 @@
 				525718AA1D6A73EA007D744C /* ViewController.swift in Sources */,
 				259234CA1D950A3F0029BF3E /* VideoController.swift in Sources */,
 				525718A81D6A73EA007D744C /* AppDelegate.swift in Sources */,
+				52C8A7FB1DA1FEFA001759F5 /* VRVideoTableViewController.swift in Sources */,
+				52C8A7F91DA1FB08001759F5 /* VRVideoTableViewCell.swift in Sources */,
+				52C8A8001DA30264001759F5 /* VRVideo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -379,6 +442,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				"FRAMEWORK_SEARCH_PATHS[arch=*]" = "$(SRCROOT)/**";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -424,6 +488,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				"FRAMEWORK_SEARCH_PATHS[arch=*]" = "$(SRCROOT)/**";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -441,26 +506,98 @@
 		};
 		525718CD1D6A73EA007D744C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE33F603C793BA84E9F287DF /* Pods-tagvr.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = GKW5GXD942;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				"FRAMEWORK_SEARCH_PATHS[arch=*]" = "";
 				INFOPLIST_FILE = tagvr/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				"LIBRARY_SEARCH_PATHS[arch=*]" = (
+					"$(inherited)",
+					"${PODS_ROOT}/GVRSDK/Libraries",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"c++\"",
+					"-framework",
+					"\"AVFoundation\"",
+					"-framework",
+					"\"AudioToolbox\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreMedia\"",
+					"-framework",
+					"\"CoreMotion\"",
+					"-framework",
+					"\"CoreText\"",
+					"-framework",
+					"\"CoreVideo\"",
+					"-framework",
+					"\"GLKit\"",
+					"-framework",
+					"\"MediaPlayer\"",
+					"-framework",
+					"\"OpenGLES\"",
+					"-framework",
+					"\"QuartzCore\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.tagtheagency.tagvr;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "tagvr/tagvr-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		525718CE1D6A73EA007D744C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3EF559CDA641EDD9DE04AB61 /* Pods-tagvr.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = GKW5GXD942;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				"FRAMEWORK_SEARCH_PATHS[arch=*]" = "";
 				INFOPLIST_FILE = tagvr/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				"LIBRARY_SEARCH_PATHS[arch=*]" = (
+					"$(inherited)",
+					"${PODS_ROOT}/GVRSDK/Libraries",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"c++\"",
+					"-framework",
+					"\"AVFoundation\"",
+					"-framework",
+					"\"AudioToolbox\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreMedia\"",
+					"-framework",
+					"\"CoreMotion\"",
+					"-framework",
+					"\"CoreText\"",
+					"-framework",
+					"\"CoreVideo\"",
+					"-framework",
+					"\"GLKit\"",
+					"-framework",
+					"\"MediaPlayer\"",
+					"-framework",
+					"\"OpenGLES\"",
+					"-framework",
+					"\"QuartzCore\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.tagtheagency.tagvr;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "tagvr/tagvr-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

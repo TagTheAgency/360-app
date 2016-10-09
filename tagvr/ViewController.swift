@@ -15,6 +15,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var detailDuration: UILabel!
     @IBOutlet weak var videoVRView: GVRVideoView!
     
+    
     var vrVideo: VRVideo?
     
     override func viewDidLoad() {

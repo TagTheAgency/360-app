@@ -21,6 +21,7 @@
 		52C8A7F91DA1FB08001759F5 /* VRVideoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C8A7F81DA1FB08001759F5 /* VRVideoTableViewCell.swift */; };
 		52C8A7FB1DA1FEFA001759F5 /* VRVideoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C8A7FA1DA1FEFA001759F5 /* VRVideoTableViewController.swift */; };
 		52C8A8001DA30264001759F5 /* VRVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C8A7FF1DA30264001759F5 /* VRVideo.swift */; };
+		82F8FD60D265234ED1E05542 /* Pods_tagvrTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B82C5173E4FE5DE3FD1BD00 /* Pods_tagvrTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		259234C91D950A3F0029BF3E /* VideoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoController.swift; sourceTree = "<group>"; };
 		259234CD1D9510600029BF3E /* favela.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = favela.mp4; sourceTree = "<group>"; };
 		259234CE1D9510600029BF3E /* giraffe1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = giraffe1.mp4; sourceTree = "<group>"; };
+		3B82C5173E4FE5DE3FD1BD00 /* Pods_tagvrTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tagvrTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EF559CDA641EDD9DE04AB61 /* Pods-tagvr.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tagvr.release.xcconfig"; path = "Pods/Target Support Files/Pods-tagvr/Pods-tagvr.release.xcconfig"; sourceTree = "<group>"; };
 		52226C891DA6F1E2003C2AAD /* tagvr-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "tagvr-Bridging-Header.h"; sourceTree = "<group>"; };
 		525718A41D6A73EA007D744C /* tagvr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tagvr.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -64,6 +66,8 @@
 		52C8A7FA1DA1FEFA001759F5 /* VRVideoTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VRVideoTableViewController.swift; sourceTree = "<group>"; };
 		52C8A7FF1DA30264001759F5 /* VRVideo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VRVideo.swift; sourceTree = "<group>"; };
 		52D5B0EB1DA5F67800D6D4C9 /* libCardboardSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libCardboardSDK.a; path = Pods/CardboardSDK/Libraries/libCardboardSDK.a; sourceTree = "<group>"; };
+		6E590796BD967908E2AF6EC6 /* Pods-tagvrTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tagvrTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-tagvrTests/Pods-tagvrTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B58D895384E20CB1438AA39C /* Pods-tagvrTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tagvrTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-tagvrTests/Pods-tagvrTests.release.xcconfig"; sourceTree = "<group>"; };
 		EE33F603C793BA84E9F287DF /* Pods-tagvr.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tagvr.debug.xcconfig"; path = "Pods/Target Support Files/Pods-tagvr/Pods-tagvr.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -80,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82F8FD60D265234ED1E05542 /* Pods_tagvrTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -158,6 +163,7 @@
 			children = (
 				52D5B0EB1DA5F67800D6D4C9 /* libCardboardSDK.a */,
 				21B303D3063A38CEF3746E6C /* Pods_tagvr.framework */,
+				3B82C5173E4FE5DE3FD1BD00 /* Pods_tagvrTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -167,6 +173,8 @@
 			children = (
 				EE33F603C793BA84E9F287DF /* Pods-tagvr.debug.xcconfig */,
 				3EF559CDA641EDD9DE04AB61 /* Pods-tagvr.release.xcconfig */,
+				6E590796BD967908E2AF6EC6 /* Pods-tagvrTests.debug.xcconfig */,
+				B58D895384E20CB1438AA39C /* Pods-tagvrTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -198,9 +206,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 525718CF1D6A73EA007D744C /* Build configuration list for PBXNativeTarget "tagvrTests" */;
 			buildPhases = (
+				E87BAD92F99957EFABA460D4 /* [CP] Check Pods Manifest.lock */,
 				525718B41D6A73EA007D744C /* Sources */,
 				525718B51D6A73EA007D744C /* Frameworks */,
 				525718B61D6A73EA007D744C /* Resources */,
+				1A2986D5060958A92A020E74 /* [CP] Embed Pods Frameworks */,
+				33F5108BA944432C85257976 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -322,6 +333,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-tagvr/Pods-tagvr-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		1A2986D5060958A92A020E74 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-tagvrTests/Pods-tagvrTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		291E527B28E792754AE59A6B /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -337,6 +363,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-tagvr/Pods-tagvr-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		33F5108BA944432C85257976 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-tagvrTests/Pods-tagvrTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		571EE91606DB830BC3FC94F6 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -349,7 +390,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E87BAD92F99957EFABA460D4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -606,6 +662,7 @@
 		};
 		525718D01D6A73EA007D744C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E590796BD967908E2AF6EC6 /* Pods-tagvrTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = tagvrTests/Info.plist;
@@ -619,6 +676,7 @@
 		};
 		525718D11D6A73EA007D744C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B58D895384E20CB1438AA39C /* Pods-tagvrTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = tagvrTests/Info.plist;

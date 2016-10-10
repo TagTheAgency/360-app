@@ -22,7 +22,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
 
         if let vrVideo = vrVideo {
-            videoVRView.load(from: URL(string: "https://s3.amazonaws.com/ray.wenderlich/elephant_safari.mp4"))
+            videoVRView.load(from: URL(string: vrVideo.video))
             videoVRView.enableCardboardButton = true
             videoVRView.enableFullscreenButton = true
             detailImageView.image = vrVideo.photo

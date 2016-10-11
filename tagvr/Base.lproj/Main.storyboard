@@ -151,7 +151,7 @@
                 <navigationController title="TagVR" automaticallyAdjustsScrollViewInsets="NO" id="xbA-zw-4Hg" sceneMemberID="viewController">
                     <toolbarItems/>
                     <nil key="simulatedBottomBarMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="q3e-fL-GBx">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" barStyle="black" id="q3e-fL-GBx">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.92156862750000001" green="0.33333333329999998" blue="0.68235294120000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -165,12 +165,90 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </toolbar>
                     <connections>
-                        <segue destination="SVT-bq-dSf" kind="relationship" relationship="rootViewController" id="8w2-6d-UaK"/>
+                        <segue destination="zui-Y8-nuO" kind="relationship" relationship="rootViewController" id="Tfb-lv-L4n"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UKL-fR-2Kh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="380" y="336.88155922038982"/>
+            <point key="canvasLocation" x="-361" y="336"/>
+        </scene>
+        <!--TagVr-->
+        <scene sceneID="Mu6-TY-ska">
+            <objects>
+                <viewController id="zui-Y8-nuO" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wKg-2y-hbr"/>
+                        <viewControllerLayoutGuide type="bottom" id="EOY-1h-G3i"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="KrL-UH-J5L">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vgf-C5-hEk" userLabel="Videos">
+                                <color key="backgroundColor" red="0.94117647059999998" green="0.87058823529999996" blue="0.058823529409999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="AaA-YU-u4w"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="25"/>
+                                <state key="normal" title="Videos">
+                                    <color key="titleColor" red="0.92156862750000001" green="0.33333333329999998" blue="0.68235294120000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Tb-Uh-XGX">
+                                <color key="backgroundColor" red="0.92156862750000001" green="0.33333333329999998" blue="0.68235294120000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="XbB-xk-9vY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="25"/>
+                                <state key="normal" title="360° Photos">
+                                    <color key="titleColor" red="0.94117647059999998" green="0.87058823529999996" blue="0.058823529409999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dCj-lo-izW">
+                                <color key="backgroundColor" red="0.94117647059999998" green="0.87058823529999996" blue="0.058823529409999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="XJe-0O-6fn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="25"/>
+                                <state key="normal" title="360° Videos">
+                                    <color key="titleColor" red="0.92156862750000001" green="0.33333333329999998" blue="0.68235294120000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="SVT-bq-dSf" kind="show" id="7pZ-Ei-WKX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UyD-D9-JLv" userLabel="Contact">
+                                <color key="backgroundColor" red="0.92156862750000001" green="0.33333333329999998" blue="0.68235294120000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="MM8-6b-hiQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="25"/>
+                                <state key="normal" title="Contact Us">
+                                    <color key="titleColor" red="0.94117647059999998" green="0.87058823529999996" blue="0.058823529409999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="dCj-lo-izW" firstAttribute="leading" secondItem="0Tb-Uh-XGX" secondAttribute="leading" id="0In-BG-aKf"/>
+                            <constraint firstItem="UyD-D9-JLv" firstAttribute="leading" secondItem="vgf-C5-hEk" secondAttribute="leading" id="6bb-Wf-xWF"/>
+                            <constraint firstItem="dCj-lo-izW" firstAttribute="top" secondItem="wKg-2y-hbr" secondAttribute="bottom" id="7Qh-YC-lhL"/>
+                            <constraint firstItem="dCj-lo-izW" firstAttribute="width" secondItem="KrL-UH-J5L" secondAttribute="width" id="LGT-PA-zuc"/>
+                            <constraint firstItem="UyD-D9-JLv" firstAttribute="leading" secondItem="0Tb-Uh-XGX" secondAttribute="leading" id="RUi-xP-HlJ"/>
+                            <constraint firstItem="UyD-D9-JLv" firstAttribute="trailing" secondItem="0Tb-Uh-XGX" secondAttribute="trailing" id="Vua-Sh-AEC"/>
+                            <constraint firstItem="0Tb-Uh-XGX" firstAttribute="top" secondItem="dCj-lo-izW" secondAttribute="bottom" id="gBb-lX-7gd"/>
+                            <constraint firstItem="vgf-C5-hEk" firstAttribute="top" secondItem="0Tb-Uh-XGX" secondAttribute="bottom" id="izQ-Lt-8mm"/>
+                            <constraint firstItem="dCj-lo-izW" firstAttribute="trailing" secondItem="0Tb-Uh-XGX" secondAttribute="trailing" id="mbQ-x5-hyj"/>
+                            <constraint firstItem="UyD-D9-JLv" firstAttribute="trailing" secondItem="vgf-C5-hEk" secondAttribute="trailing" id="vve-Y2-arB"/>
+                            <constraint firstItem="UyD-D9-JLv" firstAttribute="top" secondItem="vgf-C5-hEk" secondAttribute="bottom" id="wD9-jV-ZGb"/>
+                            <constraint firstItem="dCj-lo-izW" firstAttribute="leading" secondItem="KrL-UH-J5L" secondAttribute="leading" id="zcE-QS-Exp"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="TagVr" id="ZBQ-8c-gVk"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Ll-ve-BKO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="470" y="336"/>
         </scene>
     </scenes>
 </document>

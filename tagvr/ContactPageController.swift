@@ -22,7 +22,8 @@ class ContactPageController: UIViewController, MFMailComposeViewControllerDelega
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        
+        messageStatus.text = ""
+        messageStatus.layer.borderWidth = 0
     }
 
     override func didReceiveMemoryWarning() {
@@ -50,8 +51,9 @@ class ContactPageController: UIViewController, MFMailComposeViewControllerDelega
         case MFMailComposeResult.failed.rawValue:
             print("Failed")
             messageStatus.text = "Message failed to send."
-            messageStatus.layer.borderWidth = 0.5
+            messageStatus.layer.borderWidth = 1
             messageStatus.layer.borderColor = UIColor.red.cgColor
+            messageStatus.layer.cornerRadius = 5
         case MFMailComposeResult.saved.rawValue:
             print("Saved")
         case MFMailComposeResult.sent.rawValue:
@@ -59,6 +61,7 @@ class ContactPageController: UIViewController, MFMailComposeViewControllerDelega
             messageStatus.text = "Message sent, thanks!"
             messageStatus.layer.borderWidth = 1
             messageStatus.layer.borderColor = UIColor.green.cgColor
+            messageStatus.layer.cornerRadius = 5
         default:
             break
         }

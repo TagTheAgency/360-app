@@ -14,3 +14,12 @@ target 'tagvr' do
 
 
 end
+
+target 'tagvrTests' do
+    use_frameworks!
+
+    # Pods for tagvr
+
+    #pod 'CardboardSDK'
+    pod 'GVRSDK'
+end

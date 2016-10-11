@@ -10,6 +10,8 @@ import XCTest
 @testable import tagvr
 
 class tagvrTests: XCTestCase {
+    var vc: ViewController!
+    
     
     override func setUp() {
         super.setUp()
@@ -21,9 +23,15 @@ class tagvrTests: XCTestCase {
         super.tearDown()
     }
     
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int { return 1 }
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        return UITableViewCell()
+    }
+    
     func testExample() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
+        XCTAssert(true)
     }
     
     func testPerformanceExample() {

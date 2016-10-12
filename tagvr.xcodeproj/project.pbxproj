@@ -22,6 +22,7 @@
 		52C8A7F91DA1FB08001759F5 /* VRVideoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C8A7F81DA1FB08001759F5 /* VRVideoTableViewCell.swift */; };
 		52C8A7FB1DA1FEFA001759F5 /* VRVideoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C8A7FA1DA1FEFA001759F5 /* VRVideoTableViewController.swift */; };
 		52C8A8001DA30264001759F5 /* VRVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C8A7FF1DA30264001759F5 /* VRVideo.swift */; };
+		52CFBD761DADE0C700BF8760 /* VRPhotoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CFBD751DADE0C700BF8760 /* VRPhotoTableViewCell.swift */; };
 		82F8FD60D265234ED1E05542 /* Pods_tagvrTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B82C5173E4FE5DE3FD1BD00 /* Pods_tagvrTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -67,6 +68,7 @@
 		52C8A7F81DA1FB08001759F5 /* VRVideoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VRVideoTableViewCell.swift; sourceTree = "<group>"; };
 		52C8A7FA1DA1FEFA001759F5 /* VRVideoTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VRVideoTableViewController.swift; sourceTree = "<group>"; };
 		52C8A7FF1DA30264001759F5 /* VRVideo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VRVideo.swift; sourceTree = "<group>"; };
+		52CFBD751DADE0C700BF8760 /* VRPhotoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VRPhotoTableViewCell.swift; sourceTree = "<group>"; };
 		52D5B0EB1DA5F67800D6D4C9 /* libCardboardSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libCardboardSDK.a; path = Pods/CardboardSDK/Libraries/libCardboardSDK.a; sourceTree = "<group>"; };
 		6E590796BD967908E2AF6EC6 /* Pods-tagvrTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tagvrTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-tagvrTests/Pods-tagvrTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B58D895384E20CB1438AA39C /* Pods-tagvrTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tagvrTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-tagvrTests/Pods-tagvrTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 				525718A71D6A73EA007D744C /* AppDelegate.swift */,
 				525718A91D6A73EA007D744C /* ViewController.swift */,
 				525718AB1D6A73EA007D744C /* Main.storyboard */,
+				52CFBD751DADE0C700BF8760 /* VRPhotoTableViewCell.swift */,
 				52C8A7FA1DA1FEFA001759F5 /* VRVideoTableViewController.swift */,
 				52C8A7FF1DA30264001759F5 /* VRVideo.swift */,
 				52C8A7F81DA1FB08001759F5 /* VRVideoTableViewCell.swift */,
@@ -420,6 +423,7 @@
 			files = (
 				525718AA1D6A73EA007D744C /* ViewController.swift in Sources */,
 				259234CA1D950A3F0029BF3E /* VideoController.swift in Sources */,
+				52CFBD761DADE0C700BF8760 /* VRPhotoTableViewCell.swift in Sources */,
 				2549B79C1DAC5AA10033762C /* ContactPageController.swift in Sources */,
 				525718A81D6A73EA007D744C /* AppDelegate.swift in Sources */,
 				52C8A7FB1DA1FEFA001759F5 /* VRVideoTableViewController.swift in Sources */,

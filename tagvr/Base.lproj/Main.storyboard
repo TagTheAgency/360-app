@@ -62,10 +62,10 @@
             </objects>
             <point key="canvasLocation" x="1314.4927536231885" y="336.68478260869568"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Photo Table View Controller-->
         <scene sceneID="9tx-Bo-GAH">
             <objects>
-                <tableViewController id="Uvt-eQ-aSc" sceneMemberID="viewController">
+                <tableViewController id="Uvt-eQ-aSc" customClass="VRPhotoTableViewController" customModule="tagvr" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="120" sectionHeaderHeight="28" sectionFooterHeight="28" id="7KK-bg-FHH">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -87,6 +87,9 @@
                                         <constraint firstItem="Ggg-Ne-9d0" firstAttribute="height" secondItem="XTx-HF-FVY" secondAttribute="height" id="xcQ-LC-AHJ"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="photoView" destination="Ggg-Ne-9d0" id="T8F-dg-FWf"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>

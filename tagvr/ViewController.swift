@@ -17,6 +17,7 @@ class ViewController: UIViewController {
     
     
     var vrVideo: VRVideo?
+    var vrPhoto: VRPhoto?
     
     override func viewDidLoad() {
         super.viewDidLoad()

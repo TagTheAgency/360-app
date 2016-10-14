@@ -12,26 +12,28 @@ import AVFoundation
 
 class VR2DVideoController: UIViewController {
     
-    
+   
     @IBOutlet weak var videoView: UIView!
-    
     @IBOutlet weak var detailImageView: UIImageView!
-    @IBOutlet weak var detailDuration: UILabel!
     @IBOutlet weak var detailTitle: UILabel!
+    @IBOutlet weak var detailDuration: UILabel!
+    @IBOutlet weak var playButton: UIButton!
     
     var vrVideo: VRVideo?
+    
+    
+    var av      :AVPlayerViewController!
+    var player  :AVPlayer!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         if let vrVideo = vrVideo {
             let fileURL: NSURL? = NSURL(string: vrVideo.video)
-            let player = AVPlayer(url: fileURL! as URL)
-            let playerLayer = AVPlayerLayer(player: player)
-            playerLayer.frame = self.view.bounds
-            self.videoView.layer.addSublayer(playerLayer)
-            player.play()
-
+            player = AVPlayer(url: fileURL! as URL)
+            av = AVPlayerViewController()
+            av.player = player
+            
             detailImageView.image = vrVideo.photo
             detailTitle.text = vrVideo.title
             detailDuration.text = vrVideo.duration
@@ -42,5 +44,12 @@ class VR2DVideoController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    @IBAction func playVideo(_ sender: AnyObject) {
+        self.present(av, animated: true) {
+            self.av.player!.play()
+        }
+    }
+    
 
 }

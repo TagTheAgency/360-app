@@ -57,7 +57,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" id="F7U-KQ-DIz"/>
                     <connections>
-                        <segue destination="Bec-yd-8mO" kind="show" id="0vW-xb-pMC"/>
+                        <segue destination="Bec-yd-8mO" kind="showDetail" id="Gwh-m1-Yn0"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Oe-Cp-apE" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -234,12 +234,12 @@
                     </tableView>
                     <navigationItem key="navigationItem" id="h5C-Bi-6Ai"/>
                     <connections>
-                        <segue destination="JQo-qv-gjh" kind="show" id="fqd-Qr-AQq"/>
+                        <segue destination="JQo-qv-gjh" kind="showDetail" id="cyl-Sz-UOL"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cam-aj-t03" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2169" y="1099"/>
+            <point key="canvasLocation" x="2238" y="1115"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="UPe-TP-g1Q">
@@ -409,7 +409,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PX7-wp-I8z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3076" y="1098.8005997001501"/>
+            <point key="canvasLocation" x="3079" y="1115"/>
         </scene>
     </scenes>
 </document>

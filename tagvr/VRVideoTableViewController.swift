@@ -107,8 +107,7 @@ class VRVideoTableViewController: UITableViewController {
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "ShowDetail" {
-            let VRVideoDetailViewController = segue.destination as! VR2DVideoController
-            
+            let VRVideoDetailViewController = segue.destination as! ViewController
             if let selectedVRVideoCell = sender as? VRVideoTableViewCell {
                 let indexPath = tableView.indexPath(for: selectedVRVideoCell)!
                 let selectedVRVideo = vrVideos[indexPath.row]

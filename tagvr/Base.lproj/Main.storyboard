@@ -20,7 +20,7 @@
                                 <rect key="frame" x="0.0" y="92" width="375" height="120"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="uqP-3N-aq8" id="tCz-yu-bcs">
-                                    <frame key="frameInset" width="342" height="119"/>
+                                    <frame key="frameInset" width="342" height="119.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KA7-mj-UhI">
@@ -47,7 +47,7 @@
                                 <connections>
                                     <outlet property="coverImageView" destination="KA7-mj-UhI" id="BqG-MM-OeI"/>
                                     <outlet property="coverTitle" destination="uTI-CR-Cv8" id="xDL-4D-gJX"/>
-                                    <segue destination="cOL-vL-3PB" kind="show" identifier="ShowDetail" id="ikJ-8k-ZNv"/>
+                                    <segue destination="cOL-vL-3PB" kind="show" identifier="ShowVideoDetail" id="ikJ-8k-ZNv"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -62,22 +62,35 @@
             </objects>
             <point key="canvasLocation" x="1314.4927536231885" y="336.68478260869568"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Photo Table View Controller-->
         <scene sceneID="9tx-Bo-GAH">
             <objects>
-                <tableViewController id="Uvt-eQ-aSc" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="7KK-bg-FHH">
+                <tableViewController id="Uvt-eQ-aSc" customClass="VRPhotoTableViewController" customModule="tagvr" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="120" sectionHeaderHeight="28" sectionFooterHeight="28" id="7KK-bg-FHH">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="5Mp-KA-gyU">
-                                <rect key="frame" x="0.0" y="92" width="375" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="VRPhotoTableViewCell" rowHeight="120" id="5Mp-KA-gyU" customClass="VRPhotoTableViewCell" customModule="tagvr" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="92" width="375" height="120"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5Mp-KA-gyU" id="XTx-HF-FVY">
-                                    <frame key="frameInset" width="375" height="43"/>
+                                    <frame key="frameInset" width="375" height="119.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ggg-Ne-9d0"/>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="Ggg-Ne-9d0" firstAttribute="centerY" secondItem="XTx-HF-FVY" secondAttribute="centerY" id="Aa2-F4-yI8"/>
+                                        <constraint firstItem="Ggg-Ne-9d0" firstAttribute="width" secondItem="XTx-HF-FVY" secondAttribute="width" id="XqO-H4-nTv"/>
+                                        <constraint firstItem="Ggg-Ne-9d0" firstAttribute="centerX" secondItem="XTx-HF-FVY" secondAttribute="centerX" id="mtr-wa-KUu"/>
+                                        <constraint firstItem="Ggg-Ne-9d0" firstAttribute="height" secondItem="XTx-HF-FVY" secondAttribute="height" id="xcQ-LC-AHJ"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="photoView" destination="Ggg-Ne-9d0" id="T8F-dg-FWf"/>
+                                    <segue destination="3rJ-Ym-0YS" kind="show" identifier="ShowPhotoDetail" id="TKP-8v-mz0"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -89,6 +102,41 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3X0-0S-166" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1313" y="1082"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="jLg-Ey-wwm">
+            <objects>
+                <viewController id="3rJ-Ym-0YS" customClass="ViewController" customModule="tagvr" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="v2g-I5-UoT"/>
+                        <viewControllerLayoutGuide type="bottom" id="iyI-wX-k5J"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="FMo-AG-sh8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OiH-dE-dIZ" customClass="GVRPanoramaView">
+                                <color key="backgroundColor" red="0.92156862750000001" green="0.33333333329999998" blue="0.68235294120000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="WJR-hD-BEM"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="OiH-dE-dIZ" secondAttribute="trailing" id="OUY-Fv-jeo"/>
+                            <constraint firstItem="OiH-dE-dIZ" firstAttribute="centerX" secondItem="FMo-AG-sh8" secondAttribute="centerX" id="PuP-Ff-X4g"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="OiH-dE-dIZ" secondAttribute="leading" id="eyV-zK-Sli"/>
+                            <constraint firstItem="OiH-dE-dIZ" firstAttribute="centerY" secondItem="FMo-AG-sh8" secondAttribute="centerY" id="ji1-Wv-Mao"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="photoVRView" destination="OiH-dE-dIZ" id="WPB-yL-ZiR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ah5-Ww-zQO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2060" y="1080.8095952023989"/>
         </scene>
         <!--Contact Page Controller-->
         <scene sceneID="l7Q-QD-7s8">

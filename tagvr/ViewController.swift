@@ -14,9 +14,11 @@ class ViewController: UIViewController {
     @IBOutlet weak var detailTitle: UILabel!
     @IBOutlet weak var detailDuration: UILabel!
     @IBOutlet weak var videoVRView: GVRVideoView!
+    @IBOutlet weak var photoVRView: GVRPanoramaView!
     
     
     var vrVideo: VRVideo?
+    var vrPhoto: VRPhoto?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,6 +30,13 @@ class ViewController: UIViewController {
             detailImageView.image = vrVideo.photo
             detailTitle.text = vrVideo.title
             detailDuration.text = vrVideo.duration
+        }
+        
+        if let vrPhoto = vrPhoto {
+            photoVRView.load(vrPhoto.photo, of: GVRPanoramaImageType.mono)
+            photoVRView.enableCardboardButton = true
+            photoVRView.enableFullscreenButton = true
+
         }
         // Do any additional setup after loading the view, typically from a nib.
     }

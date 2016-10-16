@@ -12,12 +12,12 @@ import AVFoundation
 
 class VR2DVideoController: UIViewController {
     
-   
     @IBOutlet weak var videoView: UIView!
     @IBOutlet weak var detailImageView: UIImageView!
     @IBOutlet weak var detailTitle: UILabel!
     @IBOutlet weak var detailDuration: UILabel!
     @IBOutlet weak var playButton: UIButton!
+   
     
     var vrVideo: VRVideo?
     
@@ -37,6 +37,13 @@ class VR2DVideoController: UIViewController {
             detailImageView.image = vrVideo.photo
             detailTitle.text = vrVideo.title
             detailDuration.text = vrVideo.duration
+            
+            av.view.frame = self.videoView.bounds
+            self.addChildViewController(av)
+            self.videoView.addSubview(av.view)
+            av.didMove(toParentViewController: self)
+            
+            
         }
     }
 
@@ -45,11 +52,8 @@ class VR2DVideoController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func playVideo(_ sender: AnyObject) {
-        self.present(av, animated: true) {
-            self.av.player!.play()
-        }
-    }
-    
 
 }
+
+
+

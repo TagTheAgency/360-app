@@ -115,8 +115,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OiH-dE-dIZ" customClass="GVRPanoramaView">
-                                <frame key="frameInset" minX="16" minY="183.5" width="343" height="300"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OiH-dE-dIZ" customClass="GVRPanoramaView">
                                 <color key="backgroundColor" red="0.92156862750000001" green="0.33333333329999998" blue="0.68235294120000001" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                         </subviews>
@@ -231,10 +230,10 @@
             </objects>
             <point key="canvasLocation" x="1314" y="-376"/>
         </scene>
-        <!--View Controller-->
+        <!--Vr Video View Controller-->
         <scene sceneID="Fqf-cV-BDj">
             <objects>
-                <viewController id="cOL-vL-3PB" customClass="ViewController" customModule="tagvr" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="cOL-vL-3PB" customClass="VrVideoViewController" customModule="tagvr" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="SEC-fE-0Ur"/>
                         <viewControllerLayoutGuide type="bottom" id="c9B-Db-zaV"/>
@@ -243,71 +242,36 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="KzY-qB-jdj">
-                                <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zdb-n0-ENn">
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="120" id="rov-HZ-BMQ"/>
-                                        </constraints>
-                                    </imageView>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="120" id="2X1-PL-exd"/>
-                                    <constraint firstItem="zdb-n0-ENn" firstAttribute="centerY" secondItem="KzY-qB-jdj" secondAttribute="centerY" id="KZQ-Nx-mVW"/>
-                                    <constraint firstItem="zdb-n0-ENn" firstAttribute="width" secondItem="KzY-qB-jdj" secondAttribute="width" id="dYw-b8-0SL"/>
-                                    <constraint firstItem="zdb-n0-ENn" firstAttribute="centerX" secondItem="KzY-qB-jdj" secondAttribute="centerX" id="yeS-R9-VpK"/>
-                                </constraints>
-                            </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="egG-ei-Qox">
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5ZG-aB-Dre" customClass="GVRVideoView">
-                                <color key="backgroundColor" red="0.92156862750000001" green="0.33333333329999998" blue="0.68235294120000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" priority="750" constant="213" id="aIp-Gb-a4O"/>
-                                </constraints>
-                            </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IkI-ia-h1S">
-                                <color key="backgroundColor" red="0.92156862750000001" green="0.33333333329999998" blue="0.68235294120000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="6EU-HZ-EjO"/>
-                                    <constraint firstAttribute="height" constant="40" id="NMi-kK-cUo"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <state key="normal" title="Play">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="VNe-AK-Cqh">
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="26"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5ZG-aB-Dre" customClass="GVRVideoView">
+                                <color key="backgroundColor" red="0.92156862750000001" green="0.33333333329999998" blue="0.68235294120000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="IkI-ia-h1S" firstAttribute="leading" secondItem="VNe-AK-Cqh" secondAttribute="leading" id="D5P-bD-2oQ"/>
-                            <constraint firstItem="KzY-qB-jdj" firstAttribute="top" secondItem="SEC-fE-0Ur" secondAttribute="bottom" id="Eja-nx-wOz"/>
-                            <constraint firstItem="KzY-qB-jdj" firstAttribute="width" secondItem="JpP-kF-1Xn" secondAttribute="width" id="FHY-g9-hk0"/>
-                            <constraint firstItem="KzY-qB-jdj" firstAttribute="centerX" secondItem="JpP-kF-1Xn" secondAttribute="centerX" id="iEe-SG-zwh"/>
+                            <constraint firstItem="c9B-Db-zaV" firstAttribute="top" secondItem="5ZG-aB-Dre" secondAttribute="bottom" constant="15" id="0Ba-f0-Rvv"/>
+                            <constraint firstItem="VNe-AK-Cqh" firstAttribute="top" secondItem="SEC-fE-0Ur" secondAttribute="bottom" constant="15" id="0Kl-fj-RTV"/>
+                            <constraint firstItem="5ZG-aB-Dre" firstAttribute="top" secondItem="egG-ei-Qox" secondAttribute="bottom" constant="15" id="Sis-id-q7h"/>
                             <constraint firstItem="egG-ei-Qox" firstAttribute="top" secondItem="VNe-AK-Cqh" secondAttribute="bottom" constant="15" id="iNm-zF-MB8"/>
                             <constraint firstAttribute="trailingMargin" secondItem="5ZG-aB-Dre" secondAttribute="trailing" id="jDl-mT-Nc3"/>
-                            <constraint firstItem="c9B-Db-zaV" firstAttribute="top" secondItem="IkI-ia-h1S" secondAttribute="bottom" constant="65" id="jk5-QD-Q3R"/>
                             <constraint firstItem="5ZG-aB-Dre" firstAttribute="leading" secondItem="VNe-AK-Cqh" secondAttribute="leading" id="kdd-u2-Knq"/>
-                            <constraint firstItem="IkI-ia-h1S" firstAttribute="top" secondItem="5ZG-aB-Dre" secondAttribute="bottom" constant="50" id="pu0-vG-MuH"/>
-                            <constraint firstItem="VNe-AK-Cqh" firstAttribute="top" secondItem="KzY-qB-jdj" secondAttribute="bottom" constant="35" id="uXy-HY-lQf"/>
                             <constraint firstAttribute="leadingMargin" secondItem="VNe-AK-Cqh" secondAttribute="leading" id="wZu-WY-iQh"/>
                             <constraint firstItem="egG-ei-Qox" firstAttribute="leading" secondItem="VNe-AK-Cqh" secondAttribute="leading" id="yT8-UJ-bSf"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="detailDuration" destination="egG-ei-Qox" id="pT1-8T-lTy"/>
-                        <outlet property="detailImageView" destination="zdb-n0-ENn" id="a9q-WR-Hqj"/>
-                        <outlet property="detailTitle" destination="VNe-AK-Cqh" id="4Nc-ua-z6a"/>
-                        <outlet property="videoVRView" destination="5ZG-aB-Dre" id="3ol-5h-gyp"/>
+                        <outlet property="durationLabel" destination="egG-ei-Qox" id="OLA-k2-aLM"/>
+                        <outlet property="titleLabel" destination="VNe-AK-Cqh" id="68X-4h-A2X"/>
+                        <outlet property="videoVRView" destination="5ZG-aB-Dre" id="TWc-K8-IsL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CHW-fR-ef6" userLabel="First Responder" sceneMemberID="firstResponder"/>

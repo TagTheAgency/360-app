@@ -1,5 +1,5 @@
 //
-//  PanoramaViewController.swift
+//  VrVideoViewController.swift
 //  tagvr
 //
 //  Created by Ira Ritchie Meek on 18/10/16.
@@ -8,21 +8,26 @@
 
 import UIKit
 
-class PanoramaViewController: UIViewController {
+class VrVideoViewController: UIViewController {
+    
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var durationLabel: UILabel!
+    @IBOutlet weak var videoVRView: GVRVideoView!
+    
+    var vrVideo: VRVideo?
 
-    @IBOutlet weak var photoVrView: GVRPanoramaView!
-    
-    var vrPhoto: VRPhoto?
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if let vrPhoto = vrPhoto {
-            photoVrView.load(vrPhoto.photo, of: GVRPanoramaImageType.mono)
-            photoVrView.enableCardboardButton = true
-            photoVrView.enableFullscreenButton = true
-            
+        if let vrVideo = vrVideo {
+            videoVRView.load(from: URL(string: vrVideo.video))
+            videoVRView.enableCardboardButton = true
+            videoVRView.enableFullscreenButton = true
+            titleLabel.text = vrVideo.title
+            durationLabel.text = vrVideo.duration
         }
+
+        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {

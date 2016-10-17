@@ -15,14 +15,21 @@ class ViewController: UIViewController {
     @IBOutlet weak var detailDuration: UILabel!
     @IBOutlet weak var videoVRView: GVRVideoView!
     @IBOutlet weak var photoVRView: GVRPanoramaView!
+    @IBOutlet weak var menuPanoView: GVRPanoramaView!
     
     
     var vrVideo: VRVideo?
     var vrPhoto: VRPhoto?
     
     override func viewDidLoad() {
+        
         super.viewDidLoad()
-
+        
+        DispatchQueue.main.async {
+            self.menuPanoView.load(UIImage(named: "tokyo360")!, of: GVRPanoramaImageType.mono)
+        }
+        
+        
         if let vrVideo = vrVideo {
             videoVRView.load(from: URL(string: vrVideo.video))
             videoVRView.enableCardboardButton = true
@@ -38,6 +45,8 @@ class ViewController: UIViewController {
             photoVRView.enableFullscreenButton = true
 
         }
+        
+
         // Do any additional setup after loading the view, typically from a nib.
     }
 

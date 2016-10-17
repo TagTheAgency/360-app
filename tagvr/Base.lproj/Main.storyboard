@@ -20,7 +20,7 @@
                                 <rect key="frame" x="0.0" y="92" width="375" height="120"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="uqP-3N-aq8" id="tCz-yu-bcs">
-                                    <frame key="frameInset" width="342" height="120"/>
+                                    <frame key="frameInset" width="342" height="119.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KA7-mj-UhI">
@@ -75,7 +75,7 @@
                                 <rect key="frame" x="0.0" y="92" width="375" height="120"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5Mp-KA-gyU" id="XTx-HF-FVY">
-                                    <frame key="frameInset" width="375" height="120"/>
+                                    <frame key="frameInset" width="375" height="119.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ggg-Ne-9d0"/>
@@ -103,10 +103,10 @@
             </objects>
             <point key="canvasLocation" x="1313" y="1082"/>
         </scene>
-        <!--View Controller-->
+        <!--Panorama View Controller-->
         <scene sceneID="jLg-Ey-wwm">
             <objects>
-                <viewController id="3rJ-Ym-0YS" customClass="ViewController" customModule="tagvr" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="3rJ-Ym-0YS" customClass="PanoramaViewController" customModule="tagvr" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="v2g-I5-UoT"/>
                         <viewControllerLayoutGuide type="bottom" id="iyI-wX-k5J"/>
@@ -131,7 +131,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="photoVRView" destination="OiH-dE-dIZ" id="WPB-yL-ZiR"/>
+                        <outlet property="photoVrView" destination="OiH-dE-dIZ" id="dAk-gr-gny"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ah5-Ww-zQO" userLabel="First Responder" sceneMemberID="firstResponder"/>

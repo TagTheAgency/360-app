@@ -101,7 +101,7 @@ class VRPhotoTableViewController: UITableViewController {
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "ShowPhotoDetail" {
-            let VRPhotoDetailViewController = segue.destination as! ViewController
+            let VRPhotoDetailViewController = segue.destination as! PanoramaViewController
             
             if let selectedVRPhotoCell = sender as? VRPhotoTableViewCell {
                 let indexPath = tableView.indexPath(for: selectedVRPhotoCell)!

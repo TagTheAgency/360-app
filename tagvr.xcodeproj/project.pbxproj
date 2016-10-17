@@ -19,6 +19,7 @@
 		525718BD1D6A73EA007D744C /* tagvrTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525718BC1D6A73EA007D744C /* tagvrTests.swift */; };
 		525718C81D6A73EA007D744C /* tagvrUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525718C71D6A73EA007D744C /* tagvrUITests.swift */; };
 		529E7E201DA5EAAC0039A4F5 /* Pods_tagvr.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21B303D3063A38CEF3746E6C /* Pods_tagvr.framework */; };
+		52AAFBF81DB57B6A00C0AC67 /* PanoramaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AAFBF71DB57B6A00C0AC67 /* PanoramaViewController.swift */; };
 		52C8A7F91DA1FB08001759F5 /* VRVideoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C8A7F81DA1FB08001759F5 /* VRVideoTableViewCell.swift */; };
 		52C8A7FB1DA1FEFA001759F5 /* VRVideoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C8A7FA1DA1FEFA001759F5 /* VRVideoTableViewController.swift */; };
 		52C8A8001DA30264001759F5 /* VRVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C8A7FF1DA30264001759F5 /* VRVideo.swift */; };
@@ -67,6 +68,7 @@
 		525718C31D6A73EA007D744C /* tagvrUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tagvrUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		525718C71D6A73EA007D744C /* tagvrUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tagvrUITests.swift; sourceTree = "<group>"; };
 		525718C91D6A73EA007D744C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52AAFBF71DB57B6A00C0AC67 /* PanoramaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PanoramaViewController.swift; sourceTree = "<group>"; };
 		52C8A7F81DA1FB08001759F5 /* VRVideoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VRVideoTableViewCell.swift; sourceTree = "<group>"; };
 		52C8A7FA1DA1FEFA001759F5 /* VRVideoTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VRVideoTableViewController.swift; sourceTree = "<group>"; };
 		52C8A7FF1DA30264001759F5 /* VRVideo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VRVideo.swift; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 				259234C91D950A3F0029BF3E /* VideoController.swift */,
 				525718A71D6A73EA007D744C /* AppDelegate.swift */,
 				525718A91D6A73EA007D744C /* ViewController.swift */,
+				52AAFBF71DB57B6A00C0AC67 /* PanoramaViewController.swift */,
 				525718AB1D6A73EA007D744C /* Main.storyboard */,
 				52CFBD751DADE0C700BF8760 /* VRPhotoTableViewCell.swift */,
 				52C8A7F81DA1FB08001759F5 /* VRVideoTableViewCell.swift */,
@@ -432,6 +435,7 @@
 				52CFBD7A1DB0416500BF8760 /* VRPhoto.swift in Sources */,
 				52CFBD781DB0353300BF8760 /* VRPhotoTableViewController.swift in Sources */,
 				52CFBD761DADE0C700BF8760 /* VRPhotoTableViewCell.swift in Sources */,
+				52AAFBF81DB57B6A00C0AC67 /* PanoramaViewController.swift in Sources */,
 				2549B79C1DAC5AA10033762C /* ContactPageController.swift in Sources */,
 				525718A81D6A73EA007D744C /* AppDelegate.swift in Sources */,
 				52C8A7FB1DA1FEFA001759F5 /* VRVideoTableViewController.swift in Sources */,

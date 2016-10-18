@@ -231,6 +231,40 @@
             </objects>
             <point key="canvasLocation" x="470" y="1082"/>
         </scene>
+        <!--Video View Controller-->
+        <scene sceneID="JY8-Ik-cHe">
+            <objects>
+                <viewController id="ejU-6J-48y" customClass="_DVideoViewController" customModule="tagvr" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0uM-c0-wtl"/>
+                        <viewControllerLayoutGuide type="bottom" id="V3g-sj-KLa"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zqL-tU-ume">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="03w-Zr-Cm0">
+                                <color key="backgroundColor" red="0.92156862750000001" green="0.33333333329999998" blue="0.68235294120000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="240" id="9he-9X-1GL"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="03w-Zr-Cm0" firstAttribute="centerX" secondItem="zqL-tU-ume" secondAttribute="centerX" id="AfH-uC-Ndw"/>
+                            <constraint firstItem="03w-Zr-Cm0" firstAttribute="centerY" secondItem="zqL-tU-ume" secondAttribute="centerY" id="HSy-te-VnM"/>
+                            <constraint firstItem="03w-Zr-Cm0" firstAttribute="width" secondItem="zqL-tU-ume" secondAttribute="width" id="O8m-HS-Ce0"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="videoView" destination="03w-Zr-Cm0" id="91G-3x-vHW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NIM-NJ-Fi3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2060" y="-340.47976011994007"/>
+        </scene>
         <!--VRStudio-->
         <scene sceneID="Fqf-cV-BDj">
             <objects>
@@ -286,7 +320,7 @@
                 <navigationController title="TagVR" automaticallyAdjustsScrollViewInsets="NO" id="xbA-zw-4Hg" sceneMemberID="viewController">
                     <toolbarItems/>
                     <nil key="simulatedBottomBarMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="q3e-fL-GBx">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" barStyle="black" id="q3e-fL-GBx">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.92156862750000001" green="0.33333333329999998" blue="0.68235294120000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -328,6 +362,9 @@
                                 <state key="normal" title="Videos">
                                     <color key="titleColor" red="0.92156862750000001" green="0.33333333329999998" blue="0.68235294120000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="ejU-6J-48y" kind="show" id="OY3-iR-Vpt"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Tb-Uh-XGX">
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>

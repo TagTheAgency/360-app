@@ -11,23 +11,20 @@
         <scene sceneID="JWD-tV-2VE">
             <objects>
                 <tableViewController id="SVT-bq-dSf" customClass="VRVideoTableViewController" customModule="tagvr" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="120" sectionHeaderHeight="28" sectionFooterHeight="28" id="oll-9w-la4">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="240" sectionHeaderHeight="28" sectionFooterHeight="28" id="oll-9w-la4">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="VRVideoTableViewCell" rowHeight="120" id="uqP-3N-aq8" customClass="VRVideoTableViewCell" customModule="tagvr" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="92" width="375" height="120"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="VRVideoTableViewCell" rowHeight="240" id="uqP-3N-aq8" customClass="VRVideoTableViewCell" customModule="tagvr" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="92" width="375" height="240"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="uqP-3N-aq8" id="tCz-yu-bcs">
-                                    <frame key="frameInset" width="342" height="119.5"/>
+                                    <frame key="frameInset" width="342" height="239"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KA7-mj-UhI">
-                                            <frame key="frameInset" minX="-7" minY="-20" width="421" height="139"/>
-                                        </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uTI-CR-Cv8">
-                                            <frame key="frameInset" minX="169" minY="49" width="42" height="21"/>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KA7-mj-UhI"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uTI-CR-Cv8">
                                             <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="28"/>
                                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
@@ -62,31 +59,33 @@
             </objects>
             <point key="canvasLocation" x="1314.4927536231885" y="336.68478260869568"/>
         </scene>
-        <!--Photo Table View Controller-->
+        <!--360° Photos-->
         <scene sceneID="9tx-Bo-GAH">
             <objects>
                 <tableViewController id="Uvt-eQ-aSc" customClass="VRPhotoTableViewController" customModule="tagvr" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="120" sectionHeaderHeight="28" sectionFooterHeight="28" id="7KK-bg-FHH">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="240" sectionHeaderHeight="28" sectionFooterHeight="28" id="7KK-bg-FHH">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="VRPhotoTableViewCell" rowHeight="120" id="5Mp-KA-gyU" customClass="VRPhotoTableViewCell" customModule="tagvr" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="92" width="375" height="120"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="VRPhotoTableViewCell" rowHeight="240" id="5Mp-KA-gyU" customClass="VRPhotoTableViewCell" customModule="tagvr" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="92" width="375" height="240"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5Mp-KA-gyU" id="XTx-HF-FVY">
-                                    <frame key="frameInset" width="375" height="119.5"/>
+                                    <frame key="frameInset" width="342" height="239"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ggg-Ne-9d0"/>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="Ggg-Ne-9d0" firstAttribute="centerY" secondItem="XTx-HF-FVY" secondAttribute="centerY" id="Aa2-F4-yI8"/>
-                                        <constraint firstItem="Ggg-Ne-9d0" firstAttribute="width" secondItem="XTx-HF-FVY" secondAttribute="width" id="XqO-H4-nTv"/>
-                                        <constraint firstItem="Ggg-Ne-9d0" firstAttribute="centerX" secondItem="XTx-HF-FVY" secondAttribute="centerX" id="mtr-wa-KUu"/>
                                         <constraint firstItem="Ggg-Ne-9d0" firstAttribute="height" secondItem="XTx-HF-FVY" secondAttribute="height" id="xcQ-LC-AHJ"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <constraints>
+                                    <constraint firstItem="Ggg-Ne-9d0" firstAttribute="centerY" secondItem="5Mp-KA-gyU" secondAttribute="centerY" id="3PN-fq-K8P"/>
+                                    <constraint firstItem="Ggg-Ne-9d0" firstAttribute="width" secondItem="5Mp-KA-gyU" secondAttribute="width" id="DGH-BD-kC0"/>
+                                    <constraint firstItem="Ggg-Ne-9d0" firstAttribute="centerX" secondItem="5Mp-KA-gyU" secondAttribute="centerX" id="Hyr-Ye-jG6"/>
+                                </constraints>
                                 <connections>
                                     <outlet property="photoView" destination="Ggg-Ne-9d0" id="T8F-dg-FWf"/>
                                     <segue destination="3rJ-Ym-0YS" kind="show" identifier="ShowPhotoDetail" id="TKP-8v-mz0"/>
@@ -98,12 +97,13 @@
                             <outlet property="delegate" destination="Uvt-eQ-aSc" id="Ea2-rZ-lUV"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="360° Photos" id="dHW-wE-PFS"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3X0-0S-166" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1313" y="1082"/>
         </scene>
-        <!--Panorama View Controller-->
+        <!--VRStudio-->
         <scene sceneID="jLg-Ey-wwm">
             <objects>
                 <viewController id="3rJ-Ym-0YS" customClass="PanoramaViewController" customModule="tagvr" customModuleProvider="target" sceneMemberID="viewController">
@@ -129,6 +129,7 @@
                             <constraint firstAttribute="trailing" secondItem="OiH-dE-dIZ" secondAttribute="trailing" id="wAP-6Z-pYc"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="VRStudio" id="VDp-6T-uLM"/>
                     <connections>
                         <outlet property="photoVrView" destination="OiH-dE-dIZ" id="dAk-gr-gny"/>
                     </connections>
@@ -228,9 +229,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5YN-E8-gBM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1314" y="-376"/>
+            <point key="canvasLocation" x="470" y="1082"/>
         </scene>
-        <!--Vr Video View Controller-->
+        <!--VRStudio-->
         <scene sceneID="Fqf-cV-BDj">
             <objects>
                 <viewController id="cOL-vL-3PB" customClass="VrVideoViewController" customModule="tagvr" customModuleProvider="target" sceneMemberID="viewController">
@@ -268,6 +269,7 @@
                             <constraint firstItem="egG-ei-Qox" firstAttribute="leading" secondItem="VNe-AK-Cqh" secondAttribute="leading" id="yT8-UJ-bSf"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="VRStudio" id="gZW-4w-ROO"/>
                     <connections>
                         <outlet property="durationLabel" destination="egG-ei-Qox" id="OLA-k2-aLM"/>
                         <outlet property="titleLabel" destination="VNe-AK-Cqh" id="68X-4h-A2X"/>
@@ -284,7 +286,7 @@
                 <navigationController title="TagVR" automaticallyAdjustsScrollViewInsets="NO" id="xbA-zw-4Hg" sceneMemberID="viewController">
                     <toolbarItems/>
                     <nil key="simulatedBottomBarMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" barStyle="black" id="q3e-fL-GBx">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="q3e-fL-GBx">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.92156862750000001" green="0.33333333329999998" blue="0.68235294120000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -308,7 +310,7 @@
         <!--VRStudio-->
         <scene sceneID="Mu6-TY-ska">
             <objects>
-                <viewController title="VRStudio" id="zui-Y8-nuO" customClass="ViewController" customModule="tagvr" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="zui-Y8-nuO" customClass="ViewController" customModule="tagvr" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="wKg-2y-hbr"/>
                         <viewControllerLayoutGuide type="bottom" id="EOY-1h-G3i"/>
@@ -382,7 +384,7 @@
                             <constraint firstItem="dCj-lo-izW" firstAttribute="top" secondItem="wKg-2y-hbr" secondAttribute="bottom" id="yHL-D6-bTt"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="TagVr" id="ZBQ-8c-gVk"/>
+                    <navigationItem key="navigationItem" title="VRStudio" id="ZBQ-8c-gVk"/>
                     <connections>
                         <outlet property="menuPanoView" destination="dar-dK-if9" id="1YR-i0-FxO"/>
                     </connections>

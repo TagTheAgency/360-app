@@ -11,6 +11,7 @@ import UIKit
 class VRPhotoTableViewCell: UITableViewCell {
 
     @IBOutlet weak var photoView: UIImageView!
+    @IBOutlet weak var title: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()

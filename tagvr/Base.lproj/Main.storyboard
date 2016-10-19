@@ -76,9 +76,16 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ggg-Ne-9d0"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1H3-aY-8ku">
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="28"/>
+                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                     <constraints>
+                                        <constraint firstItem="1H3-aY-8ku" firstAttribute="centerY" secondItem="Ggg-Ne-9d0" secondAttribute="centerY" id="9dj-Z9-DbX"/>
                                         <constraint firstItem="Ggg-Ne-9d0" firstAttribute="height" secondItem="XTx-HF-FVY" secondAttribute="height" id="xcQ-LC-AHJ"/>
+                                        <constraint firstItem="1H3-aY-8ku" firstAttribute="centerX" secondItem="Ggg-Ne-9d0" secondAttribute="centerX" id="ywS-l8-pwS"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <constraints>
@@ -88,6 +95,7 @@
                                 </constraints>
                                 <connections>
                                     <outlet property="photoView" destination="Ggg-Ne-9d0" id="T8F-dg-FWf"/>
+                                    <outlet property="title" destination="1H3-aY-8ku" id="ujk-3W-6XM"/>
                                     <segue destination="3rJ-Ym-0YS" kind="show" identifier="ShowPhotoDetail" id="TKP-8v-mz0"/>
                                 </connections>
                             </tableViewCell>

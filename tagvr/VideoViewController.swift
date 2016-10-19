@@ -1,5 +1,5 @@
 //
-//  2DVideoViewController.swift
+//  VideoViewController.swift
 //  tagvr
 //
 //  Created by Ira Ritchie Meek on 18/10/16.
@@ -10,9 +10,11 @@ import UIKit
 import AVKit
 import AVFoundation
 
-class _DVideoViewController: UIViewController {
+class VideoViewController: UIViewController {
     
     @IBOutlet weak var videoView: UIView!
+    
+    var video: Video?
     
     var av      :AVPlayerViewController!
     var player  :AVPlayer!
@@ -30,8 +32,6 @@ class _DVideoViewController: UIViewController {
         self.videoView.addSubview(av.view)
         av.didMove(toParentViewController: self)
         
-
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {

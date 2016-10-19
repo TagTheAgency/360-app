@@ -234,7 +234,7 @@
         <!--Video View Controller-->
         <scene sceneID="JY8-Ik-cHe">
             <objects>
-                <viewController id="ejU-6J-48y" customClass="_DVideoViewController" customModule="tagvr" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ejU-6J-48y" customClass="VideoViewController" customModule="tagvr" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="0uM-c0-wtl"/>
                         <viewControllerLayoutGuide type="bottom" id="V3g-sj-KLa"/>
@@ -363,7 +363,7 @@
                                     <color key="titleColor" red="0.92156862750000001" green="0.33333333329999998" blue="0.68235294120000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="ejU-6J-48y" kind="show" id="OY3-iR-Vpt"/>
+                                    <segue destination="EAL-zc-yKo" kind="show" id="JaZ-41-cr7"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Tb-Uh-XGX">
@@ -429,6 +429,54 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Ll-ve-BKO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="469.60000000000002" y="335.98200899550227"/>
+        </scene>
+        <!--Videos-->
+        <scene sceneID="was-mA-Q4S">
+            <objects>
+                <tableViewController id="EAL-zc-yKo" customClass="VideoTableViewController" customModule="tagvr" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="240" sectionHeaderHeight="28" sectionFooterHeight="28" id="dih-BX-yMe">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="VideoTableViewCell" rowHeight="240" id="K6D-WX-sRN" customClass="VideoTableViewCell" customModule="tagvr" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="92" width="375" height="240"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="K6D-WX-sRN" id="P1G-Kq-feT">
+                                    <frame key="frameInset" width="342" height="239"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="n33-BL-uWv"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ove-Zm-9bL">
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="28"/>
+                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="ove-Zm-9bL" firstAttribute="centerX" secondItem="n33-BL-uWv" secondAttribute="centerX" id="Ubl-RR-dMr"/>
+                                        <constraint firstItem="ove-Zm-9bL" firstAttribute="centerY" secondItem="n33-BL-uWv" secondAttribute="centerY" id="d6W-rO-M8q"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <constraints>
+                                    <constraint firstItem="n33-BL-uWv" firstAttribute="width" secondItem="K6D-WX-sRN" secondAttribute="width" id="0fb-Ug-0kw"/>
+                                    <constraint firstItem="n33-BL-uWv" firstAttribute="centerX" secondItem="K6D-WX-sRN" secondAttribute="centerX" id="INA-Zn-lfW"/>
+                                    <constraint firstItem="n33-BL-uWv" firstAttribute="height" secondItem="K6D-WX-sRN" secondAttribute="height" id="he9-ui-jcQ"/>
+                                    <constraint firstItem="n33-BL-uWv" firstAttribute="centerY" secondItem="K6D-WX-sRN" secondAttribute="centerY" id="yGT-HS-sdf"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="backgroundImage" destination="n33-BL-uWv" id="Ta3-qw-xXH"/>
+                                    <outlet property="title" destination="ove-Zm-9bL" id="ds0-Cu-bKN"/>
+                                    <segue destination="ejU-6J-48y" kind="show" id="cY5-Yw-0DA"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Videos" id="5Be-ZF-rze"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gUo-MG-vWc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1313" y="-340"/>
         </scene>
     </scenes>
 </document>

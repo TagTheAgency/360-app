@@ -18,7 +18,7 @@ class ViewController: UIViewController {
         
         super.viewDidLoad()
         
-        self.menuPanoView.load(UIImage(named: "tokyo-360")!, of: GVRPanoramaImageType.mono)
+//        self.menuPanoView.load(UIImage(named: "tokyo-360")!, of: GVRPanoramaImageType.mono)
 
     }
 

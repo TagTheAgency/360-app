@@ -137,21 +137,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OiH-dE-dIZ" customClass="GVRPanoramaView"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sMC-P1-b7C" customClass="GVRPanoramaView">
+                                <frame key="frameInset" minY="72" width="375" height="595"/>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="OiH-dE-dIZ" firstAttribute="centerX" secondItem="FMo-AG-sh8" secondAttribute="centerX" id="PuP-Ff-X4g"/>
-                            <constraint firstItem="OiH-dE-dIZ" firstAttribute="leading" secondItem="FMo-AG-sh8" secondAttribute="leading" id="Wif-AF-PRY"/>
-                            <constraint firstItem="OiH-dE-dIZ" firstAttribute="width" secondItem="FMo-AG-sh8" secondAttribute="width" id="eem-9e-q2K"/>
-                            <constraint firstItem="OiH-dE-dIZ" firstAttribute="centerY" secondItem="FMo-AG-sh8" secondAttribute="centerY" id="ji1-Wv-Mao"/>
-                            <constraint firstItem="OiH-dE-dIZ" firstAttribute="height" secondItem="FMo-AG-sh8" secondAttribute="height" id="uHx-DZ-5rF"/>
-                            <constraint firstAttribute="trailing" secondItem="OiH-dE-dIZ" secondAttribute="trailing" id="wAP-6Z-pYc"/>
+                            <constraint firstItem="sMC-P1-b7C" firstAttribute="height" secondItem="FMo-AG-sh8" secondAttribute="height" id="cPj-Xz-GuI"/>
+                            <constraint firstItem="sMC-P1-b7C" firstAttribute="centerY" secondItem="FMo-AG-sh8" secondAttribute="centerY" id="jNO-cN-Yps"/>
+                            <constraint firstItem="sMC-P1-b7C" firstAttribute="width" secondItem="FMo-AG-sh8" secondAttribute="width" id="kId-m6-GJA"/>
+                            <constraint firstItem="sMC-P1-b7C" firstAttribute="centerX" secondItem="FMo-AG-sh8" secondAttribute="centerX" id="o9C-oI-Do1"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="VRStudio" id="VDp-6T-uLM"/>
                     <connections>
-                        <outlet property="photoVrView" destination="OiH-dE-dIZ" id="dAk-gr-gny"/>
+                        <outlet property="photoVrView" destination="sMC-P1-b7C" id="RaN-9t-9r5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ah5-Ww-zQO" userLabel="First Responder" sceneMemberID="firstResponder"/>

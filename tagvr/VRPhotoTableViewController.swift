@@ -13,13 +13,21 @@ class VRPhotoTableViewController: UITableViewController {
     var vrPhotos = [VRPhoto]()
     
     func loadSamplePhotos() {
-        let photo1 = VRPhoto(photo: UIImage(named: "view-360")!, title: "Soaring with Orcas")!
+        let photo1 = VRPhoto(photo: UIImage(named: "beach-360")!, title: "Beach")!
         
-        let photo2 = VRPhoto(photo: UIImage(named: "tree-360")!, title: "Road Trip New Zealand")!
+        let photo2 = VRPhoto(photo: UIImage(named: "park-360")!, title: "Park")!
         
-        let photo3 = VRPhoto(photo: UIImage(named: "view-360")!, title: "Aventador Test")!
+        let photo3 = VRPhoto(photo: UIImage(named: "cave-360")!, title: "Cave")!
         
-        vrPhotos += [photo1, photo2, photo3]
+        let photo4 = VRPhoto(photo: UIImage(named: "oriental_parade-360")!, title: "Oriental Parade")!
+        
+        let photo5 = VRPhoto(photo: UIImage(named: "pier-360")!, title: "Pier")!
+        
+        let photo6 = VRPhoto(photo: UIImage(named: "tokyo-360")!, title: "Tokyo")!
+        
+        let photo7 = VRPhoto(photo: UIImage(named: "cafe-360")!, title: "Cafe")!
+        
+        vrPhotos += [photo1, photo2, photo3, photo4, photo5, photo6, photo7]
         
     }
 
@@ -59,6 +67,7 @@ class VRPhotoTableViewController: UITableViewController {
         let vrPhoto = vrPhotos[indexPath.row]
         
         cell.photoView.image = vrPhoto.photo
+        cell.title.text = vrPhoto.title
 
         return cell
     }

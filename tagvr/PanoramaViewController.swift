@@ -17,14 +17,19 @@ class PanoramaViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if let vrPhoto = vrPhoto {
-            photoVrView.load(vrPhoto.photo, of: GVRPanoramaImageType.mono)
-            photoVrView.enableCardboardButton = true
-            photoVrView.enableFullscreenButton = true
-            
+        
+        DispatchQueue.main.async {
+            if let vrPhoto = self.vrPhoto {
+                self.photoVrView.load(vrPhoto.photo, of: GVRPanoramaImageType.mono)
+                self.photoVrView.enableCardboardButton = true
+                self.photoVrView.enableFullscreenButton = true
+                
+            }
         }
-    }
 
+    }
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

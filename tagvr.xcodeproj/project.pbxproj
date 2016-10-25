@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		2549B79C1DAC5AA10033762C /* ContactPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2549B79B1DAC5AA10033762C /* ContactPageController.swift */; };
 		2549B79E1DAC5F800033762C /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2549B79D1DAC5F800033762C /* MessageUI.framework */; };
-		259234CA1D950A3F0029BF3E /* VideoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259234C91D950A3F0029BF3E /* VideoController.swift */; };
-		259234D01D9510600029BF3E /* giraffe1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 259234CE1D9510600029BF3E /* giraffe1.mp4 */; };
 		525718A81D6A73EA007D744C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525718A71D6A73EA007D744C /* AppDelegate.swift */; };
 		525718AA1D6A73EA007D744C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525718A91D6A73EA007D744C /* ViewController.swift */; };
 		525718AD1D6A73EA007D744C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 525718AB1D6A73EA007D744C /* Main.storyboard */; };
@@ -55,8 +53,6 @@
 		21B303D3063A38CEF3746E6C /* Pods_tagvr.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tagvr.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2549B79B1DAC5AA10033762C /* ContactPageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactPageController.swift; sourceTree = "<group>"; };
 		2549B79D1DAC5F800033762C /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
-		259234C91D950A3F0029BF3E /* VideoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoController.swift; sourceTree = "<group>"; };
-		259234CE1D9510600029BF3E /* giraffe1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = giraffe1.mp4; sourceTree = "<group>"; };
 		3B82C5173E4FE5DE3FD1BD00 /* Pods_tagvrTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tagvrTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EF559CDA641EDD9DE04AB61 /* Pods-tagvr.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tagvr.release.xcconfig"; path = "Pods/Target Support Files/Pods-tagvr/Pods-tagvr.release.xcconfig"; sourceTree = "<group>"; };
 		52226C891DA6F1E2003C2AAD /* tagvr-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "tagvr-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -145,8 +141,6 @@
 			isa = PBXGroup;
 			children = (
 				52226C891DA6F1E2003C2AAD /* tagvr-Bridging-Header.h */,
-				259234CE1D9510600029BF3E /* giraffe1.mp4 */,
-				259234C91D950A3F0029BF3E /* VideoController.swift */,
 				525718A71D6A73EA007D744C /* AppDelegate.swift */,
 				525718A91D6A73EA007D744C /* ViewController.swift */,
 				52AAFBF91DB57FDD00C0AC67 /* VrVideoViewController.swift */,
@@ -324,7 +318,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				259234D01D9510600029BF3E /* giraffe1.mp4 in Resources */,
 				525718B21D6A73EA007D744C /* LaunchScreen.storyboard in Resources */,
 				525718AF1D6A73EA007D744C /* Assets.xcassets in Resources */,
 				525718AD1D6A73EA007D744C /* Main.storyboard in Resources */,
@@ -447,7 +440,6 @@
 			files = (
 				52AAFBFA1DB57FDD00C0AC67 /* VrVideoViewController.swift in Sources */,
 				525718AA1D6A73EA007D744C /* ViewController.swift in Sources */,
-				259234CA1D950A3F0029BF3E /* VideoController.swift in Sources */,
 				52E95A2F1DB6FCA6009A0FFF /* Video.swift in Sources */,
 				52CFBD7A1DB0416500BF8760 /* VRPhoto.swift in Sources */,
 				5294F2E11DB5CA01007D9849 /* VideoViewController.swift in Sources */,

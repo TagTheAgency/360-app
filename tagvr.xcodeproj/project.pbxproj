@@ -63,16 +63,16 @@
 		520FBCD51DBEEDF6006FAF6A /* Harriet Display Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Harriet Display Bold.otf"; path = "../../../../Downloads/Harriet Display Bold.otf"; sourceTree = "<group>"; };
 		520FBCD71DBEF9B4006FAF6A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../../.Trash/Assets.xcassets; sourceTree = "<group>"; };
 		52226C891DA6F1E2003C2AAD /* tagvr-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "tagvr-Bridging-Header.h"; sourceTree = "<group>"; };
-		525718A41D6A73EA007D744C /* VRStudio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VRStudio.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		525718A41D6A73EA007D744C /* tagvr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tagvr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		525718A71D6A73EA007D744C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		525718A91D6A73EA007D744C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		525718AC1D6A73EA007D744C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		525718B11D6A73EA007D744C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		525718B31D6A73EA007D744C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		525718B81D6A73EA007D744C /* VRStudioTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VRStudioTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		525718B81D6A73EA007D744C /* tagvrTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tagvrTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		525718BC1D6A73EA007D744C /* tagvrTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tagvrTests.swift; sourceTree = "<group>"; };
 		525718BE1D6A73EA007D744C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		525718C31D6A73EA007D744C /* VRStudioUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VRStudioUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		525718C31D6A73EA007D744C /* tagvrUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tagvrUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		525718C71D6A73EA007D744C /* tagvrUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tagvrUITests.swift; sourceTree = "<group>"; };
 		525718C91D6A73EA007D744C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5294F2E01DB5CA01007D9849 /* VideoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
@@ -136,9 +136,9 @@
 		525718A51D6A73EA007D744C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				525718A41D6A73EA007D744C /* VRStudio.app */,
-				525718B81D6A73EA007D744C /* VRStudioTests.xctest */,
-				525718C31D6A73EA007D744C /* VRStudioUITests.xctest */,
+				525718A41D6A73EA007D744C /* tagvr.app */,
+				525718B81D6A73EA007D744C /* tagvrTests.xctest */,
+				525718C31D6A73EA007D744C /* tagvrUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -216,9 +216,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		525718A31D6A73EA007D744C /* VRStudio */ = {
+		525718A31D6A73EA007D744C /* tagvr */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 525718CC1D6A73EA007D744C /* Build configuration list for PBXNativeTarget "VRStudio" */;
+			buildConfigurationList = 525718CC1D6A73EA007D744C /* Build configuration list for PBXNativeTarget "tagvr" */;
 			buildPhases = (
 				571EE91606DB830BC3FC94F6 /* [CP] Check Pods Manifest.lock */,
 				525718A01D6A73EA007D744C /* Sources */,
@@ -231,14 +231,14 @@
 			);
 			dependencies = (
 			);
-			name = VRStudio;
+			name = tagvr;
 			productName = tagvr;
-			productReference = 525718A41D6A73EA007D744C /* VRStudio.app */;
+			productReference = 525718A41D6A73EA007D744C /* tagvr.app */;
 			productType = "com.apple.product-type.application";
 		};
-		525718B71D6A73EA007D744C /* VRStudioTests */ = {
+		525718B71D6A73EA007D744C /* tagvrTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 525718CF1D6A73EA007D744C /* Build configuration list for PBXNativeTarget "VRStudioTests" */;
+			buildConfigurationList = 525718CF1D6A73EA007D744C /* Build configuration list for PBXNativeTarget "tagvrTests" */;
 			buildPhases = (
 				E87BAD92F99957EFABA460D4 /* [CP] Check Pods Manifest.lock */,
 				525718B41D6A73EA007D744C /* Sources */,
@@ -252,14 +252,14 @@
 			dependencies = (
 				525718BA1D6A73EA007D744C /* PBXTargetDependency */,
 			);
-			name = VRStudioTests;
+			name = tagvrTests;
 			productName = tagvrTests;
-			productReference = 525718B81D6A73EA007D744C /* VRStudioTests.xctest */;
+			productReference = 525718B81D6A73EA007D744C /* tagvrTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		525718C21D6A73EA007D744C /* VRStudioUITests */ = {
+		525718C21D6A73EA007D744C /* tagvrUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 525718D21D6A73EA007D744C /* Build configuration list for PBXNativeTarget "VRStudioUITests" */;
+			buildConfigurationList = 525718D21D6A73EA007D744C /* Build configuration list for PBXNativeTarget "tagvrUITests" */;
 			buildPhases = (
 				525718BF1D6A73EA007D744C /* Sources */,
 				525718C01D6A73EA007D744C /* Frameworks */,
@@ -270,9 +270,9 @@
 			dependencies = (
 				525718C51D6A73EA007D744C /* PBXTargetDependency */,
 			);
-			name = VRStudioUITests;
+			name = tagvrUITests;
 			productName = tagvrUITests;
-			productReference = 525718C31D6A73EA007D744C /* VRStudioUITests.xctest */;
+			productReference = 525718C31D6A73EA007D744C /* tagvrUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -302,7 +302,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 5257189F1D6A73EA007D744C /* Build configuration list for PBXProject "VRStudio" */;
+			buildConfigurationList = 5257189F1D6A73EA007D744C /* Build configuration list for PBXProject "tagvr" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -315,9 +315,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				525718A31D6A73EA007D744C /* VRStudio */,
-				525718B71D6A73EA007D744C /* VRStudioTests */,
-				525718C21D6A73EA007D744C /* VRStudioUITests */,
+				525718A31D6A73EA007D744C /* tagvr */,
+				525718B71D6A73EA007D744C /* tagvrTests */,
+				525718C21D6A73EA007D744C /* tagvrUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -489,12 +489,12 @@
 /* Begin PBXTargetDependency section */
 		525718BA1D6A73EA007D744C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 525718A31D6A73EA007D744C /* VRStudio */;
+			target = 525718A31D6A73EA007D744C /* tagvr */;
 			targetProxy = 525718B91D6A73EA007D744C /* PBXContainerItemProxy */;
 		};
 		525718C51D6A73EA007D744C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 525718A31D6A73EA007D744C /* VRStudio */;
+			target = 525718A31D6A73EA007D744C /* tagvr */;
 			targetProxy = 525718C41D6A73EA007D744C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -714,7 +714,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.tagtheagency.tagvrTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VRStudio.app/VRStudio";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/tagvr.app/tagvr";
 			};
 			name = Debug;
 		};
@@ -728,7 +728,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.tagtheagency.tagvrTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VRStudio.app/VRStudio";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/tagvr.app/tagvr";
 			};
 			name = Release;
 		};
@@ -759,7 +759,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5257189F1D6A73EA007D744C /* Build configuration list for PBXProject "VRStudio" */ = {
+		5257189F1D6A73EA007D744C /* Build configuration list for PBXProject "tagvr" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				525718CA1D6A73EA007D744C /* Debug */,
@@ -768,7 +768,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		525718CC1D6A73EA007D744C /* Build configuration list for PBXNativeTarget "VRStudio" */ = {
+		525718CC1D6A73EA007D744C /* Build configuration list for PBXNativeTarget "tagvr" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				525718CD1D6A73EA007D744C /* Debug */,
@@ -777,7 +777,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		525718CF1D6A73EA007D744C /* Build configuration list for PBXNativeTarget "VRStudioTests" */ = {
+		525718CF1D6A73EA007D744C /* Build configuration list for PBXNativeTarget "tagvrTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				525718D01D6A73EA007D744C /* Debug */,
@@ -786,7 +786,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		525718D21D6A73EA007D744C /* Build configuration list for PBXNativeTarget "VRStudioUITests" */ = {
+		525718D21D6A73EA007D744C /* Build configuration list for PBXNativeTarget "tagvrUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				525718D31D6A73EA007D744C /* Debug */,

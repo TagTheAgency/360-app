@@ -15,13 +15,22 @@ class ViewController: UIViewController {
     var vrVideo: VRVideo?
     
     override func viewDidLoad() {
-        
+        print("Load")
         super.viewDidLoad()
-        
-//        self.menuPanoView.load(UIImage(named: "tokyo-360")!, of: GVRPanoramaImageType.mono)
+//        self.menuPanoView.load(UIImage(named: "landing-page-360")!, of: GVRPanoramaImageType.mono)
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        self.menuPanoView.load(UIImage(named: "landing-page-360")!, of: GVRPanoramaImageType.mono)
 
     }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        self.menuPanoView.load(nil)
 
+    }
+    
+        
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

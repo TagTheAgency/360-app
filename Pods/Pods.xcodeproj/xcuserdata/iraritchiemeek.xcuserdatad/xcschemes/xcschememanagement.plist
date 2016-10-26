@@ -4,12 +4,12 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Pods-tagvr.xcscheme</key>
+		<key>Pods-VRStudio.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-tagvrTests.xcscheme</key>
+		<key>Pods-VRStudioTests.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>

@@ -18,7 +18,9 @@ class VrVideoViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
         if let vrVideo = vrVideo {
             videoVRView.load(from: URL(string: vrVideo.video))
             videoVRView.enableCardboardButton = true
@@ -26,8 +28,10 @@ class VrVideoViewController: UIViewController {
             titleLabel.text = vrVideo.title
             durationLabel.text = vrVideo.duration
         }
-
-        // Do any additional setup after loading the view.
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        self.videoVRView.load(from: nil)
     }
 
     override func didReceiveMemoryWarning() {

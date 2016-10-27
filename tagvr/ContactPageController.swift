@@ -37,8 +37,9 @@ class ContactPageController: UIViewController, MFMailComposeViewControllerDelega
         if (MFMailComposeViewController.canSendMail()) {
             mc.mailComposeDelegate = self
             mc.setToRecipients(toRecipients)
-            mc.setSubject(contactName.text!)
-            mc.setMessageBody("Name: \(contactName.text!) \n\nEmail: \(contactEmail.text!) \n\nMessage: \(contactMessage.text!)", isHTML: false)
+            mc.setSubject("VR inquiry from \(contactName.text!)")
+            mc.setMessageBody("\(contactMessage.text!)\n----------\nName: \(contactName.text!) \nEmail: \(contactEmail.text!)", isHTML: false)
+//            mc.setMessageBody("Name: \(contactName.text!) \n\nEmail: \(contactEmail.text!) \n\nMessage: \(contactMessage.text!)", isHTML: false)
             self.present(mc, animated: true, completion: nil)
         }
     }

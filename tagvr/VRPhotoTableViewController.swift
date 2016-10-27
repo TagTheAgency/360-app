@@ -23,11 +23,32 @@ class VRPhotoTableViewController: UITableViewController {
         
         let photo5 = VRPhoto(photo: UIImage(named: "pier-360")!, title: "Pier")!
         
-        let photo6 = VRPhoto(photo: UIImage(named: "tokyo-360")!, title: "Tokyo")!
+        let photo6 = VRPhoto(photo: UIImage(named: "cafe-360")!, title: "Cafe")!
         
-        let photo7 = VRPhoto(photo: UIImage(named: "cafe-360")!, title: "Cafe")!
+        let photo7 = VRPhoto(photo: UIImage(named: "winter-road-360")!, title: "Winter Road")!
         
-        vrPhotos += [photo1, photo2, photo3, photo4, photo5, photo6, photo7]
+        let photo8 = VRPhoto(photo: UIImage(named: "winter-forest-360")!, title: "Winter Forest")!
+        
+        let photo9 = VRPhoto(photo: UIImage(named: "cave-waterfall-360")!, title: "Cave Waterfall")!
+        
+        let photo10 = VRPhoto(photo: UIImage(named: "night-forest-360")!, title: "Night Forest")!
+        
+        let photo11 = VRPhoto(photo: UIImage(named: "moon-360")!, title: "Moon")!
+        
+        let photo12 = VRPhoto(photo: UIImage(named: "castle-360")!, title: "Castle")!
+        
+        let photo13 = VRPhoto(photo: UIImage(named: "watchtower-360")!, title: "Watchtower")!
+        
+        let photo14 = VRPhoto(photo: UIImage(named: "ocean-360")!, title: "Ocean View")!
+        
+        let photo15 = VRPhoto(photo: UIImage(named: "church-360")!, title: "Church")!
+        
+        let photo16 = VRPhoto(photo: UIImage(named: "on-the-river-360")!, title: "On the River")!
+        
+        let photo17 = VRPhoto(photo: UIImage(named: "winter-city-360")!, title: "City in Winter")!
+
+
+        vrPhotos += [photo1, photo2, photo3, photo4, photo5, photo6, photo7, photo8, photo9, photo10, photo11, photo12, photo13, photo14, photo15, photo16, photo17]
         
     }
 

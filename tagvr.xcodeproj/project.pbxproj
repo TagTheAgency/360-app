@@ -12,7 +12,7 @@
 		259234CA1D950A3F0029BF3E /* VideoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259234C91D950A3F0029BF3E /* VideoController.swift */; };
 		259234D01D9510600029BF3E /* giraffe1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 259234CE1D9510600029BF3E /* giraffe1.mp4 */; };
 		520FBCD61DBEEDF6006FAF6A /* Harriet Display Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 520FBCD51DBEEDF6006FAF6A /* Harriet Display Bold.otf */; };
-		520FBCD81DBEF9B4006FAF6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 520FBCD71DBEF9B4006FAF6A /* Assets.xcassets */; };
+		520FBCDA1DC0601B006FAF6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 520FBCD91DC0601B006FAF6A /* Assets.xcassets */; };
 		525718A81D6A73EA007D744C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525718A71D6A73EA007D744C /* AppDelegate.swift */; };
 		525718AA1D6A73EA007D744C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525718A91D6A73EA007D744C /* ViewController.swift */; };
 		525718AD1D6A73EA007D744C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 525718AB1D6A73EA007D744C /* Main.storyboard */; };
@@ -61,7 +61,7 @@
 		3B82C5173E4FE5DE3FD1BD00 /* Pods_tagvrTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tagvrTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EF559CDA641EDD9DE04AB61 /* Pods-tagvr.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tagvr.release.xcconfig"; path = "Pods/Target Support Files/Pods-tagvr/Pods-tagvr.release.xcconfig"; sourceTree = "<group>"; };
 		520FBCD51DBEEDF6006FAF6A /* Harriet Display Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Harriet Display Bold.otf"; path = "../../../../Downloads/Harriet Display Bold.otf"; sourceTree = "<group>"; };
-		520FBCD71DBEF9B4006FAF6A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../../.Trash/Assets.xcassets; sourceTree = "<group>"; };
+		520FBCD91DC0601B006FAF6A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = SOURCE_ROOT; };
 		52226C891DA6F1E2003C2AAD /* tagvr-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "tagvr-Bridging-Header.h"; sourceTree = "<group>"; };
 		525718A41D6A73EA007D744C /* tagvr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tagvr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		525718A71D6A73EA007D744C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -146,7 +146,7 @@
 		525718A61D6A73EA007D744C /* tagvr */ = {
 			isa = PBXGroup;
 			children = (
-				520FBCD71DBEF9B4006FAF6A /* Assets.xcassets */,
+				520FBCD91DC0601B006FAF6A /* Assets.xcassets */,
 				520FBCD51DBEEDF6006FAF6A /* Harriet Display Bold.otf */,
 				52226C891DA6F1E2003C2AAD /* tagvr-Bridging-Header.h */,
 				259234CE1D9510600029BF3E /* giraffe1.mp4 */,
@@ -331,7 +331,7 @@
 				520FBCD61DBEEDF6006FAF6A /* Harriet Display Bold.otf in Resources */,
 				525718B21D6A73EA007D744C /* LaunchScreen.storyboard in Resources */,
 				525718AD1D6A73EA007D744C /* Main.storyboard in Resources */,
-				520FBCD81DBEF9B4006FAF6A /* Assets.xcassets in Resources */,
+				520FBCDA1DC0601B006FAF6A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

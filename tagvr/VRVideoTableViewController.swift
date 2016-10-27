@@ -11,6 +11,7 @@ import UIKit
 class VRVideoTableViewController: UITableViewController {
     
     var vrVideos = [VRVideo]()
+    var imageCache = NSMutableDictionary()
     
     func loadSampleVideos() {
         let photo1 = UIImage(named: "image1")!

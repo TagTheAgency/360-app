@@ -13,18 +13,21 @@ class PanoramaViewController: UIViewController {
     @IBOutlet weak var photoVrView: GVRPanoramaView!
     
     var vrPhoto: VRPhoto?
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        if let vrPhoto = vrPhoto {
-            photoVrView.load(vrPhoto.photo, of: GVRPanoramaImageType.mono)
-            photoVrView.enableCardboardButton = true
-            photoVrView.enableFullscreenButton = true
-            
-        }
+    
+            self.photoVrView.load(self.vrPhoto?.photo, of: GVRPanoramaImageType.mono)
+            self.photoVrView.enableCardboardButton = true
+            self.photoVrView.enableFullscreenButton = true
+//            if let vrPhoto = self.vrPhoto {
+
+                
+//            }
     }
     
     override func viewDidDisappear(_ animated: Bool) {

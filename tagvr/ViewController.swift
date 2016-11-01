@@ -11,12 +11,13 @@ import UIKit
 class ViewController: UIViewController {
     
     @IBOutlet weak var menuPanoView: GVRPanoramaView!
-    
+        
     var vrVideo: VRVideo?
     
     override func viewDidLoad() {
-        print("Load")
         super.viewDidLoad()
+        
+        
 //        self.menuPanoView.load(UIImage(named: "landing-page-360")!, of: GVRPanoramaImageType.mono)
     }
     

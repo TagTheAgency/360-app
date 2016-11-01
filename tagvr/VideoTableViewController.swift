@@ -15,9 +15,8 @@ class VideoTableViewController: UITableViewController {
     func loadSampleVideos() {
         
         let photo1 = UIImage(named: "image1")!
-        let video1 = Video(photo: photo1, title: "Bunny Trailer", duration: "1:00", video: "https://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4")!
-
-        videos += [video1]
+        let video1 = Video(photo: photo1, title: "Bunny Trailer", duration: "1:00", video: "http://www.tagtheagency.com/TAG%202016%20Showreel%20(1).mp4")!
+        videos += []
         
     }
 
@@ -107,14 +106,16 @@ class VideoTableViewController: UITableViewController {
     }
     */
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+         if segue.identifier == "ShowVideoDetail" {
+             let VideoDetailViewController = segue.destination as! VideoViewController
+             
+             if let selectedVideoCell = sender as? VideoTableViewCell {
+                 let indexPath = tableView.indexPath(for: selectedVideoCell)!
+                 let selectedVideo = videos[indexPath.row]
+                 VideoDetailViewController.video = selectedVideo
+             }
+         }
     }
-    */
 
 }

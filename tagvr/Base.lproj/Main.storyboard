@@ -7,6 +7,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
+        <array key="Futura (Light).ttf">
+            <string>FuturaLight</string>
+        </array>
         <array key="Harriet Display Bold.otf">
             <string>HarrietDisplay-Bold</string>
         </array>
@@ -34,7 +37,7 @@
                                             <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         </view>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uTI-CR-Cv8">
-                                            <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="28"/>
+                                            <fontDescription key="fontDescription" name="FuturaLight" family="Futura (Light)" pointSize="28"/>
                                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -57,7 +60,7 @@
                                 <connections>
                                     <outlet property="coverImageView" destination="KA7-mj-UhI" id="BqG-MM-OeI"/>
                                     <outlet property="coverTitle" destination="uTI-CR-Cv8" id="xDL-4D-gJX"/>
-                                    <segue destination="cOL-vL-3PB" kind="show" identifier="ShowVideoDetail" id="ikJ-8k-ZNv"/>
+                                    <segue destination="cOL-vL-3PB" kind="show" identifier="ShowVRVideoDetail" id="ikJ-8k-ZNv"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -95,7 +98,7 @@
                                             <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         </view>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1H3-aY-8ku">
-                                            <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="28"/>
+                                            <fontDescription key="fontDescription" name="FuturaLight" family="Futura (Light)" pointSize="28"/>
                                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -378,12 +381,26 @@
                         <viewControllerLayoutGuide type="top" id="wKg-2y-hbr"/>
                         <viewControllerLayoutGuide type="bottom" id="EOY-1h-G3i"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="KrL-UH-J5L">
+                    <view key="view" opaque="NO" contentMode="scaleToFill" id="KrL-UH-J5L">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dar-dK-if9" customClass="GVRPanoramaView"/>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vgf-C5-hEk" userLabel="Videos">
+                            <view opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4kd-8m-qNt">
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Coming Soon" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ifg-uR-4Jw">
+                                        <fontDescription key="fontDescription" name="FuturaLight" family="Futura (Light)" pointSize="23"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="Ifg-uR-4Jw" firstAttribute="top" secondItem="4kd-8m-qNt" secondAttribute="top" constant="15" id="K5P-4O-uXV"/>
+                                    <constraint firstItem="Ifg-uR-4Jw" firstAttribute="leading" secondItem="4kd-8m-qNt" secondAttribute="leading" constant="15" id="MEb-vz-PeY"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" alpha="0.34999999999999998" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vgf-C5-hEk" userLabel="Videos">
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.20000000000000001" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="HarrietDisplay-Bold" family="Harriet Display" pointSize="35"/>
                                 <state key="normal" title="Videos"/>
@@ -399,7 +416,21 @@
                                     <segue destination="Uvt-eQ-aSc" kind="show" id="OAn-tN-8fo"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dCj-lo-izW">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r62-Ka-Yyu">
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Coming soon" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hHi-qU-FZh">
+                                        <fontDescription key="fontDescription" name="FuturaLight" family="Futura (Light)" pointSize="24"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="hHi-qU-FZh" firstAttribute="leading" secondItem="r62-Ka-Yyu" secondAttribute="leading" constant="15" id="D40-8S-Juk"/>
+                                    <constraint firstItem="hHi-qU-FZh" firstAttribute="top" secondItem="r62-Ka-Yyu" secondAttribute="top" constant="15" id="laR-4R-yeH"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" alpha="0.34999999999999998" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dCj-lo-izW">
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.20000000000000001" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="HarrietDisplay-Bold" family="Harriet Display" pointSize="35"/>
                                 <state key="normal" title="360° Videos"/>
@@ -420,19 +451,27 @@
                         <constraints>
                             <constraint firstItem="vgf-C5-hEk" firstAttribute="width" secondItem="KrL-UH-J5L" secondAttribute="width" id="0OO-CD-gMq"/>
                             <constraint firstItem="dCj-lo-izW" firstAttribute="height" secondItem="vgf-C5-hEk" secondAttribute="height" id="1UT-VC-ggh"/>
+                            <constraint firstItem="r62-Ka-Yyu" firstAttribute="height" secondItem="dCj-lo-izW" secondAttribute="height" id="1b4-kw-rNY"/>
                             <constraint firstItem="UyD-D9-JLv" firstAttribute="centerX" secondItem="KrL-UH-J5L" secondAttribute="centerX" id="1l6-14-DVl"/>
                             <constraint firstItem="UyD-D9-JLv" firstAttribute="top" secondItem="vgf-C5-hEk" secondAttribute="bottom" id="5mZ-ae-Aij"/>
+                            <constraint firstItem="4kd-8m-qNt" firstAttribute="centerX" secondItem="vgf-C5-hEk" secondAttribute="centerX" id="BzC-xQ-7da"/>
                             <constraint firstItem="dCj-lo-izW" firstAttribute="height" secondItem="UyD-D9-JLv" secondAttribute="height" id="CkE-R1-cET"/>
                             <constraint firstItem="dar-dK-if9" firstAttribute="centerY" secondItem="KrL-UH-J5L" secondAttribute="centerY" id="Gpg-L6-hfg"/>
                             <constraint firstItem="dar-dK-if9" firstAttribute="height" secondItem="KrL-UH-J5L" secondAttribute="height" id="I37-fc-ePG"/>
                             <constraint firstItem="0Tb-Uh-XGX" firstAttribute="width" secondItem="KrL-UH-J5L" secondAttribute="width" id="J7K-DY-tRj"/>
                             <constraint firstItem="dar-dK-if9" firstAttribute="centerX" secondItem="KrL-UH-J5L" secondAttribute="centerX" id="Mvu-Og-o0k"/>
+                            <constraint firstItem="4kd-8m-qNt" firstAttribute="centerY" secondItem="vgf-C5-hEk" secondAttribute="centerY" id="Nqo-R3-Sbe"/>
                             <constraint firstItem="0Tb-Uh-XGX" firstAttribute="top" secondItem="dCj-lo-izW" secondAttribute="bottom" id="Tp6-Gd-wiO"/>
+                            <constraint firstItem="r62-Ka-Yyu" firstAttribute="centerY" secondItem="dCj-lo-izW" secondAttribute="centerY" id="WdD-dr-hnL"/>
+                            <constraint firstItem="r62-Ka-Yyu" firstAttribute="centerX" secondItem="dCj-lo-izW" secondAttribute="centerX" id="ay8-o5-fVc"/>
                             <constraint firstItem="dCj-lo-izW" firstAttribute="width" secondItem="KrL-UH-J5L" secondAttribute="width" id="dpj-qK-JhK"/>
+                            <constraint firstItem="r62-Ka-Yyu" firstAttribute="width" secondItem="dCj-lo-izW" secondAttribute="width" id="eq4-3h-a5R"/>
                             <constraint firstItem="0Tb-Uh-XGX" firstAttribute="centerX" secondItem="KrL-UH-J5L" secondAttribute="centerX" id="fdL-YU-AyC"/>
                             <constraint firstItem="dar-dK-if9" firstAttribute="width" secondItem="KrL-UH-J5L" secondAttribute="width" id="g2d-LD-KyV"/>
                             <constraint firstItem="dCj-lo-izW" firstAttribute="height" secondItem="0Tb-Uh-XGX" secondAttribute="height" id="gDR-qe-VLp"/>
                             <constraint firstItem="vgf-C5-hEk" firstAttribute="centerX" secondItem="KrL-UH-J5L" secondAttribute="centerX" id="iwj-ep-jMd"/>
+                            <constraint firstItem="4kd-8m-qNt" firstAttribute="width" secondItem="vgf-C5-hEk" secondAttribute="width" id="kM1-Ct-15H"/>
+                            <constraint firstItem="4kd-8m-qNt" firstAttribute="height" secondItem="vgf-C5-hEk" secondAttribute="height" id="kM8-Mq-XRf"/>
                             <constraint firstItem="UyD-D9-JLv" firstAttribute="width" secondItem="KrL-UH-J5L" secondAttribute="width" id="nFx-7r-RLx"/>
                             <constraint firstItem="vgf-C5-hEk" firstAttribute="top" secondItem="0Tb-Uh-XGX" secondAttribute="bottom" id="q7o-h6-igE"/>
                             <constraint firstItem="dCj-lo-izW" firstAttribute="centerX" secondItem="KrL-UH-J5L" secondAttribute="centerX" id="xuJ-oM-7eI"/>
@@ -471,7 +510,7 @@
                                             <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         </view>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ove-Zm-9bL">
-                                            <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="28"/>
+                                            <fontDescription key="fontDescription" name="FuturaLight" family="Futura (Light)" pointSize="28"/>
                                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -494,7 +533,7 @@
                                 <connections>
                                     <outlet property="backgroundImage" destination="n33-BL-uWv" id="Ta3-qw-xXH"/>
                                     <outlet property="title" destination="ove-Zm-9bL" id="ds0-Cu-bKN"/>
-                                    <segue destination="ejU-6J-48y" kind="show" id="cY5-Yw-0DA"/>
+                                    <segue destination="ejU-6J-48y" kind="show" identifier="ShowVideoDetail" id="cY5-Yw-0DA"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>

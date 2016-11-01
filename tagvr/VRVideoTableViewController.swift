@@ -23,7 +23,7 @@ class VRVideoTableViewController: UITableViewController {
         let photo3 = UIImage(named: "image3")!
         let video3 = VRVideo(photo: photo3, title: "Aventador Test", duration: "3:12", video: "https://s3.amazonaws.com/ray.wenderlich/elephant_safari.mp4")!
         
-        vrVideos += [video1, video2, video3]
+        vrVideos += []
 
     }
 
@@ -107,7 +107,7 @@ class VRVideoTableViewController: UITableViewController {
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "ShowVideoDetail" {
+        if segue.identifier == "ShowVRVideoDetail" {
             let VRVideoDetailViewController = segue.destination as! VrVideoViewController
             
             if let selectedVRVideoCell = sender as? VRVideoTableViewCell {

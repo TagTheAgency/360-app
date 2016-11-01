@@ -32,6 +32,7 @@
 		52E95A2F1DB6FCA6009A0FFF /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E95A2E1DB6FCA6009A0FFF /* Video.swift */; };
 		52E95A311DB706B2009A0FFF /* VideoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E95A301DB706B2009A0FFF /* VideoTableViewController.swift */; };
 		52E95A331DB706BE009A0FFF /* VideoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E95A321DB706BE009A0FFF /* VideoTableViewCell.swift */; };
+		52E9B0D51DC93364008B1B19 /* Futura (Light).ttf in Resources */ = {isa = PBXBuildFile; fileRef = 52E9B0D41DC93364008B1B19 /* Futura (Light).ttf */; };
 		82F8FD60D265234ED1E05542 /* Pods_tagvrTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B82C5173E4FE5DE3FD1BD00 /* Pods_tagvrTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -88,6 +89,7 @@
 		52E95A2E1DB6FCA6009A0FFF /* Video.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
 		52E95A301DB706B2009A0FFF /* VideoTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoTableViewController.swift; sourceTree = "<group>"; };
 		52E95A321DB706BE009A0FFF /* VideoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoTableViewCell.swift; sourceTree = "<group>"; };
+		52E9B0D41DC93364008B1B19 /* Futura (Light).ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Futura (Light).ttf"; sourceTree = "<group>"; };
 		6E590796BD967908E2AF6EC6 /* Pods-tagvrTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tagvrTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-tagvrTests/Pods-tagvrTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B58D895384E20CB1438AA39C /* Pods-tagvrTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tagvrTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-tagvrTests/Pods-tagvrTests.release.xcconfig"; sourceTree = "<group>"; };
 		EE33F603C793BA84E9F287DF /* Pods-tagvr.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tagvr.debug.xcconfig"; path = "Pods/Target Support Files/Pods-tagvr/Pods-tagvr.debug.xcconfig"; sourceTree = "<group>"; };
@@ -148,6 +150,7 @@
 			children = (
 				520FBCD91DC0601B006FAF6A /* Assets.xcassets */,
 				520FBCD51DBEEDF6006FAF6A /* Harriet Display Bold.otf */,
+				52E9B0D41DC93364008B1B19 /* Futura (Light).ttf */,
 				52226C891DA6F1E2003C2AAD /* tagvr-Bridging-Header.h */,
 				259234CE1D9510600029BF3E /* giraffe1.mp4 */,
 				259234C91D950A3F0029BF3E /* VideoController.swift */,
@@ -331,6 +334,7 @@
 				520FBCD61DBEEDF6006FAF6A /* Harriet Display Bold.otf in Resources */,
 				525718B21D6A73EA007D744C /* LaunchScreen.storyboard in Resources */,
 				525718AD1D6A73EA007D744C /* Main.storyboard in Resources */,
+				52E9B0D51DC93364008B1B19 /* Futura (Light).ttf in Resources */,
 				520FBCDA1DC0601B006FAF6A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -647,7 +651,7 @@
 					"-framework",
 					"\"QuartzCore\"",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.tagtheagency.tagvr;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tagtheagency.vrstudio;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "tagvr/tagvr-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
@@ -697,7 +701,7 @@
 					"-framework",
 					"\"QuartzCore\"",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.tagtheagency.tagvr;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tagtheagency.vrstudio;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "tagvr/tagvr-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;

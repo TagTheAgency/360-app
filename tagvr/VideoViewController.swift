@@ -22,7 +22,7 @@ class VideoViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let videoURL = NSURL(string: "https://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4")
+        let videoURL = NSURL(string: (video?.video)!)
         player = AVPlayer(url: videoURL! as URL)
         av = AVPlayerViewController()
         av.player = player

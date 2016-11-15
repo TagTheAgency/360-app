@@ -16,6 +16,9 @@ class VideoTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        
+        backgroundImage.layer.cornerRadius = 10.0
+        backgroundImage.clipsToBounds = true
         // Initialization code
     }
 

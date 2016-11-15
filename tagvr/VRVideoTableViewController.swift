@@ -64,6 +64,7 @@ class VRVideoTableViewController: UITableViewController {
 
         cell.coverImageView.image = vrVideo.photo
         cell.coverTitle.text = vrVideo.title
+        cell.backgroundColor = .clear
         
         return cell
     }

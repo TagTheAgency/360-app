@@ -25,11 +25,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="sectionIndexBackgroundColor" red="0.92549019610000005" green="0.0" blue="0.54901960780000003" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="VRVideoTableViewCell" rowHeight="200" id="uqP-3N-aq8" customClass="VRVideoTableViewCell" customModule="tagvr" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="VRVideoTableViewCell" rowHeight="200" id="uqP-3N-aq8" customClass="VRVideoTableViewCell" customModule="tagvr" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="92" width="375" height="200"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="uqP-3N-aq8" id="tCz-yu-bcs">
-                                    <frame key="frameInset" width="342" height="199"/>
+                                    <frame key="frameInset" width="375" height="199"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KA7-mj-UhI"/>
@@ -43,12 +43,13 @@
                                         </label>
                                     </subviews>
                                     <constraints>
+                                        <constraint firstItem="uTI-CR-Cv8" firstAttribute="centerX" secondItem="gqx-JT-qg6" secondAttribute="centerX" id="58R-eB-qeS"/>
                                         <constraint firstAttribute="bottomMargin" secondItem="KA7-mj-UhI" secondAttribute="bottom" constant="20" id="BVE-EP-OQl"/>
-                                        <constraint firstItem="uTI-CR-Cv8" firstAttribute="top" secondItem="tCz-yu-bcs" secondAttribute="topMargin" constant="25" id="Ca1-xk-1Nm"/>
                                         <constraint firstItem="KA7-mj-UhI" firstAttribute="top" secondItem="tCz-yu-bcs" secondAttribute="topMargin" constant="20" id="XbV-1D-UEO"/>
                                         <constraint firstItem="gqx-JT-qg6" firstAttribute="width" secondItem="KA7-mj-UhI" secondAttribute="width" id="ZPj-2b-Mb6"/>
                                         <constraint firstItem="gqx-JT-qg6" firstAttribute="centerX" secondItem="KA7-mj-UhI" secondAttribute="centerX" id="avb-q6-al1"/>
                                         <constraint firstItem="gqx-JT-qg6" firstAttribute="height" secondItem="KA7-mj-UhI" secondAttribute="height" id="d28-m2-RRM"/>
+                                        <constraint firstItem="uTI-CR-Cv8" firstAttribute="centerY" secondItem="gqx-JT-qg6" secondAttribute="centerY" id="lPe-cI-We2"/>
                                         <constraint firstItem="KA7-mj-UhI" firstAttribute="leading" secondItem="tCz-yu-bcs" secondAttribute="leadingMargin" constant="20" id="oMd-vs-lYF"/>
                                         <constraint firstItem="gqx-JT-qg6" firstAttribute="centerY" secondItem="KA7-mj-UhI" secondAttribute="centerY" id="yri-Pk-0Ov"/>
                                     </constraints>
@@ -56,7 +57,6 @@
                                 <constraints>
                                     <constraint firstItem="KA7-mj-UhI" firstAttribute="centerX" secondItem="uqP-3N-aq8" secondAttribute="centerX" id="Sli-Cg-JJW"/>
                                     <constraint firstItem="KA7-mj-UhI" firstAttribute="centerY" secondItem="uqP-3N-aq8" secondAttribute="centerY" id="Tc0-kt-Y09"/>
-                                    <constraint firstItem="uTI-CR-Cv8" firstAttribute="leading" secondItem="uqP-3N-aq8" secondAttribute="leading" constant="15" id="X6t-gT-y61"/>
                                 </constraints>
                                 <connections>
                                     <outlet property="coverImageView" destination="KA7-mj-UhI" id="BqG-MM-OeI"/>
@@ -92,15 +92,15 @@
                                     <frame key="frameInset" width="375" height="200"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ggg-Ne-9d0">
+                                        <imageView userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ggg-Ne-9d0">
                                             <userDefinedRuntimeAttributes>
                                                 <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                                     <integer key="value" value="9"/>
                                                 </userDefinedRuntimeAttribute>
                                             </userDefinedRuntimeAttributes>
                                         </imageView>
-                                        <view alpha="0.65000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SO2-W1-D7t">
-                                            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <view alpha="0.34999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SO2-W1-D7t">
+                                            <color key="backgroundColor" red="0.2714922350495369" green="0.0" blue="0.27233573717948723" alpha="1" colorSpace="calibratedRGB"/>
                                             <userDefinedRuntimeAttributes>
                                                 <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                                     <integer key="value" value="9"/>
@@ -115,19 +115,19 @@
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="Ggg-Ne-9d0" firstAttribute="width" secondItem="SO2-W1-D7t" secondAttribute="width" id="B1y-61-nKe"/>
+                                        <constraint firstItem="1H3-aY-8ku" firstAttribute="centerX" secondItem="SO2-W1-D7t" secondAttribute="centerX" id="R16-3t-PLb"/>
+                                        <constraint firstItem="1H3-aY-8ku" firstAttribute="centerY" secondItem="SO2-W1-D7t" secondAttribute="centerY" id="RNT-Hj-lES"/>
                                         <constraint firstAttribute="bottomMargin" secondItem="Ggg-Ne-9d0" secondAttribute="bottom" constant="5" id="Yil-9j-sMQ"/>
                                         <constraint firstItem="SO2-W1-D7t" firstAttribute="centerX" secondItem="Ggg-Ne-9d0" secondAttribute="centerX" id="c6r-ep-hmb"/>
                                         <constraint firstItem="Ggg-Ne-9d0" firstAttribute="height" secondItem="SO2-W1-D7t" secondAttribute="height" id="dnb-UE-2Ue"/>
                                         <constraint firstItem="Ggg-Ne-9d0" firstAttribute="leading" secondItem="XTx-HF-FVY" secondAttribute="leadingMargin" constant="5" id="fuW-xf-XgB"/>
                                         <constraint firstItem="SO2-W1-D7t" firstAttribute="centerY" secondItem="Ggg-Ne-9d0" secondAttribute="centerY" id="lYg-4R-mcP"/>
                                         <constraint firstItem="Ggg-Ne-9d0" firstAttribute="top" secondItem="XTx-HF-FVY" secondAttribute="topMargin" constant="5" id="sf1-gQ-2CJ"/>
-                                        <constraint firstItem="1H3-aY-8ku" firstAttribute="top" secondItem="XTx-HF-FVY" secondAttribute="topMargin" constant="25" id="uZF-ho-cvr"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <constraints>
                                     <constraint firstItem="Ggg-Ne-9d0" firstAttribute="centerY" secondItem="5Mp-KA-gyU" secondAttribute="centerY" id="3PN-fq-K8P"/>
                                     <constraint firstItem="Ggg-Ne-9d0" firstAttribute="centerX" secondItem="5Mp-KA-gyU" secondAttribute="centerX" id="Hyr-Ye-jG6"/>
-                                    <constraint firstItem="1H3-aY-8ku" firstAttribute="leading" secondItem="5Mp-KA-gyU" secondAttribute="leading" constant="15" id="neh-9Q-J8y"/>
                                 </constraints>
                                 <connections>
                                     <outlet property="cellContent" destination="XTx-HF-FVY" id="Maf-XE-DFS"/>
@@ -418,21 +418,7 @@
                                     <segue destination="Uvt-eQ-aSc" kind="show" id="OAn-tN-8fo"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r62-Ka-Yyu">
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Coming soon" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hHi-qU-FZh">
-                                        <fontDescription key="fontDescription" name="FuturaLight" family="Futura (Light)" pointSize="24"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstItem="hHi-qU-FZh" firstAttribute="leading" secondItem="r62-Ka-Yyu" secondAttribute="leading" constant="15" id="D40-8S-Juk"/>
-                                    <constraint firstItem="hHi-qU-FZh" firstAttribute="top" secondItem="r62-Ka-Yyu" secondAttribute="top" constant="15" id="laR-4R-yeH"/>
-                                </constraints>
-                            </view>
-                            <button opaque="NO" alpha="0.34999999999999998" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dCj-lo-izW">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dCj-lo-izW">
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.20000000000000001" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="HarrietDisplay-Bold" family="Harriet Display" pointSize="35"/>
                                 <state key="normal" title="360° Videos"/>
@@ -453,7 +439,6 @@
                         <constraints>
                             <constraint firstItem="vgf-C5-hEk" firstAttribute="width" secondItem="KrL-UH-J5L" secondAttribute="width" id="0OO-CD-gMq"/>
                             <constraint firstItem="dCj-lo-izW" firstAttribute="height" secondItem="vgf-C5-hEk" secondAttribute="height" id="1UT-VC-ggh"/>
-                            <constraint firstItem="r62-Ka-Yyu" firstAttribute="height" secondItem="dCj-lo-izW" secondAttribute="height" id="1b4-kw-rNY"/>
                             <constraint firstItem="UyD-D9-JLv" firstAttribute="centerX" secondItem="KrL-UH-J5L" secondAttribute="centerX" id="1l6-14-DVl"/>
                             <constraint firstItem="UyD-D9-JLv" firstAttribute="top" secondItem="vgf-C5-hEk" secondAttribute="bottom" id="5mZ-ae-Aij"/>
                             <constraint firstItem="dCj-lo-izW" firstAttribute="height" secondItem="UyD-D9-JLv" secondAttribute="height" id="CkE-R1-cET"/>
@@ -462,10 +447,7 @@
                             <constraint firstItem="0Tb-Uh-XGX" firstAttribute="width" secondItem="KrL-UH-J5L" secondAttribute="width" id="J7K-DY-tRj"/>
                             <constraint firstItem="dar-dK-if9" firstAttribute="centerX" secondItem="KrL-UH-J5L" secondAttribute="centerX" id="Mvu-Og-o0k"/>
                             <constraint firstItem="0Tb-Uh-XGX" firstAttribute="top" secondItem="dCj-lo-izW" secondAttribute="bottom" id="Tp6-Gd-wiO"/>
-                            <constraint firstItem="r62-Ka-Yyu" firstAttribute="centerY" secondItem="dCj-lo-izW" secondAttribute="centerY" id="WdD-dr-hnL"/>
-                            <constraint firstItem="r62-Ka-Yyu" firstAttribute="centerX" secondItem="dCj-lo-izW" secondAttribute="centerX" id="ay8-o5-fVc"/>
                             <constraint firstItem="dCj-lo-izW" firstAttribute="width" secondItem="KrL-UH-J5L" secondAttribute="width" id="dpj-qK-JhK"/>
-                            <constraint firstItem="r62-Ka-Yyu" firstAttribute="width" secondItem="dCj-lo-izW" secondAttribute="width" id="eq4-3h-a5R"/>
                             <constraint firstItem="0Tb-Uh-XGX" firstAttribute="centerX" secondItem="KrL-UH-J5L" secondAttribute="centerX" id="fdL-YU-AyC"/>
                             <constraint firstItem="dar-dK-if9" firstAttribute="width" secondItem="KrL-UH-J5L" secondAttribute="width" id="g2d-LD-KyV"/>
                             <constraint firstItem="dCj-lo-izW" firstAttribute="height" secondItem="0Tb-Uh-XGX" secondAttribute="height" id="gDR-qe-VLp"/>
@@ -490,21 +472,21 @@
         <scene sceneID="was-mA-Q4S">
             <objects>
                 <tableViewController id="EAL-zc-yKo" customClass="VideoTableViewController" customModule="tagvr" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="200" sectionHeaderHeight="28" sectionFooterHeight="28" id="dih-BX-yMe">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="200" sectionHeaderHeight="28" sectionFooterHeight="28" id="dih-BX-yMe">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="sectionIndexBackgroundColor" red="0.92549019610000005" green="0.0" blue="0.54901960780000003" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="VideoTableViewCell" rowHeight="200" id="K6D-WX-sRN" customClass="VideoTableViewCell" customModule="tagvr" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="VideoTableViewCell" rowHeight="200" id="K6D-WX-sRN" customClass="VideoTableViewCell" customModule="tagvr" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="92" width="375" height="200"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="K6D-WX-sRN" id="P1G-Kq-feT">
-                                    <frame key="frameInset" width="342" height="199"/>
+                                    <frame key="frameInset" width="375" height="200"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="n33-BL-uWv"/>
-                                        <view alpha="0.34999999999999998" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gzk-68-MTV">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="n33-BL-uWv"/>
+                                        <view alpha="0.34999999999999998" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gzk-68-MTV">
                                             <frame key="frameInset" width="375" height="200"/>
                                             <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         </view>
@@ -515,16 +497,21 @@
                                         </label>
                                     </subviews>
                                     <constraints>
+                                        <constraint firstItem="Gzk-68-MTV" firstAttribute="width" secondItem="n33-BL-uWv" secondAttribute="width" id="17U-ec-bVK"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="ove-Zm-9bL" secondAttribute="trailing" constant="50" id="4NI-28-WWI"/>
                                         <constraint firstItem="Gzk-68-MTV" firstAttribute="centerY" secondItem="n33-BL-uWv" secondAttribute="centerY" id="JbR-hC-WPA"/>
                                         <constraint firstItem="ove-Zm-9bL" firstAttribute="centerY" secondItem="Gzk-68-MTV" secondAttribute="centerY" id="OSI-Fu-feJ"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="n33-BL-uWv" secondAttribute="bottom" constant="5" id="PSX-je-bND"/>
                                         <constraint firstItem="Gzk-68-MTV" firstAttribute="centerX" secondItem="n33-BL-uWv" secondAttribute="centerX" id="VYF-XD-dIr"/>
                                         <constraint firstItem="ove-Zm-9bL" firstAttribute="centerX" secondItem="Gzk-68-MTV" secondAttribute="centerX" id="WO4-tL-w0C"/>
+                                        <constraint firstItem="Gzk-68-MTV" firstAttribute="height" secondItem="n33-BL-uWv" secondAttribute="height" id="bMf-HX-a4m"/>
+                                        <constraint firstItem="ove-Zm-9bL" firstAttribute="leading" secondItem="P1G-Kq-feT" secondAttribute="leadingMargin" constant="50" id="ggO-70-X3U"/>
+                                        <constraint firstItem="n33-BL-uWv" firstAttribute="leading" secondItem="P1G-Kq-feT" secondAttribute="leadingMargin" constant="5" id="jSo-jd-iao"/>
+                                        <constraint firstItem="n33-BL-uWv" firstAttribute="top" secondItem="P1G-Kq-feT" secondAttribute="topMargin" constant="5" id="rkf-hi-rfB"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <constraints>
-                                    <constraint firstItem="n33-BL-uWv" firstAttribute="width" secondItem="K6D-WX-sRN" secondAttribute="width" id="0fb-Ug-0kw"/>
                                     <constraint firstItem="n33-BL-uWv" firstAttribute="centerX" secondItem="K6D-WX-sRN" secondAttribute="centerX" id="INA-Zn-lfW"/>
-                                    <constraint firstItem="n33-BL-uWv" firstAttribute="height" secondItem="K6D-WX-sRN" secondAttribute="height" id="he9-ui-jcQ"/>
                                     <constraint firstItem="n33-BL-uWv" firstAttribute="centerY" secondItem="K6D-WX-sRN" secondAttribute="centerY" id="yGT-HS-sdf"/>
                                 </constraints>
                                 <connections>

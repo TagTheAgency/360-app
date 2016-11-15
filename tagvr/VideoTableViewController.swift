@@ -29,6 +29,11 @@ class VideoTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let backgroundImage = UIImage(named: "space.jpg")
+        let imageView = UIImageView(image: backgroundImage)
+        self.tableView.backgroundView = imageView
+
 
         loadSampleVideos()
         // Uncomment the following line to preserve selection between presentations
@@ -64,7 +69,7 @@ class VideoTableViewController: UITableViewController {
         
         cell.backgroundImage.image = video.photo
         cell.title.text = video.title
-        
+        cell.backgroundColor = .clear
         return cell
     }
 

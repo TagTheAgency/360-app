@@ -11,6 +11,7 @@ import UIKit
 class VRPhotoTableViewController: UITableViewController {
     
     var vrPhotos = [VRPhoto]()
+
     
     func loadSamplePhotos() {
         let photo1 = VRPhoto(photo: UIImage(named: "beach-360")!, title: "Beach")!
@@ -56,6 +57,10 @@ class VRPhotoTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         loadSamplePhotos()
+        
+        let backgroundImage = UIImage(named: "space.jpg")
+        let imageView = UIImageView(image: backgroundImage)
+        self.tableView.backgroundView = imageView
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -89,7 +94,9 @@ class VRPhotoTableViewController: UITableViewController {
         
         cell.photoView.image = vrPhoto.photo
         cell.title.text = vrPhoto.title
-
+        cell.backgroundColor = .clear
+        
+        
         return cell
     }
 

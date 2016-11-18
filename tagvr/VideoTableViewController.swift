@@ -52,10 +52,11 @@ class VideoTableViewController: UITableViewController {
         
         var time = asset.duration
         //If possible - take not the first frame (it could be completely black or white on camara's videos)
-        time.value = min(time.value, 2)
+        time.value = min(time.value, 3)
+//        time.value = 5
         
         do {
-            let imageRef = try imageGenerator.copyCGImage(at: time, actualTime: nil)
+            let imageRef = try imageGenerator.copyCGImage(at: CMTimeMake(15, 1), actualTime: nil)
             return UIImage(cgImage: imageRef)
         }
         catch let error as NSError

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class VideoTableViewController: UITableViewController {
     
@@ -42,6 +43,27 @@ class VideoTableViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
+    
+    func generateThumnail(url:URL) -> UIImage?
+    {
+        let asset = AVAsset(url: url)
+        let imageGenerator = AVAssetImageGenerator(asset: asset)
+        imageGenerator.appliesPreferredTrackTransform = true
+        
+        var time = asset.duration
+        //If possible - take not the first frame (it could be completely black or white on camara's videos)
+        time.value = min(time.value, 2)
+        
+        do {
+            let imageRef = try imageGenerator.copyCGImage(at: time, actualTime: nil)
+            return UIImage(cgImage: imageRef)
+        }
+        catch let error as NSError
+        {
+            print("Image generation failed with error \(error)")
+            return nil
+        }
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -67,7 +89,9 @@ class VideoTableViewController: UITableViewController {
         
         let video = videos[indexPath.row]
         
-        cell.backgroundImage.image = video.photo
+        let url = URL(string: video.video)
+        cell.backgroundImage.image = generateThumnail(url: url!)
+//        cell.backgroundImage.image = video.photo
         cell.title.text = video.title
         cell.backgroundColor = .clear
         return cell

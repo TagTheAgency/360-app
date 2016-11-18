@@ -18,6 +18,9 @@ class VRVideoTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        
+        coverImageView.layer.cornerRadius = 10.0
+        coverImageView.clipsToBounds = true
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

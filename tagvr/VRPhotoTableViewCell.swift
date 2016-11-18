@@ -19,10 +19,8 @@ class VRPhotoTableViewCell: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
         
-//        cellContent.layer.cornerRadius = 10.0
         photoView.layer.cornerRadius = 10.0
         photoView.clipsToBounds = true
-//        overlayView.layer.cornerRadius = 10.0
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

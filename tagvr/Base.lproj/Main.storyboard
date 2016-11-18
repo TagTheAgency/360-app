@@ -19,7 +19,7 @@
         <scene sceneID="JWD-tV-2VE">
             <objects>
                 <tableViewController id="SVT-bq-dSf" customClass="VRVideoTableViewController" customModule="tagvr" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="200" sectionHeaderHeight="28" sectionFooterHeight="28" id="oll-9w-la4">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="200" sectionHeaderHeight="28" sectionFooterHeight="28" id="oll-9w-la4">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -29,7 +29,7 @@
                                 <rect key="frame" x="0.0" y="92" width="375" height="200"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="uqP-3N-aq8" id="tCz-yu-bcs">
-                                    <frame key="frameInset" width="375" height="199"/>
+                                    <frame key="frameInset" width="375" height="200"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KA7-mj-UhI"/>
@@ -44,13 +44,13 @@
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="uTI-CR-Cv8" firstAttribute="centerX" secondItem="gqx-JT-qg6" secondAttribute="centerX" id="58R-eB-qeS"/>
-                                        <constraint firstAttribute="bottomMargin" secondItem="KA7-mj-UhI" secondAttribute="bottom" constant="20" id="BVE-EP-OQl"/>
-                                        <constraint firstItem="KA7-mj-UhI" firstAttribute="top" secondItem="tCz-yu-bcs" secondAttribute="topMargin" constant="20" id="XbV-1D-UEO"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="KA7-mj-UhI" secondAttribute="bottom" constant="5" id="BVE-EP-OQl"/>
+                                        <constraint firstItem="KA7-mj-UhI" firstAttribute="top" secondItem="tCz-yu-bcs" secondAttribute="topMargin" constant="5" id="XbV-1D-UEO"/>
                                         <constraint firstItem="gqx-JT-qg6" firstAttribute="width" secondItem="KA7-mj-UhI" secondAttribute="width" id="ZPj-2b-Mb6"/>
                                         <constraint firstItem="gqx-JT-qg6" firstAttribute="centerX" secondItem="KA7-mj-UhI" secondAttribute="centerX" id="avb-q6-al1"/>
                                         <constraint firstItem="gqx-JT-qg6" firstAttribute="height" secondItem="KA7-mj-UhI" secondAttribute="height" id="d28-m2-RRM"/>
                                         <constraint firstItem="uTI-CR-Cv8" firstAttribute="centerY" secondItem="gqx-JT-qg6" secondAttribute="centerY" id="lPe-cI-We2"/>
-                                        <constraint firstItem="KA7-mj-UhI" firstAttribute="leading" secondItem="tCz-yu-bcs" secondAttribute="leadingMargin" constant="20" id="oMd-vs-lYF"/>
+                                        <constraint firstItem="KA7-mj-UhI" firstAttribute="leading" secondItem="tCz-yu-bcs" secondAttribute="leadingMargin" constant="5" id="oMd-vs-lYF"/>
                                         <constraint firstItem="gqx-JT-qg6" firstAttribute="centerY" secondItem="KA7-mj-UhI" secondAttribute="centerY" id="yri-Pk-0Ov"/>
                                     </constraints>
                                 </tableViewCellContentView>

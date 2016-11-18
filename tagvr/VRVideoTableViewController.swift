@@ -23,7 +23,7 @@ class VRVideoTableViewController: UITableViewController {
         let photo3 = UIImage(named: "image3")!
         let video3 = VRVideo(photo: photo3, title: "Aventador Test", duration: "3:12", video: "https://s3.amazonaws.com/ray.wenderlich/elephant_safari.mp4")!
         
-        vrVideos += []
+        vrVideos += [video1, video2, video3]
 
     }
 
@@ -33,6 +33,10 @@ class VRVideoTableViewController: UITableViewController {
         
         loadSampleVideos()
 
+        
+        let backgroundImage = UIImage(named: "space.jpg")
+        let imageView = UIImageView(image: backgroundImage)
+        self.tableView.backgroundView = imageView
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 

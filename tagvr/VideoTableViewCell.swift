@@ -10,6 +10,7 @@ import UIKit
 
 class VideoTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var overlayView: UIView!
     @IBOutlet weak var backgroundImage: UIImageView!
     @IBOutlet weak var title: UILabel!
     

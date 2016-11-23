@@ -22,16 +22,16 @@ class VrVideoViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         if let vrVideo = vrVideo {
-            videoVRView.load(from: URL(string: vrVideo.video))
             videoVRView.enableCardboardButton = true
             videoVRView.enableFullscreenButton = true
             titleLabel.text = vrVideo.title
             durationLabel.text = vrVideo.duration
+            videoVRView.load(from: URL(string: vrVideo.video), of: GVRVideoType.stereoOverUnder)
         }
     }
     
     override func viewDidDisappear(_ animated: Bool) {
-        self.videoVRView.load(from: nil)
+//        self.videoVRView.load(from: nil)
     }
 
     override func didReceiveMemoryWarning() {

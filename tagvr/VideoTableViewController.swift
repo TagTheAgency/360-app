@@ -12,18 +12,18 @@ import AVFoundation
 class VideoTableViewController: UITableViewController {
     
     var videos = [Video]()
+//    var heightAtIndexPath = NSMutableDictionary()
     
     func loadSampleVideos() {
         
-        let photo1 = UIImage(named: "image1")!
-        let video1 = Video(photo: photo1, title: "Tag The Agency", duration: "0:24", video: "https://1819948887.rsc.cdn77.org/videos/TAG%20The%20Agency%20(1).mp4")!
-        let video2 = Video(photo: photo1, title: "Tag The Agency Facebook Apps", duration: "0:24", video: "https://1819948887.rsc.cdn77.org/videos/TAG%20The%20Agency%20-%20Facebook%20Apps%20(1).mp4")!
-        let video3 = Video(photo: photo1, title: "UX NZ 2015 - Your conference in a nutshell", duration: "0:24", video: "https://1819948887.rsc.cdn77.org/videos/UX%20New%20Zealand%202015%20-%20Your%20conference%20in%20a%20nutshell.mp4")!
-        let video4 = Video(photo: photo1, title: "Tag The Agency Vr Carboard", duration: "0:24", video: "https://1819948887.rsc.cdn77.org/videos/TAG%20The%20Agency%20-%20VR%20Cardboard.mp4")!
-        let video5 = Video(photo: photo1, title: "Tag The Agency 2016 Showreel", duration: "0:24", video: "https://1819948887.rsc.cdn77.org/videos/TAG%202016%20Showreel%20(2).mp4")!
-        let video6 = Video(photo: photo1, title: "Holograms - dreams become reality", duration: "0:24", video: "https://1819948887.rsc.cdn77.org/videos/Holograms%20-%20dreams%20become%20reality.mp4")!
-        let video7 = Video(photo: photo1, title: "Agile NZ Conference part 1", duration: "0:24", video: "https://1819948887.rsc.cdn77.org/videos/Agile%20NZ%20Conference%20Part%201.mp4")!
-        let video8 = Video(photo: photo1, title: "Agile NZ 2015 Highlights", duration: "0:24", video: "https://1819948887.rsc.cdn77.org/videos/Agile%20NZ%202015%20Highlights.mp4")!
+        let video1 = Video(title: "Tag The Agency", duration: "0:24", video: "https://1819948887.rsc.cdn77.org/videos/TAG%20The%20Agency%20(1).mp4")!
+        let video2 = Video(title: "Tag The Agency Facebook Apps", duration: "0:24", video: "https://1819948887.rsc.cdn77.org/videos/TAG%20The%20Agency%20-%20Facebook%20Apps%20(1).mp4")!
+        let video3 = Video(title: "UX NZ 2015 - Your conference in a nutshell", duration: "0:24", video: "https://1819948887.rsc.cdn77.org/videos/UX%20New%20Zealand%202015%20-%20Your%20conference%20in%20a%20nutshell.mp4")!
+        let video4 = Video(title: "Tag The Agency Vr Carboard", duration: "0:24", video: "https://1819948887.rsc.cdn77.org/videos/TAG%20The%20Agency%20-%20VR%20Cardboard.mp4")!
+        let video5 = Video(title: "Tag The Agency 2016 Showreel", duration: "0:24", video: "https://1819948887.rsc.cdn77.org/videos/TAG%202016%20Showreel%20(2).mp4")!
+        let video6 = Video(title: "Holograms - dreams become reality", duration: "0:24", video: "https://1819948887.rsc.cdn77.org/videos/Holograms%20-%20dreams%20become%20reality.mp4")!
+        let video7 = Video(title: "Agile NZ Conference part 1", duration: "0:24", video: "https://1819948887.rsc.cdn77.org/videos/Agile%20NZ%20Conference%20Part%201.mp4")!
+        let video8 = Video(title: "Agile NZ 2015 Highlights", duration: "0:24", video: "https://1819948887.rsc.cdn77.org/videos/Agile%20NZ%202015%20Highlights.mp4")!
         videos += [video1, video2, video3, video4, video5, video6, video7, video8]
         
     }
@@ -37,15 +37,29 @@ class VideoTableViewController: UITableViewController {
 
 
         loadSampleVideos()
+//        self.tableView.rowHeight = UITableViewAutomaticDimension
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
+//    
+//    func tableView(tableView: UITableView, estimatedHeightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+//        let height = self.heightAtIndexPath.object(forKey: indexPath)
+//        if ((height) != nil) {
+//            return CGFloat(height!.floatValue)
+//        } else {
+//            return UITableViewAutomaticDimension
+//        }
+//    }
+//    
+//    func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
+//        let height = cell.frame.size.height
+//        self.heightAtIndexPath.setObject(height, forKey: indexPath)
+//    }
     
-    func generateThumnail(url:URL) -> UIImage?
-    {
+    func generateThumnail(url:URL) -> UIImage? {
         let asset = AVAsset(url: url)
         let imageGenerator = AVAssetImageGenerator(asset: asset)
         imageGenerator.appliesPreferredTrackTransform = true

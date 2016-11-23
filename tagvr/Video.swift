@@ -10,14 +10,14 @@ import Foundation
 
 class Video {
     
-    var photo: UIImage
+//    var photo: UIImage
     var title: String
     var duration: String
     var video: String
     
-    init?(photo: UIImage, title: String, duration: String, video: String) {
+    init?(title: String, duration: String, video: String) {
         
-        self.photo = photo
+//        self.photo = photo
         self.title = title
         self.duration = duration
         self.video = video

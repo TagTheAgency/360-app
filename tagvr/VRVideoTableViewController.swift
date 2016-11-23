@@ -14,14 +14,14 @@ class VRVideoTableViewController: UITableViewController {
     var imageCache = NSMutableDictionary()
     
     func loadSampleVideos() {
-        let photo1 = UIImage(named: "image1")!
-        let video1 = VRVideo(photo: photo1, title: "Soaring with Orcas", duration: "2:52", video: "https://s3.amazonaws.com/ray.wenderlich/elephant_safari.mp4")!
+        let photo1 = UIImage(named: "times-square")!
+        let video1 = VRVideo(photo: photo1, title: "Times Square", duration: "1:00", video: "https://1819948887.rsc.cdn77.org/videos/360-times-square-new-york-city_SMI_OSOE.mp4")!
         
-        let photo2 = UIImage(named: "image2")!
-        let video2 = VRVideo(photo: photo2, title: "Road Trip New Zealand", duration: "1:29", video: "https://s3.amazonaws.com/ray.wenderlich/elephant_safari.mp4")!
+        let photo2 = UIImage(named: "union-square")!
+        let video2 = VRVideo(photo: photo2, title: "Beach and Pier", duration: "1:00", video: "https://1819948887.rsc.cdn77.org/videos/360-video-of-beach-and-pier_H5e_Jtfa.mp4")!
         
-        let photo3 = UIImage(named: "image3")!
-        let video3 = VRVideo(photo: photo3, title: "Aventador Test", duration: "3:12", video: "https://s3.amazonaws.com/ray.wenderlich/elephant_safari.mp4")!
+        let photo3 = UIImage(named: "pier")!
+        let video3 = VRVideo(photo: photo3, title: "Union Square", duration: "1:00", video: "https://1819948887.rsc.cdn77.org/videos/360-union-square-new-york-city_SfdL_Bd4.mp4")!
         
         vrVideos += [video1, video2, video3]
 

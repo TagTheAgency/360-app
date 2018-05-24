@@ -26,21 +26,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bju-dO-lJs">
+                            <view contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bju-dO-lJs">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="GAZE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZRY-y9-ITK">
-                                        <rect key="frame" x="112" y="257" width="150" height="50"/>
+                                        <rect key="frame" x="112" y="245" width="150" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="150" id="RdX-Vf-fSq"/>
                                             <constraint firstAttribute="height" constant="50" id="m3w-GB-kKA"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="FuturaLight" family="Futura (Light)" pointSize="32"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="50"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="BY TAG THE AGENCY" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kRm-GG-h3J">
-                                        <rect key="frame" x="51" y="315" width="273" height="50"/>
+                                        <rect key="frame" x="51" y="308" width="273" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="150" id="9vg-y0-gcp"/>
                                             <constraint firstAttribute="height" constant="50" id="RiP-mn-F0T"/>

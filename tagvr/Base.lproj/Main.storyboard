@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11761" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="xbA-zw-4Hg">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="xbA-zw-4Hg">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -36,10 +36,10 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KA7-mj-UhI">
-                                            <rect key="frame" x="13" y="13" width="349" height="174"/>
+                                            <rect key="frame" x="21" y="16" width="333" height="168"/>
                                         </imageView>
                                         <view alpha="0.34999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gqx-JT-qg6">
-                                            <rect key="frame" x="13" y="13" width="349" height="174"/>
+                                            <rect key="frame" x="21" y="16" width="333" height="168"/>
                                             <color key="backgroundColor" red="0.92549019610000005" green="0.0" blue="0.54901960780000003" alpha="0.64771012930000005" colorSpace="calibratedRGB"/>
                                             <userDefinedRuntimeAttributes>
                                                 <userDefinedRuntimeAttribute type="number" keyPath="keyPath">
@@ -105,7 +105,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ggg-Ne-9d0">
-                                            <rect key="frame" x="13" y="13" width="349" height="174"/>
+                                            <rect key="frame" x="21" y="16" width="333" height="168"/>
                                             <userDefinedRuntimeAttributes>
                                                 <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                                     <integer key="value" value="9"/>
@@ -113,7 +113,7 @@
                                             </userDefinedRuntimeAttributes>
                                         </imageView>
                                         <view alpha="0.34999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SO2-W1-D7t">
-                                            <rect key="frame" x="13" y="13" width="349" height="174"/>
+                                            <rect key="frame" x="21" y="16" width="333" height="168"/>
                                             <color key="backgroundColor" red="0.2714922350495369" green="0.0" blue="0.27233573717948723" alpha="1" colorSpace="calibratedRGB"/>
                                             <userDefinedRuntimeAttributes>
                                                 <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -168,7 +168,7 @@
             </objects>
             <point key="canvasLocation" x="1313" y="1082"/>
         </scene>
-        <!--VRStudio-->
+        <!--Gaze-->
         <scene sceneID="jLg-Ey-wwm">
             <objects>
                 <viewController id="3rJ-Ym-0YS" customClass="PanoramaViewController" customModule="tagvr" customModuleProvider="target" sceneMemberID="viewController">
@@ -192,7 +192,7 @@
                             <constraint firstItem="sMC-P1-b7C" firstAttribute="centerX" secondItem="FMo-AG-sh8" secondAttribute="centerX" id="o9C-oI-Do1"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="VRStudio" id="VDp-6T-uLM"/>
+                    <navigationItem key="navigationItem" title="Gaze" id="VDp-6T-uLM"/>
                     <connections>
                         <outlet property="photoVrView" destination="sMC-P1-b7C" id="RaN-9t-9r5"/>
                     </connections>
@@ -282,6 +282,7 @@
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                     <connections>
                         <outlet property="contactEmail" destination="e2E-0D-e3g" id="H5n-Lj-ehF"/>
@@ -329,7 +330,7 @@
             </objects>
             <point key="canvasLocation" x="2060" y="-340.47976011994007"/>
         </scene>
-        <!--VRStudio-->
+        <!--Gaze-->
         <scene sceneID="Fqf-cV-BDj">
             <objects>
                 <viewController id="cOL-vL-3PB" customClass="VrVideoViewController" customModule="tagvr" customModuleProvider="target" sceneMemberID="viewController">
@@ -343,7 +344,7 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5ZG-aB-Dre" customClass="GVRVideoView">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <color key="backgroundColor" red="0.92549019610000005" green="0.0" blue="0.54901960780000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.91588443517684937" green="0.0034622072707861662" blue="0.54190152883529663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="egG-ei-Qox">
                                 <rect key="frame" x="16" y="123" width="49" height="26"/>
@@ -370,7 +371,7 @@
                             <constraint firstItem="egG-ei-Qox" firstAttribute="leading" secondItem="VNe-AK-Cqh" secondAttribute="leading" id="yT8-UJ-bSf"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="VRStudio" id="gZW-4w-ROO"/>
+                    <navigationItem key="navigationItem" title="Gaze" id="gZW-4w-ROO"/>
                     <connections>
                         <outlet property="durationLabel" destination="egG-ei-Qox" id="OLA-k2-aLM"/>
                         <outlet property="titleLabel" destination="VNe-AK-Cqh" id="68X-4h-A2X"/>
@@ -388,7 +389,7 @@
                     <toolbarItems/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" clearsContextBeforeDrawing="NO" alpha="0.65000000000000002" contentMode="scaleToFill" misplaced="YES" barStyle="black" id="q3e-fL-GBx">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.92549019607843142" green="0.0" blue="0.5490196078431373" alpha="0.64771012931034477" colorSpace="calibratedRGB"/>
                         <textAttributes key="titleTextAttributes">
@@ -397,7 +398,6 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="xWi-UB-caM">
-                        <rect key="frame" x="0.0" y="623" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </toolbar>
                     <connections>
@@ -408,7 +408,7 @@
             </objects>
             <point key="canvasLocation" x="-361" y="336"/>
         </scene>
-        <!--VRStudio-->
+        <!--Gaze-->
         <scene sceneID="Mu6-TY-ska">
             <objects>
                 <viewController id="zui-Y8-nuO" customClass="ViewController" customModule="tagvr" customModuleProvider="target" sceneMemberID="viewController">
@@ -484,7 +484,7 @@
                             <constraint firstItem="dCj-lo-izW" firstAttribute="top" secondItem="wKg-2y-hbr" secondAttribute="bottom" id="yHL-D6-bTt"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="VRStudio" id="ZBQ-8c-gVk"/>
+                    <navigationItem key="navigationItem" title="Gaze" id="ZBQ-8c-gVk"/>
                     <connections>
                         <outlet property="menuPanoView" destination="dar-dK-if9" id="1YR-i0-FxO"/>
                     </connections>
@@ -511,10 +511,10 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="n33-BL-uWv">
-                                            <rect key="frame" x="13" y="13" width="349" height="174"/>
+                                            <rect key="frame" x="21" y="16" width="333" height="168"/>
                                         </imageView>
                                         <view alpha="0.34999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gzk-68-MTV">
-                                            <rect key="frame" x="13" y="13" width="349" height="174"/>
+                                            <rect key="frame" x="21" y="16" width="333" height="168"/>
                                             <color key="backgroundColor" red="0.92549019610000005" green="0.0" blue="0.54901960780000003" alpha="0.64771012930000005" colorSpace="calibratedRGB"/>
                                             <userDefinedRuntimeAttributes>
                                                 <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -523,7 +523,7 @@
                                             </userDefinedRuntimeAttributes>
                                         </view>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="22" translatesAutoresizingMaskIntoConstraints="NO" id="ove-Zm-9bL">
-                                            <rect key="frame" x="58" y="84.5" width="259" height="31.5"/>
+                                            <rect key="frame" x="66" y="84.5" width="243" height="31.5"/>
                                             <fontDescription key="fontDescription" name="FuturaLight" family="Futura (Light)" pointSize="28"/>
                                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
@@ -563,4 +563,5 @@
             <point key="canvasLocation" x="1313" y="-340"/>
         </scene>
     </scenes>
+    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
 </document>

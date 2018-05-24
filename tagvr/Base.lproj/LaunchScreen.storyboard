@@ -29,22 +29,20 @@
                             <view contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bju-dO-lJs">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="GAZE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZRY-y9-ITK">
-                                        <rect key="frame" x="112" y="245" width="150" height="50"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="150" id="RdX-Vf-fSq"/>
-                                            <constraint firstAttribute="height" constant="50" id="m3w-GB-kKA"/>
-                                        </constraints>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GAZE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZRY-y9-ITK">
+                                        <rect key="frame" x="118.5" y="265" width="137" height="65"/>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="50"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="BY TAG THE AGENCY" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kRm-GG-h3J">
-                                        <rect key="frame" x="51" y="308" width="273" height="50"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="150" id="9vg-y0-gcp"/>
-                                            <constraint firstAttribute="height" constant="50" id="RiP-mn-F0T"/>
-                                        </constraints>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="BY TAG THE AGENCY" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kRm-GG-h3J">
+                                        <rect key="frame" x="73" y="334" width="229" height="50"/>
+                                        <fontDescription key="fontDescription" name="FuturaLight" family="Futura (Light)" pointSize="23"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Version 3.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="06b-po-Z1S">
+                                        <rect key="frame" x="131" y="585" width="112" height="26"/>
                                         <fontDescription key="fontDescription" name="FuturaLight" family="Futura (Light)" pointSize="23"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -53,7 +51,13 @@
                                 <color key="backgroundColor" red="0.91588443519999996" green="0.0034622072709999999" blue="0.54190152879999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="ZRY-y9-ITK" firstAttribute="centerX" secondItem="Bju-dO-lJs" secondAttribute="centerX" id="1jk-gy-HmV"/>
-                                    <constraint firstItem="ZRY-y9-ITK" firstAttribute="centerY" secondItem="Bju-dO-lJs" secondAttribute="centerY" id="j3G-fr-mg4"/>
+                                    <constraint firstItem="kRm-GG-h3J" firstAttribute="top" secondItem="ZRY-y9-ITK" secondAttribute="bottom" constant="21" id="2KH-Wx-gWG"/>
+                                    <constraint firstItem="ZRY-y9-ITK" firstAttribute="centerX" secondItem="Bju-dO-lJs" secondAttribute="centerX" id="5F5-cy-2dS"/>
+                                    <constraint firstItem="ZRY-y9-ITK" firstAttribute="top" secondItem="Bju-dO-lJs" secondAttribute="top" constant="265" id="APu-h7-8Lp"/>
+                                    <constraint firstItem="06b-po-Z1S" firstAttribute="top" secondItem="kRm-GG-h3J" secondAttribute="bottom" constant="208" id="B7U-aw-1ar"/>
+                                    <constraint firstItem="kRm-GG-h3J" firstAttribute="centerX" secondItem="Bju-dO-lJs" secondAttribute="centerX" id="BiG-SR-Pry"/>
+                                    <constraint firstItem="06b-po-Z1S" firstAttribute="centerX" secondItem="Bju-dO-lJs" secondAttribute="centerX" id="EFp-9K-Trb"/>
+                                    <constraint firstAttribute="bottom" secondItem="06b-po-Z1S" secondAttribute="bottom" constant="56" id="eNA-yR-Gpg"/>
                                 </constraints>
                             </view>
                         </subviews>

@@ -17,10 +17,10 @@ class VRVideoTableViewController: UITableViewController {
         let photo1 = UIImage(named: "times-square")!
         let video1 = VRVideo(photo: photo1, title: "Times Square", duration: "1:00", video: "https://1819948887.rsc.cdn77.org/videos/360-times-square-new-york-city_SMI_OSOE.mp4")!
         
-        let photo2 = UIImage(named: "union-square")!
+        let photo2 = UIImage(named: "pier")!
         let video2 = VRVideo(photo: photo2, title: "Beach and Pier", duration: "1:00", video: "https://1819948887.rsc.cdn77.org/videos/360-video-of-beach-and-pier_H5e_Jtfa.mp4")!
         
-        let photo3 = UIImage(named: "pier")!
+        let photo3 = UIImage(named: "union-square")!
         let video3 = VRVideo(photo: photo3, title: "Union Square", duration: "1:00", video: "https://1819948887.rsc.cdn77.org/videos/360-union-square-new-york-city_SfdL_Bd4.mp4")!
         
         let photo4 = UIImage(named: "tahiti")!

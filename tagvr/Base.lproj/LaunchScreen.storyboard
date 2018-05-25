@@ -30,19 +30,19 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GAZE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZRY-y9-ITK">
-                                        <rect key="frame" x="118.5" y="265" width="137" height="65"/>
+                                        <rect key="frame" x="119" y="271" width="137" height="65"/>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="50"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="BY TAG THE AGENCY" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kRm-GG-h3J">
-                                        <rect key="frame" x="73" y="334" width="229" height="50"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BY TAG THE AGENCY" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kRm-GG-h3J">
+                                        <rect key="frame" x="75" y="344" width="224.5" height="26"/>
                                         <fontDescription key="fontDescription" name="FuturaLight" family="Futura (Light)" pointSize="23"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Version 3.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="06b-po-Z1S">
-                                        <rect key="frame" x="131" y="585" width="112" height="26"/>
+                                        <rect key="frame" x="131" y="589" width="112" height="26"/>
                                         <fontDescription key="fontDescription" name="FuturaLight" family="Futura (Light)" pointSize="23"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -50,14 +50,13 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.91588443519999996" green="0.0034622072709999999" blue="0.54190152879999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstItem="ZRY-y9-ITK" firstAttribute="centerX" secondItem="Bju-dO-lJs" secondAttribute="centerX" id="1jk-gy-HmV"/>
-                                    <constraint firstItem="kRm-GG-h3J" firstAttribute="top" secondItem="ZRY-y9-ITK" secondAttribute="bottom" constant="21" id="2KH-Wx-gWG"/>
-                                    <constraint firstItem="ZRY-y9-ITK" firstAttribute="centerX" secondItem="Bju-dO-lJs" secondAttribute="centerX" id="5F5-cy-2dS"/>
-                                    <constraint firstItem="ZRY-y9-ITK" firstAttribute="top" secondItem="Bju-dO-lJs" secondAttribute="top" constant="265" id="APu-h7-8Lp"/>
-                                    <constraint firstItem="06b-po-Z1S" firstAttribute="top" secondItem="kRm-GG-h3J" secondAttribute="bottom" constant="208" id="B7U-aw-1ar"/>
-                                    <constraint firstItem="kRm-GG-h3J" firstAttribute="centerX" secondItem="Bju-dO-lJs" secondAttribute="centerX" id="BiG-SR-Pry"/>
-                                    <constraint firstItem="06b-po-Z1S" firstAttribute="centerX" secondItem="Bju-dO-lJs" secondAttribute="centerX" id="EFp-9K-Trb"/>
-                                    <constraint firstAttribute="bottom" secondItem="06b-po-Z1S" secondAttribute="bottom" constant="56" id="eNA-yR-Gpg"/>
+                                    <constraint firstAttribute="bottom" secondItem="06b-po-Z1S" secondAttribute="bottom" constant="52" id="112-4O-nUM"/>
+                                    <constraint firstItem="kRm-GG-h3J" firstAttribute="top" secondItem="ZRY-y9-ITK" secondAttribute="bottom" constant="8" id="28a-Py-cGy"/>
+                                    <constraint firstItem="kRm-GG-h3J" firstAttribute="centerX" secondItem="Bju-dO-lJs" secondAttribute="centerX" id="B2I-7s-f9A"/>
+                                    <constraint firstItem="ZRY-y9-ITK" firstAttribute="centerX" secondItem="Bju-dO-lJs" secondAttribute="centerX" id="H0v-6b-kHG"/>
+                                    <constraint firstItem="06b-po-Z1S" firstAttribute="centerX" secondItem="Bju-dO-lJs" secondAttribute="centerX" id="bOC-yq-rMy"/>
+                                    <constraint firstItem="kRm-GG-h3J" firstAttribute="top" secondItem="ZRY-y9-ITK" secondAttribute="bottom" constant="8" id="hOa-2l-DvC"/>
+                                    <constraint firstItem="ZRY-y9-ITK" firstAttribute="top" secondItem="Bju-dO-lJs" secondAttribute="top" constant="271" id="s6m-ys-bYW"/>
                                 </constraints>
                             </view>
                         </subviews>

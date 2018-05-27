@@ -48,8 +48,15 @@ class VRPhotoTableViewController: UITableViewController {
         
         let photo17 = VRPhoto(photo: UIImage(named: "winter-city-360")!, title: "City in Winter")!
 
-
-        vrPhotos += [photo1, photo2, photo3, photo4, photo5, photo6, photo7, photo8, photo9, photo10, photo11, photo12, photo13, photo14, photo15, photo16, photo17]
+        let photo18 = VRPhoto(photo: UIImage(named: "southwards-360")!, title: "Southwards Car Museum")!
+        
+        let photo19 = VRPhoto(photo: UIImage(named: "cityscape-360")!, title: "Cityscape")!
+        
+        let photo20 = VRPhoto(photo: UIImage(named: "brooklyn-memorial-360")!, title: "Brooklyn Memorial")!
+        
+        let photo21 = VRPhoto(photo: UIImage(named: "dodge-viper-360")!, title: "Dodge Viper")!
+        
+        vrPhotos += [photo1, photo2, photo3, photo4, photo5, photo6, photo7, photo8, photo9, photo10, photo11, photo12, photo13, photo14, photo15, photo16, photo17, photo18, photo19, photo20, photo21]
         
     }
 

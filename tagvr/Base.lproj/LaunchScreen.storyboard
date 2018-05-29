@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
-    <device id="retina4_7" orientation="landscape">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -23,26 +23,26 @@
                         <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bju-dO-lJs">
-                                <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                                 <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Version 3.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="06b-po-Z1S">
+                                        <rect key="frame" x="151" y="657" width="112" height="26"/>
+                                        <fontDescription key="fontDescription" name="FuturaLight" family="Futura (Light)" pointSize="23"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GAZE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZRY-y9-ITK">
-                                        <rect key="frame" x="265" y="148" width="137" height="65"/>
+                                        <rect key="frame" x="139" y="319" width="137" height="65"/>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="50"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BY TAG THE AGENCY" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kRm-GG-h3J">
-                                        <rect key="frame" x="221" y="221" width="224.5" height="26"/>
-                                        <fontDescription key="fontDescription" name="FuturaLight" family="Futura (Light)" pointSize="23"/>
-                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Version 3.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="06b-po-Z1S">
-                                        <rect key="frame" x="277" y="306" width="112" height="26"/>
+                                        <rect key="frame" x="94.999999999999986" y="392" width="224.66666666666663" height="26"/>
                                         <fontDescription key="fontDescription" name="FuturaLight" family="Futura (Light)" pointSize="23"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -55,11 +55,14 @@
                                     <constraint firstItem="ZRY-y9-ITK" firstAttribute="top" secondItem="Bju-dO-lJs" secondAttribute="top" constant="148" id="BUC-sJ-ek4"/>
                                     <constraint firstItem="kRm-GG-h3J" firstAttribute="top" secondItem="Bju-dO-lJs" secondAttribute="top" constant="314" id="FPw-0x-FzS"/>
                                     <constraint firstItem="ZRY-y9-ITK" firstAttribute="centerX" secondItem="Bju-dO-lJs" secondAttribute="centerX" id="JfW-xc-Qn0"/>
+                                    <constraint firstItem="kRm-GG-h3J" firstAttribute="top" secondItem="ZRY-y9-ITK" secondAttribute="bottom" constant="8" id="Kcp-dP-uKA"/>
                                     <constraint firstItem="kRm-GG-h3J" firstAttribute="top" secondItem="ZRY-y9-ITK" secondAttribute="bottom" constant="8" id="Qqh-Py-u78"/>
                                     <constraint firstItem="kRm-GG-h3J" firstAttribute="centerX" secondItem="ZRY-y9-ITK" secondAttribute="centerX" id="VLf-JU-2lX"/>
                                     <constraint firstItem="06b-po-Z1S" firstAttribute="centerX" secondItem="kRm-GG-h3J" secondAttribute="centerX" id="VVb-S9-tc3"/>
                                     <constraint firstItem="ZRY-y9-ITK" firstAttribute="top" secondItem="Bju-dO-lJs" secondAttribute="top" constant="241" id="Wso-g1-g0F"/>
                                     <constraint firstItem="ZRY-y9-ITK" firstAttribute="centerX" secondItem="Bju-dO-lJs" secondAttribute="centerX" id="Ytr-dh-5Ig"/>
+                                    <constraint firstItem="ZRY-y9-ITK" firstAttribute="top" secondItem="Bju-dO-lJs" secondAttribute="top" constant="319" id="am5-Pe-P76"/>
+                                    <constraint firstItem="kRm-GG-h3J" firstAttribute="centerX" secondItem="ZRY-y9-ITK" secondAttribute="centerX" id="nRc-bS-DJw"/>
                                     <constraint firstItem="06b-po-Z1S" firstAttribute="centerX" secondItem="Bju-dO-lJs" secondAttribute="centerX" id="rCc-3Q-A5e"/>
                                     <constraint firstAttribute="bottom" secondItem="06b-po-Z1S" secondAttribute="bottom" constant="53" id="wHW-iV-MS6"/>
                                 </constraints>
@@ -69,10 +72,13 @@
                                         <exclude reference="JfW-xc-Qn0"/>
                                         <exclude reference="Wso-g1-g0F"/>
                                         <exclude reference="Ytr-dh-5Ig"/>
+                                        <exclude reference="am5-Pe-P76"/>
                                         <exclude reference="3qS-lI-pZo"/>
                                         <exclude reference="FPw-0x-FzS"/>
+                                        <exclude reference="Kcp-dP-uKA"/>
                                         <exclude reference="Qqh-Py-u78"/>
                                         <exclude reference="VLf-JU-2lX"/>
+                                        <exclude reference="nRc-bS-DJw"/>
                                         <exclude reference="1ax-lU-G6M"/>
                                         <exclude reference="VVb-S9-tc3"/>
                                         <exclude reference="rCc-3Q-A5e"/>
@@ -92,9 +98,12 @@
                                 <variation key="heightClass=regular-widthClass=compact">
                                     <mask key="constraints">
                                         <include reference="JfW-xc-Qn0"/>
-                                        <include reference="Wso-g1-g0F"/>
+                                        <exclude reference="Wso-g1-g0F"/>
+                                        <include reference="am5-Pe-P76"/>
                                         <include reference="3qS-lI-pZo"/>
-                                        <include reference="FPw-0x-FzS"/>
+                                        <exclude reference="FPw-0x-FzS"/>
+                                        <include reference="Kcp-dP-uKA"/>
+                                        <include reference="nRc-bS-DJw"/>
                                         <include reference="rCc-3Q-A5e"/>
                                         <include reference="wHW-iV-MS6"/>
                                     </mask>
